@@ -571,7 +571,6 @@ def advisor():
     if "user" not in session:
         return redirect(url_for("login"))
     plans_list = load_plans()
-    # Pass plan names and key info for context
     plan_summary = [{
         "name": p["Plan_Name"],
         "company": p["Company"],
@@ -585,6 +584,58 @@ def advisor():
     } for p in plans_list]
     return render_template("advisor.html", user=session["user"],
                            plans_json=json.dumps(plan_summary))
+
+
+# =====================================================
+# AI ADVISOR API — proxies Anthropic securely from backend
+# =====================================================
+@app.route("/api/advisor", methods=["POST"])
+def api_advisor():
+    if "user" not in session:
+        return jsonify({"error": "Unauthorized"}), 401
+
+    import urllib.request
+    import urllib.error
+
+    data = request.json
+    messages = data.get("messages", [])
+    system_prompt = data.get("system", "")
+
+    # Get API key from environment variable
+    api_key = os.environ.get("ANTHROPIC_API_KEY", "")
+    if not api_key:
+        return jsonify({"error": "API key not configured. Please set ANTHROPIC_API_KEY environment variable."}), 500
+
+    payload = json.dumps({
+        "model": "claude-haiku-4-5-20251001",
+        "max_tokens": 1000,
+        "system": system_prompt,
+        "messages": messages
+    }).encode("utf-8")
+
+    req = urllib.request.Request(
+        "https://api.anthropic.com/v1/messages",
+        data=payload,
+        headers={
+            "Content-Type": "application/json",
+            "x-api-key": api_key,
+            "anthropic-version": "2023-06-01"
+        },
+        method="POST"
+    )
+
+    try:
+        with urllib.request.urlopen(req, timeout=30) as resp:
+            result = json.loads(resp.read().decode("utf-8"))
+            text = result.get("content", [{}])[0].get("text", "Sorry, I could not process that.")
+            return jsonify({"response": text})
+    except urllib.error.HTTPError as e:
+        err_body = e.read().decode("utf-8")
+        print("Anthropic API error:", err_body)
+        return jsonify({"error": f"API error: {e.code}. Check your API key."}), 502
+    except Exception as e:
+        print("Advisor error:", e)
+        return jsonify({"error": "Connection error. Please try again."}), 500
 
 
 # =====================================================
