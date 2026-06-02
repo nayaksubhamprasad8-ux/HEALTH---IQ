@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health IQ — Secure Login</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background: #060d1a;
+            min-height: 100vh;
+            display: flex;
+            overflow: hidden;
+        }
+        .left-panel {
+            flex: 1;
+            background: linear-gradient(135deg, #0a1628 0%, #0d2444 50%, #0a3d62 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+        .left-panel::before {
+            content: '';
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(0,200,180,0.12) 0%, transparent 70%);
+            top: -100px;
+            right: -100px;
+        }
+        .left-panel::after {
+            content: '';
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(46,204,113,0.08) 0%, transparent 70%);
+            bottom: -50px;
+            left: 100px;
+        }
+        .brand-mark {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 60px;
+        }
+        .brand-icon {
+            width: 44px;
+            height: 44px;
+            background: linear-gradient(135deg, #00c8b4, #2ecc71);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+        .brand-text {
+            font-family: 'Playfair Display', serif;
+            color: white;
+            font-size: 24px;
+            font-weight: 700;
+        }
+        .left-panel h1 {
+            font-family: 'Playfair Display', serif;
+            color: white;
+            font-size: 46px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+        .left-panel h1 span { color: #2ecc71; }
+        .left-panel p {
+            color: rgba(255,255,255,0.65);
+            font-size: 16px;
+            line-height: 1.7;
+            max-width: 400px;
+            margin-bottom: 40px;
+        }
+        .feature-list { list-style: none; }
+        .feature-list li {
+            color: rgba(255,255,255,0.8);
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-size: 14px;
+        }
+        .feature-list li::before {
+            content: '✦';
+            color: #2ecc71;
+            font-size: 10px;
+        }
+        .right-panel {
+            width: 480px;
+            background: #0e1929;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 60px 48px;
+            border-left: 1px solid rgba(255,255,255,0.06);
+        }
+        .auth-box { display: none; }
+        .auth-box:target { display: block; }
+        body:not(:has(:target)) #signin-box { display: block; }
+        .tab-row {
+            display: flex;
+            gap: 0;
+            margin-bottom: 36px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 10px;
+            padding: 4px;
+        }
+        .tab-row a {
+            flex: 1;
+            text-align: center;
+            padding: 10px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-size: 14px;
+            font-weight: 600;
+            color: rgba(255,255,255,0.45);
+            transition: all 0.25s;
+        }
+        .tab-row a.active {
+            background: #00c8b4;
+            color: white;
+        }
+        h2 {
+            color: white;
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+        .sub {
+            color: rgba(255,255,255,0.45);
+            font-size: 14px;
+            margin-bottom: 28px;
+        }
+        .error-msg {
+            background: rgba(231,76,60,0.12);
+            border: 1px solid rgba(231,76,60,0.3);
+            color: #e74c3c;
+            padding: 12px 16px;
+            border-radius: 8px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+        .input-group {
+            position: relative;
+            margin-bottom: 16px;
+        }
+        .input-group .icon {
+            position: absolute;
+            left: 14px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 15px;
+            opacity: 0.5;
+        }
+        .input-group input {
+            width: 100%;
+            padding: 13px 14px 13px 44px;
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: 10px;
+            color: white;
+            font-size: 14px;
+            font-family: 'DM Sans', sans-serif;
+            transition: border 0.25s;
+        }
+        .input-group input:focus {
+            outline: none;
+            border-color: #00c8b4;
+            background: rgba(0,200,180,0.05);
+        }
+        .input-group input::placeholder { color: rgba(255,255,255,0.3); }
+        .btn-submit {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #00c8b4, #2ecc71);
+            color: white;
+            border: none;
+            border-radius: 10px;
+            font-size: 15px;
+            font-weight: 700;
+            cursor: pointer;
+            margin-top: 8px;
+            font-family: 'DM Sans', sans-serif;
+            transition: opacity 0.2s, transform 0.2s;
+            letter-spacing: 0.3px;
+        }
+        .btn-submit:hover { opacity: 0.9; transform: translateY(-1px); }
+        .footer-text {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 13px;
+            color: rgba(255,255,255,0.4);
+        }
+        .footer-text a { color: #00c8b4; text-decoration: none; font-weight: 600; }
+        .security-note {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-top: 24px;
+            padding: 12px;
+            background: rgba(255,255,255,0.03);
+            border-radius: 8px;
+            color: rgba(255,255,255,0.35);
+            font-size: 12px;
+        }
+        @media (max-width: 900px) {
+            .left-panel { display: none; }
+            .right-panel { width: 100%; padding: 40px 24px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="left-panel">
+        <div class="brand-mark">
+            <img src="/static/images/logo.png" alt="Health IQ Logo" style="width:44px;height:44px;object-fit:contain;border-radius:10px;">
+            <span class="brand-text">Health IQ</span>
+        </div>
+        <h1>India's Smartest<br><span>Insurance</span><br>Platform</h1>
+        <p>Compare 100+ health insurance plans, get AI-powered advice, and find the perfect coverage for you and your family.</p>
+        <ul class="feature-list">
+            <li>AI Insurance Advisor powered by Claude</li>
+            <li>Smart Recommendation Engine</li>
+            <li>Coverage Calculator & Premium Predictor</li>
+            <li>Claim Approval Probability Engine</li>
+            <li>Real-time Analytics Dashboard</li>
+        </ul>
+    </div>
+    <div class="right-panel">
+        <div class="tab-row">
+            <a href="#signin-box" class="active">Sign In</a>
+            <a href="#signup-box">Sign Up</a>
+        </div>
+
+        <!-- Small brand in right panel -->
+        <div style="text-align:center;margin-bottom:28px;">
+            <img src="/static/images/logo.png" alt="Health IQ" style="width:48px;height:48px;object-fit:contain;border-radius:12px;margin-bottom:8px;display:block;margin:0 auto 8px;">
+        </div>
+
+        <div id="signin-box" class="auth-box">
+            <h2>Welcome back</h2>
+            <p class="sub">Sign in to your Health IQ account</p>
+            {% if error %}
+            <div class="error-msg">⚠ {{ error }}</div>
+            {% endif %}
+            <form action="/signin" method="POST">
+                <div class="input-group">
+                    <span class="icon">✉</span>
+                    <input type="email" name="email" placeholder="Email address" required />
+                </div>
+                <div class="input-group">
+                    <span class="icon">🔒</span>
+                    <input type="password" name="password" placeholder="Password" required />
+                </div>
+                <button type="submit" class="btn-submit">Sign In →</button>
+            </form>
+            <p class="footer-text">Don't have an account? <a href="#signup-box">Create one free</a></p>
+            <div class="security-note">🔐 Your data is encrypted and never shared with third parties.</div>
+        </div>
+
+        <div id="signup-box" class="auth-box">
+            <h2>Create account</h2>
+            <p class="sub">Join 1,000+ users on Health IQ</p>
+            <form action="/signup" method="POST">
+                <div class="input-group">
+                    <span class="icon">👤</span>
+                    <input type="text" name="name" placeholder="Full name" required />
+                </div>
+                <div class="input-group">
+                    <span class="icon">✉</span>
+                    <input type="email" name="email" placeholder="Email address" required />
+                </div>
+                <div class="input-group">
+                    <span class="icon">🔒</span>
+                    <input type="password" name="password" placeholder="Password (min 8 chars)" required minlength="6" />
+                </div>
+                <button type="submit" class="btn-submit">Create Account →</button>
+            </form>
+            <p class="footer-text">Already have an account? <a href="#signin-box">Sign in</a></p>
+            <div class="security-note">🔐 Your data is encrypted and never shared with third parties.</div>
+        </div>
+    </div>
+</body>
+</html>

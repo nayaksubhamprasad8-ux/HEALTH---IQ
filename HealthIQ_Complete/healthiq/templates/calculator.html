@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coverage Calculator — Health IQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    {% from 'macros.html' import navbar %}
+    <link rel="stylesheet" href="/static/css/main.css"/>
+    <style>
+        .calc-layout { display: grid; grid-template-columns: 420px 1fr; gap: 28px; padding: 36px 0; }
+        .result-big { font-family: 'Playfair Display', serif; font-size: 48px; font-weight: 700; color: white; margin: 12px 0; }
+        .result-label { font-size: 13px; text-transform: uppercase; letter-spacing: 0.5px; color: var(--text-muted); }
+        .breakdown-row { display: flex; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border); font-size: 14px; }
+        .breakdown-row:last-child { border-bottom: none; }
+        .breakdown-key { color: var(--text-muted); }
+        .breakdown-val { color: white; font-weight: 600; }
+        .premium-range { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 20px 0; }
+        .prem-card { background: var(--bg); border: 1px solid var(--border); border-radius: 10px; padding: 16px; text-align: center; }
+        .prem-val { font-size: 22px; font-weight: 800; color: white; }
+        .prem-label { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+        .condition-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; }
+        .cond-item { display: flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 8px; padding: 10px; cursor: pointer; }
+        .cond-item:has(input:checked) { border-color: rgba(245,158,11,0.4); background: rgba(245,158,11,0.05); }
+        .cond-item input { accent-color: var(--orange); }
+        .cond-item label { font-size: 13px; cursor: pointer; }
+        @media (max-width: 900px) { .calc-layout { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body class="dark-bg">
+{{ navbar(user, 'calculator') }}
+
+<div class="page-header">
+    <div class="container">
+        <h1>🧮 Coverage Calculator</h1>
+        <p>Find your ideal coverage amount based on your personal profile</p>
+    </div>
+</div>
+
+<div class="page-body">
+    <div class="container">
+        <div class="calc-layout">
+            <div>
+                <div class="card">
+                    <div class="card-title">Your Profile</div>
+                    <div class="form-group">
+                        <label class="form-label">Your Age</label>
+                        <input type="number" id="age" class="form-input" value="35" min="18" max="80">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Number of Family Members (including you)</label>
+                        <input type="number" id="members" class="form-input" value="1" min="1" max="10">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">City Tier</label>
+                        <select id="city_tier" class="form-select">
+                            <option value="tier1">Tier 1 (Metro: Mumbai, Delhi, Bangalore, etc.)</option>
+                            <option value="tier2">Tier 2 (Bhubaneswar, Pune, Surat, etc.)</option>
+                            <option value="tier3">Tier 3 (Small cities, rural areas)</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Annual Income (₹)</label>
+                        <input type="number" id="income" class="form-input" value="600000" placeholder="Annual income">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Pre-existing Conditions</label>
+                        <div class="condition-grid">
+                            <div class="cond-item">
+                                <input type="checkbox" id="c1" value="diabetes">
+                                <label for="c1">Diabetes</label>
+                            </div>
+                            <div class="cond-item">
+                                <input type="checkbox" id="c2" value="hypertension">
+                                <label for="c2">Hypertension</label>
+                            </div>
+                            <div class="cond-item">
+                                <input type="checkbox" id="c3" value="heart">
+                                <label for="c3">Heart Disease</label>
+                            </div>
+                            <div class="cond-item">
+                                <input type="checkbox" id="c4" value="asthma">
+                                <label for="c4">Asthma</label>
+                            </div>
+                            <div class="cond-item">
+                                <input type="checkbox" id="c5" value="thyroid">
+                                <label for="c5">Thyroid</label>
+                            </div>
+                            <div class="cond-item">
+                                <input type="checkbox" id="c6" value="kidney">
+                                <label for="c6">Kidney Issues</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-primary btn-full" onclick="calculate()">Calculate My Coverage →</button>
+                </div>
+            </div>
+
+            <div id="resultsDiv">
+                <div class="card" style="text-align:center;padding:60px 30px;">
+                    <div style="font-size:48px;margin-bottom:16px;">🧮</div>
+                    <h3 style="color:white;margin-bottom:8px;">Enter your details</h3>
+                    <p style="color:var(--text-muted);">Your personalized coverage recommendation will appear here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+async function calculate() {
+    const conditions = Array.from(document.querySelectorAll('.cond-item input:checked')).map(c => c.value);
+    const payload = {
+        age: parseInt(document.getElementById('age').value),
+        members: parseInt(document.getElementById('members').value),
+        city_tier: document.getElementById('city_tier').value,
+        income: parseInt(document.getElementById('income').value),
+        conditions
+    };
+
+    const res = await fetch('/api/calculate', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(payload)
+    });
+    const data = await res.json();
+    renderResult(data, payload);
+}
+
+function fmt(n) { return '₹' + parseInt(n).toLocaleString('en-IN'); }
+
+function renderResult(d, p) {
+    const cov = fmt(d.recommended_coverage);
+    const html = `
+    <div class="card" style="margin-bottom:20px;">
+        <div class="result-label">Recommended Coverage</div>
+        <div class="result-big">${cov}</div>
+        <p style="color:var(--text-muted);font-size:14px;">Based on your age (${p.age}), ${p.members} member(s), ${p.city_tier.toUpperCase()} city, and income level.</p>
+    </div>
+    <div class="card" style="margin-bottom:20px;">
+        <div class="card-title">Estimated Premium Range</div>
+        <div class="premium-range">
+            <div class="prem-card">
+                <div class="prem-val">${fmt(d.premium_low)}</div>
+                <div class="prem-label">/ Year (Low Estimate)</div>
+            </div>
+            <div class="prem-card">
+                <div class="prem-val">${fmt(d.premium_high)}</div>
+                <div class="prem-label">/ Year (High Estimate)</div>
+            </div>
+        </div>
+        <p style="color:var(--text-muted);font-size:13px;">Monthly: ${fmt(d.premium_low/12)} – ${fmt(d.premium_high/12)}</p>
+    </div>
+    <div class="card" style="margin-bottom:20px;">
+        <div class="card-title">How We Calculated This</div>
+        <div class="breakdown-row"><span class="breakdown-key">Base Coverage</span><span class="breakdown-val">${fmt(d.breakdown.base)}</span></div>
+        <div class="breakdown-row"><span class="breakdown-key">Age Multiplier (${p.age} yrs)</span><span class="breakdown-val">×${d.breakdown.age_factor}</span></div>
+        <div class="breakdown-row"><span class="breakdown-key">City Cost Multiplier</span><span class="breakdown-val">×${d.breakdown.city_factor}</span></div>
+        <div class="breakdown-row"><span class="breakdown-key">Members Factor (${p.members})</span><span class="breakdown-val">×${d.breakdown.members_factor}</span></div>
+        ${d.breakdown.conditions_add > 0 ? `<div class="breakdown-row"><span class="breakdown-key">Pre-existing Conditions Add-on</span><span class="breakdown-val">+${fmt(d.breakdown.conditions_add)}</span></div>` : ''}
+    </div>
+    <a href="/recommend?coverage=${d.recommended_coverage}" class="btn-primary">Find Plans Matching This Coverage →</a>`;
+    document.getElementById('resultsDiv').innerHTML = html;
+}
+</script>
+</body>
+</html>

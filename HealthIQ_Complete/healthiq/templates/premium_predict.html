@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Predictor — Health IQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    {% from 'macros.html' import navbar %}
+    <link rel="stylesheet" href="/static/css/main.css"/>
+    <style>
+        .pred-layout { display: grid; grid-template-columns: 380px 1fr; gap: 28px; padding: 36px 0; }
+        .result-huge { font-family: 'Playfair Display', serif; font-size: 52px; font-weight: 700; color: white; line-height: 1; }
+        .adj-bar { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid var(--border); }
+        .adj-name { font-size: 14px; color: var(--text-muted); }
+        .adj-mult { font-size: 14px; font-weight: 700; }
+        .adj-mult.neutral { color: var(--text-muted); }
+        .adj-mult.up { color: var(--orange); }
+        .adj-mult.down { color: var(--green); }
+        .range-visual { background: var(--bg); border-radius: 10px; padding: 20px; margin: 16px 0; }
+        .range-bar { background: rgba(255,255,255,0.07); border-radius: 100px; height: 10px; position: relative; margin: 16px 0; }
+        .range-fill { position: absolute; height: 10px; border-radius: 100px; background: linear-gradient(90deg, var(--teal), var(--green)); }
+        .range-labels { display: flex; justify-content: space-between; font-size: 12px; color: var(--text-muted); }
+        .bmi-hint { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+        @media (max-width: 900px) { .pred-layout { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body class="dark-bg">
+{{ navbar(user, '') }}
+
+<div class="page-header">
+    <div class="container">
+        <h1>📈 Premium Predictor</h1>
+        <p>ML-powered estimation of your insurance premium before you apply</p>
+    </div>
+</div>
+
+<div class="page-body">
+    <div class="container">
+        <div class="pred-layout">
+            <div>
+                <div class="card">
+                    <div class="card-title">Your Details</div>
+                    <div class="form-group">
+                        <label class="form-label">Age</label>
+                        <input type="number" id="age" class="form-input" value="32" min="18" max="80">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Desired Coverage (₹)</label>
+                        <input type="number" id="coverage" class="form-input" value="500000">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Plan Type</label>
+                        <select id="plan_type" class="form-select">
+                            <option value="Individual">Individual</option>
+                            <option value="Family">Family</option>
+                            <option value="Senior">Senior</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Preferred Company (optional)</label>
+                        <select id="company" class="form-select">
+                            <option value="">Any Company</option>
+                            <option>Star Health and Allied Insurance</option>
+                            <option>HDFC ERGO General Insurance</option>
+                            <option>ICICI Lombard General Insurance</option>
+                            <option>Niva Bupa Health Insurance</option>
+                            <option>Care Health Insurance</option>
+                            <option>Bajaj Allianz General Insurance</option>
+                            <option>Tata AIG General Insurance</option>
+                            <option>ManipalCigna Health Insurance</option>
+                            <option>Aditya Birla Health Insurance</option>
+                            <option>SBI General Insurance</option>
+                            <option>Reliance General Insurance</option>
+                            <option>National Insurance Company</option>
+                            <option>Oriental Insurance Company</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">BMI</label>
+                        <input type="number" id="bmi" class="form-input" value="22" min="10" max="50" step="0.1">
+                        <div class="bmi-hint">Normal: 18.5–24.9 | Overweight: 25–29.9 | Obese: 30+</div>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Smoker?</label>
+                        <select id="smoker" class="form-select">
+                            <option value="false">No</option>
+                            <option value="true">Yes</option>
+                        </select>
+                    </div>
+                    <button class="btn-primary btn-full" onclick="predict()">Predict My Premium →</button>
+                </div>
+            </div>
+
+            <div id="resultsDiv">
+                <div class="card" style="text-align:center;padding:60px 30px;">
+                    <div style="font-size:48px;margin-bottom:16px;">📈</div>
+                    <h3 style="color:white;margin-bottom:8px;">Enter your details</h3>
+                    <p style="color:var(--text-muted);">Your predicted premium will appear here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+async function predict() {
+    const payload = {
+        age: parseInt(document.getElementById('age').value),
+        coverage: parseInt(document.getElementById('coverage').value),
+        plan_type: document.getElementById('plan_type').value,
+        company: document.getElementById('company').value,
+        bmi: parseFloat(document.getElementById('bmi').value),
+        smoker: document.getElementById('smoker').value === 'true'
+    };
+
+    const res = await fetch('/api/predict-premium', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(payload)
+    });
+    const d = await res.json();
+    if (d.error) { alert(d.error); return; }
+    renderResult(d);
+}
+
+function fmt(n) { return '₹' + parseInt(n).toLocaleString('en-IN'); }
+
+function getMultClass(v) { return v > 1.1 ? 'up' : v < 0.95 ? 'down' : 'neutral'; }
+function multLabel(v) { return v === 1.0 ? 'No adjustment' : (v > 1 ? `+${Math.round((v-1)*100)}%` : `-${Math.round((1-v)*100)}%`); }
+
+function renderResult(d) {
+    const loW = (d.range_low / (d.range_high + 1)) * 100;
+    const midW = ((d.predicted_annual - d.range_low) / (d.range_high - d.range_low + 1)) * 100;
+    document.getElementById('resultsDiv').innerHTML = `
+    <div class="card" style="margin-bottom:20px;">
+        <div style="color:var(--text-muted);font-size:13px;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:12px;">Predicted Annual Premium</div>
+        <div class="result-huge">${fmt(d.predicted_annual)}</div>
+        <div style="color:var(--text-muted);font-size:16px;margin-top:8px;">${fmt(d.predicted_monthly)} / month</div>
+    </div>
+    <div class="card" style="margin-bottom:20px;">
+        <div class="card-title">Likely Range</div>
+        <div class="range-visual">
+            <div class="range-bar">
+                <div class="range-fill" style="left:${loW}%;width:${100-loW}%;"></div>
+            </div>
+            <div class="range-labels">
+                <span>${fmt(d.range_low)}</span>
+                <span style="color:var(--teal);font-weight:700;">${fmt(d.predicted_annual)}</span>
+                <span>${fmt(d.range_high)}</span>
+            </div>
+        </div>
+        <p style="font-size:13px;color:var(--text-muted);">Actual premiums vary by insurer. This estimate is based on market data.</p>
+    </div>
+    <div class="card">
+        <div class="card-title">Risk Adjustments</div>
+        <div class="adj-bar">
+            <span class="adj-name">Age Factor</span>
+            <span class="adj-mult ${getMultClass(d.adjustments.age)}">${multLabel(d.adjustments.age)}</span>
+        </div>
+        <div class="adj-bar">
+            <span class="adj-name">BMI Factor</span>
+            <span class="adj-mult ${getMultClass(d.adjustments.bmi)}">${multLabel(d.adjustments.bmi)}</span>
+        </div>
+        <div class="adj-bar" style="border-bottom:none;">
+            <span class="adj-name">Smoker Surcharge</span>
+            <span class="adj-mult ${getMultClass(d.adjustments.smoker)}">${multLabel(d.adjustments.smoker)}</span>
+        </div>
+    </div>`;
+}
+</script>
+</body>
+</html>

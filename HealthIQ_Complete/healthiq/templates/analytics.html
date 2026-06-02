@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics — Health IQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    {% from 'macros.html' import navbar %}
+    <link rel="stylesheet" href="/static/css/main.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
+    <style>
+        .analytics-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; padding: 36px 0; }
+        .chart-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 28px; }
+        .chart-card.full-width { grid-column: 1 / -1; }
+        .chart-title { font-size: 16px; font-weight: 700; color: white; margin-bottom: 6px; }
+        .chart-sub { font-size: 13px; color: var(--text-muted); margin-bottom: 20px; }
+        .kpi-row { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; padding-top: 8px; padding-bottom: 8px; }
+        .kpi-card { background: var(--bg2); border: 1px solid var(--border); border-radius: var(--radius); padding: 22px 24px; }
+        .kpi-label { font-size: 12px; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 8px; }
+        .kpi-value { font-size: 28px; font-weight: 800; color: white; font-family: 'Playfair Display', serif; }
+        .kpi-sub { font-size: 12px; color: var(--text-muted); margin-top: 4px; }
+        @media (max-width: 900px) { .analytics-grid { grid-template-columns: 1fr; } .kpi-row { grid-template-columns: repeat(2,1fr); } }
+        @media (max-width: 600px) { .kpi-row { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body class="dark-bg">
+{{ navbar(user, 'analytics') }}
+
+<div class="page-header">
+    <div class="container">
+        <h1>📊 Analytics Dashboard</h1>
+        <p>Visual insights across all {{ total_plans }} health insurance plans</p>
+    </div>
+</div>
+
+<div class="page-body">
+    <div class="container">
+        <div class="kpi-row" style="margin-bottom:8px;">
+            <div class="kpi-card">
+                <div class="kpi-label">Total Plans</div>
+                <div class="kpi-value">{{ total_plans }}</div>
+                <div class="kpi-sub">across 13 companies</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Avg Annual Premium</div>
+                <div class="kpi-value">₹35K</div>
+                <div class="kpi-sub">market average</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Avg Claim Ratio</div>
+                <div class="kpi-value">93%</div>
+                <div class="kpi-sub">industry avg: 91%</div>
+            </div>
+            <div class="kpi-card">
+                <div class="kpi-label">Avg Network Hospitals</div>
+                <div class="kpi-value">10K+</div>
+                <div class="kpi-sub">cashless hospitals</div>
+            </div>
+        </div>
+
+        <div class="analytics-grid">
+            <div class="chart-card">
+                <div class="chart-title">Plans by Company</div>
+                <div class="chart-sub">Number of plans offered by each insurer</div>
+                <canvas id="companyChart" height="240"></canvas>
+            </div>
+            <div class="chart-card">
+                <div class="chart-title">Plans by Type</div>
+                <div class="chart-sub">Individual vs Family vs Senior distribution</div>
+                <canvas id="typeChart" height="240"></canvas>
+            </div>
+            <div class="chart-card">
+                <div class="chart-title">Premium Distribution</div>
+                <div class="chart-sub">How plans are spread across price buckets</div>
+                <canvas id="premiumChart" height="240"></canvas>
+            </div>
+            <div class="chart-card">
+                <div class="chart-title">Company Ratings</div>
+                <div class="chart-sub">Average customer rating per insurer</div>
+                <canvas id="ratingChart" height="240"></canvas>
+            </div>
+            <div class="chart-card full-width">
+                <div class="chart-title">Top 10 Plans — Claim Settlement Ratio</div>
+                <div class="chart-sub">Best performing plans by CSR (higher is better)</div>
+                <canvas id="csrChart" height="160"></canvas>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const COMPANY_DATA = {{ company_data|safe }};
+const TYPE_DATA = {{ type_data|safe }};
+const PREMIUM_BUCKETS = {{ premium_buckets|safe }};
+const CSR_DATA = {{ csr_data|safe }};
+const RATING_DATA = {{ rating_data|safe }};
+
+const COLORS = ['#00c8b4','#2ecc71','#8b5cf6','#f59e0b','#3b82f6','#ef4444','#06b6d4','#ec4899','#84cc16','#f97316','#a855f7','#14b8a6','#6366f1'];
+const defaults = { color: 'rgba(255,255,255,0.7)', borderColor: 'rgba(255,255,255,0.1)' };
+Chart.defaults.color = 'rgba(255,255,255,0.55)';
+Chart.defaults.borderColor = 'rgba(255,255,255,0.08)';
+
+function makeChart(id, type, labels, data, colors, opts = {}) {
+    const ctx = document.getElementById(id).getContext('2d');
+    return new Chart(ctx, {
+        type,
+        data: {
+            labels,
+            datasets: [{ data, backgroundColor: colors || COLORS, borderColor: 'transparent', borderWidth: 0, ...opts.dataset }]
+        },
+        options: {
+            responsive: true,
+            plugins: {
+                legend: { display: opts.legend !== false, position: opts.legendPos || 'right', labels: { color: 'rgba(255,255,255,0.65)', font: { size: 11 }, padding: 14, boxWidth: 12 } }
+            },
+            scales: opts.scales || {},
+            ...opts.extra
+        }
+    });
+}
+
+// Company bar chart
+const compLabels = Object.keys(COMPANY_DATA).map(k => k.replace('and Allied','').replace('General','').trim());
+makeChart('companyChart', 'bar', compLabels, Object.values(COMPANY_DATA), COLORS, {
+    legend: false,
+    scales: {
+        y: { ticks: { color: 'rgba(255,255,255,0.45)', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.05)' } },
+        x: { ticks: { color: 'rgba(255,255,255,0.45)', font: { size: 9 } }, grid: { color: 'transparent' } }
+    }
+});
+
+// Type doughnut
+makeChart('typeChart', 'doughnut', Object.keys(TYPE_DATA), Object.values(TYPE_DATA), ['#00c8b4','#2ecc71','#f59e0b'], {
+    extra: { cutout: '65%' }
+});
+
+// Premium bar
+makeChart('premiumChart', 'bar', Object.keys(PREMIUM_BUCKETS), Object.values(PREMIUM_BUCKETS),
+    ['#3b82f6','#00c8b4','#2ecc71','#f59e0b'], {
+    legend: false,
+    dataset: { borderRadius: 6 },
+    scales: {
+        y: { ticks: { color: 'rgba(255,255,255,0.45)' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+        x: { ticks: { color: 'rgba(255,255,255,0.55)' }, grid: { color: 'transparent' } }
+    }
+});
+
+// Rating horizontal bar
+const ratingLabels = Object.keys(RATING_DATA).map(k => k.replace('and Allied','').replace('General','').trim());
+const ctx4 = document.getElementById('ratingChart').getContext('2d');
+new Chart(ctx4, {
+    type: 'bar',
+    data: {
+        labels: ratingLabels,
+        datasets: [{
+            data: Object.values(RATING_DATA),
+            backgroundColor: Object.values(RATING_DATA).map(v => v >= 4.5 ? '#2ecc71' : v >= 4.2 ? '#00c8b4' : '#f59e0b'),
+            borderRadius: 4
+        }]
+    },
+    options: {
+        indexAxis: 'y',
+        responsive: true,
+        plugins: { legend: { display: false } },
+        scales: {
+            x: { min: 3.5, max: 5, ticks: { color: 'rgba(255,255,255,0.45)', font: { size: 10 } }, grid: { color: 'rgba(255,255,255,0.05)' } },
+            y: { ticks: { color: 'rgba(255,255,255,0.55)', font: { size: 10 } }, grid: { color: 'transparent' } }
+        }
+    }
+});
+
+// CSR bar
+const csrLabels = CSR_DATA.map(d => d.plan);
+const csrVals = CSR_DATA.map(d => d.csr);
+makeChart('csrChart', 'bar', csrLabels, csrVals,
+    csrVals.map(v => v >= 97 ? '#2ecc71' : v >= 94 ? '#00c8b4' : '#f59e0b'), {
+    legend: false,
+    dataset: { borderRadius: 4 },
+    scales: {
+        y: { min: 85, ticks: { color: 'rgba(255,255,255,0.45)' }, grid: { color: 'rgba(255,255,255,0.05)' } },
+        x: { ticks: { color: 'rgba(255,255,255,0.45)', font: { size: 10 }, maxRotation: 30 }, grid: { color: 'transparent' } }
+    }
+});
+</script>
+</body>
+</html>

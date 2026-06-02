@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claim Predictor — Health IQ</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    {% from 'macros.html' import navbar %}
+    <link rel="stylesheet" href="/static/css/main.css"/>
+    <style>
+        .claim-layout { display: grid; grid-template-columns: 400px 1fr; gap: 28px; padding: 36px 0; }
+        .gauge-container { position: relative; width: 200px; height: 110px; margin: 0 auto 20px; }
+        .gauge-svg { width: 200px; height: 110px; }
+        .gauge-text { position: absolute; bottom: 0; left: 0; right: 0; text-align: center; font-size: 36px; font-weight: 900; color: white; }
+        .tip-card { background: rgba(255,255,255,0.03); border-radius: 10px; padding: 12px 14px; margin-bottom: 8px; font-size: 14px; color: var(--text); line-height: 1.5; border-left: 3px solid var(--teal); }
+        .verdict-high { color: var(--green); }
+        .verdict-medium { color: var(--orange); }
+        .verdict-low { color: #f87171; }
+        .toggle-group { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .toggle-item { background: rgba(255,255,255,0.03); border: 1px solid var(--border); border-radius: 10px; padding: 14px; display: flex; align-items: center; gap: 10px; cursor: pointer; transition: all 0.2s; }
+        .toggle-item:has(input:checked) { border-color: var(--green); background: rgba(46,204,113,0.07); }
+        .toggle-item input { accent-color: var(--green); width: 18px; height: 18px; }
+        .toggle-item label { font-size: 13px; cursor: pointer; line-height: 1.4; }
+        @media (max-width: 900px) { .claim-layout { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body class="dark-bg">
+{{ navbar(user, '') }}
+
+<div class="page-header">
+    <div class="container">
+        <h1>⚖️ Claim Approval Predictor</h1>
+        <p>Estimate your claim approval probability before you submit</p>
+    </div>
+</div>
+
+<div class="page-body">
+    <div class="container">
+        <div class="claim-layout">
+            <div>
+                <div class="card">
+                    <div class="card-title">Claim Details</div>
+                    <div class="form-group">
+                        <label class="form-label">Your Plan</label>
+                        <select id="plan_name" class="form-select">
+                            {% for plan in plans %}
+                            <option value="{{ plan.Plan_Name }}">{{ plan.Plan_Name }} — {{ plan.Company }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Claim Amount (₹)</label>
+                        <input type="number" id="claim_amount" class="form-input" value="100000">
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Claim Type</label>
+                        <select id="claim_type" class="form-select">
+                            <option value="cashless">Cashless (at network hospital)</option>
+                            <option value="reimbursement">Reimbursement</option>
+                            <option value="hospitalization">General Hospitalization</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label">Situation</label>
+                        <div class="toggle-group">
+                            <div class="toggle-item">
+                                <input type="checkbox" id="waiting" checked>
+                                <label for="waiting">Waiting period completed</label>
+                            </div>
+                            <div class="toggle-item">
+                                <input type="checkbox" id="docs" checked>
+                                <label for="docs">All documents ready</label>
+                            </div>
+                            <div class="toggle-item">
+                                <input type="checkbox" id="preex">
+                                <label for="preex">Pre-existing condition involved</label>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn-primary btn-full" onclick="predictClaim()">Check Approval Probability →</button>
+                </div>
+            </div>
+
+            <div id="resultsDiv">
+                <div class="card" style="text-align:center;padding:60px 30px;">
+                    <div style="font-size:48px;margin-bottom:16px;">⚖️</div>
+                    <h3 style="color:white;margin-bottom:8px;">Enter claim details</h3>
+                    <p style="color:var(--text-muted);">Your claim approval probability will appear here</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+const PLANS_SELECT = document.getElementById('plan_name');
+
+async function predictClaim() {
+    const payload = {
+        plan_name: PLANS_SELECT.value,
+        claim_amount: parseFloat(document.getElementById('claim_amount').value),
+        claim_type: document.getElementById('claim_type').value,
+        waiting_period_done: document.getElementById('waiting').checked,
+        documents_complete: document.getElementById('docs').checked,
+        pre_existing: document.getElementById('preex').checked
+    };
+    const res = await fetch('/api/predict-claim', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify(payload)
+    });
+    const d = await res.json();
+    if (d.error) { alert(d.error); return; }
+    renderResult(d, payload.plan_name);
+}
+
+function buildGaugeSVG(pct) {
+    const color = pct >= 75 ? '#2ecc71' : pct >= 50 ? '#f59e0b' : '#ef4444';
+    const r = 80, cx = 100, cy = 100;
+    const startAngle = 180, endAngle = 0;
+    const angle = 180 - (pct / 100) * 180;
+    const rad = (a) => (a * Math.PI) / 180;
+    const x1 = cx + r * Math.cos(rad(180));
+    const y1 = cy + r * Math.sin(rad(180));
+    const x2 = cx + r * Math.cos(rad(angle));
+    const y2 = cy + r * Math.sin(rad(angle));
+    const largeArc = pct > 50 ? 1 : 0;
+    return `<svg viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg">
+        <path d="M 20 100 A 80 80 0 0 1 180 100" fill="none" stroke="rgba(255,255,255,0.07)" stroke-width="14" stroke-linecap="round"/>
+        <path d="M 20 100 A 80 80 0 ${largeArc} 1 ${x2} ${y2}" fill="none" stroke="${color}" stroke-width="14" stroke-linecap="round"/>
+    </svg>`;
+}
+
+function renderResult(d, planName) {
+    const pct = d.approval_probability;
+    const color = pct >= 75 ? 'var(--green)' : pct >= 50 ? 'var(--orange)' : '#f87171';
+    const vClass = pct >= 75 ? 'verdict-high' : pct >= 50 ? 'verdict-medium' : 'verdict-low';
+    const tips = d.tips.map(t => `<div class="tip-card">${t}</div>`).join('');
+    document.getElementById('resultsDiv').innerHTML = `
+    <div class="card" style="margin-bottom:20px;text-align:center;">
+        <div class="gauge-container">
+            ${buildGaugeSVG(pct)}
+            <div class="gauge-text" style="color:${color}">${pct}%</div>
+        </div>
+        <div style="font-size:22px;font-weight:800;margin:8px 0;class="${vClass}" style="color:${color};">
+            <span style="color:${color}">${d.verdict} Probability</span>
+        </div>
+        <div style="color:var(--text-muted);font-size:14px;">Claim approval likelihood for <strong style="color:white;">${planName}</strong></div>
+    </div>
+    <div class="card" style="margin-bottom:20px;">
+        <div class="card-title">Plan Details</div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+            <div class="result-panel">
+                <div style="color:var(--text-muted);font-size:12px;text-transform:uppercase;">Claim Settlement Ratio</div>
+                <div style="font-size:24px;font-weight:800;color:white;margin-top:4px;">${d.csr}%</div>
+            </div>
+            <div class="result-panel">
+                <div style="color:var(--text-muted);font-size:12px;text-transform:uppercase;">Max Coverage</div>
+                <div style="font-size:24px;font-weight:800;color:white;margin-top:4px;">₹${parseInt(d.coverage_limit).toLocaleString('en-IN')}</div>
+            </div>
+        </div>
+    </div>
+    ${tips ? `<div class="card"><div class="card-title">Advice & Recommendations</div>${tips}</div>` : ''}`;
+}
+</script>
+</body>
+</html>
