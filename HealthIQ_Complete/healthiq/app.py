@@ -602,7 +602,7 @@ def api_advisor():
     system_prompt = data.get("system", "")
 
     # Get API key from environment variable
-    api_key = os.environ.get("ANTHROPIC_API_KEY", "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")
+    api_key = os.environ.get("ANTHROPIC_API_KEY", " ")
     if not api_key:
         return jsonify({"error": "API key not configured. Please set ANTHROPIC_API_KEY environment variable."}), 500
 
