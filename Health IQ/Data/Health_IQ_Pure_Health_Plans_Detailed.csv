@@ -1,0 +1,1101 @@
+Company,Plan_Name,Plan_Type,Annual_Premium,Monthly_Premium,Coverage_Limit,Waiting_Period_Years,Claim_Settlement_Ratio_Percent,Network_Hospitals,Rating,Reviews_Count,Wellness_Benefit,Review_Text
+Star Health and Allied Insurance,Individual Basic - Star,Individual,19585,1632.08,500000,2,92.0,13013,4.6,1952,No,Affordable plan with decent claim settlement ratio.
+Star Health and Allied Insurance,Individual Premium - Star,Individual,38610,3217.5,1500000,0,90.0,8971,4.6,20854,No,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Family Floater - Star,Family,34734,2894.5,1000000,3,98.0,8039,4.6,8573,No,Smooth cashless claim process and good hospital network.
+Star Health and Allied Insurance,Senior Citizen Plan - Star,Senior,36254,3021.17,1000000,1,94.0,8498,4.3,21117,No,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Comprehensive Max - Star,Individual,59846,4987.17,3000000,1,88.0,13749,4.6,11986,Yes,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,Individual Basic - HDFC,Individual,17324,1443.67,1000000,1,92.0,4935,4.3,2891,Yes,Affordable plan with decent claim settlement ratio.
+HDFC ERGO General Insurance,Individual Premium - HDFC,Individual,25131,2094.25,1500000,1,88.0,5133,4.5,7643,Yes,Premium slightly higher but offers strong coverage benefits.
+HDFC ERGO General Insurance,Family Floater - HDFC,Family,27480,2290.0,3000000,0,97.0,9490,4.3,24124,Yes,Affordable plan with decent claim settlement ratio.
+HDFC ERGO General Insurance,Senior Citizen Plan - HDFC,Senior,55661,4638.42,1000000,1,91.0,15610,4.2,6371,No,Premium slightly higher but offers strong coverage benefits.
+HDFC ERGO General Insurance,Comprehensive Max - HDFC,Individual,86974,7247.83,2000000,1,93.0,8098,4.8,11899,No,Quick claim approval and responsive customer support.
+ICICI Lombard General Insurance,Individual Basic - ICICI,Individual,12527,1043.92,1000000,3,99.0,9585,4.5,7395,No,Premium slightly higher but offers strong coverage benefits.
+ICICI Lombard General Insurance,Individual Premium - ICICI,Individual,33176,2764.67,1500000,0,95.0,6638,4.7,1056,Yes,Smooth cashless claim process and good hospital network.
+ICICI Lombard General Insurance,Family Floater - ICICI,Family,26091,2174.25,3000000,0,88.0,8508,4.2,15200,Yes,Quick claim approval and responsive customer support.
+ICICI Lombard General Insurance,Senior Citizen Plan - ICICI,Senior,77343,6445.25,1000000,3,92.0,13192,4.5,23564,Yes,Comprehensive coverage with wellness rewards included.
+ICICI Lombard General Insurance,Comprehensive Max - ICICI,Individual,92422,7701.83,5000000,2,98.0,13366,4.3,8443,No,Smooth cashless claim process and good hospital network.
+Care Health Insurance,Individual Basic - Care,Individual,13835,1152.92,500000,2,94.0,11806,4.8,10214,No,Premium slightly higher but offers strong coverage benefits.
+Care Health Insurance,Individual Premium - Care,Individual,39650,3304.17,1500000,3,89.0,13754,4.2,16893,No,Quick claim approval and responsive customer support.
+Care Health Insurance,Family Floater - Care,Family,49725,4143.75,2000000,0,94.0,7932,4.5,11522,No,Affordable plan with decent claim settlement ratio.
+Care Health Insurance,Senior Citizen Plan - Care,Senior,65523,5460.25,1500000,1,96.0,9050,4.5,19485,No,Quick claim approval and responsive customer support.
+Care Health Insurance,Comprehensive Max - Care,Individual,64080,5340.0,5000000,2,99.0,5219,4.5,15825,Yes,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Individual Basic - Niva,Individual,19063,1588.58,1000000,0,94.0,7462,4.6,23173,Yes,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Individual Premium - Niva,Individual,26536,2211.33,2000000,0,99.0,5201,4.1,23881,No,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Family Floater - Niva,Family,59755,4979.58,3000000,1,99.0,12021,4.1,8367,Yes,Quick claim approval and responsive customer support.
+Niva Bupa Health Insurance,Senior Citizen Plan - Niva,Senior,35186,2932.17,1500000,2,90.0,9386,4.7,24701,No,Premium slightly higher but offers strong coverage benefits.
+Niva Bupa Health Insurance,Comprehensive Max - Niva,Individual,74674,6222.83,3000000,3,99.0,15844,3.9,23552,No,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Individual Basic - Aditya,Individual,15770,1314.17,1000000,2,89.0,14064,4.8,24740,No,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Individual Premium - Aditya,Individual,24927,2077.25,2000000,3,94.0,10920,3.9,18553,Yes,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Family Floater - Aditya,Family,38219,3184.92,3000000,0,91.0,12274,4.3,3386,Yes,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Senior Citizen Plan - Aditya,Senior,42307,3525.58,1500000,0,95.0,15492,4.6,4074,Yes,Premium slightly higher but offers strong coverage benefits.
+Aditya Birla Health Insurance,Comprehensive Max - Aditya,Individual,73310,6109.17,5000000,3,95.0,13116,4.1,17961,No,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Individual Basic - Tata,Individual,15418,1284.83,500000,2,97.0,7533,4.4,19282,Yes,Premium slightly higher but offers strong coverage benefits.
+Tata AIG General Insurance,Individual Premium - Tata,Individual,38380,3198.33,1500000,2,94.0,6650,4.0,5842,No,Smooth cashless claim process and good hospital network.
+Tata AIG General Insurance,Family Floater - Tata,Family,29178,2431.5,2000000,1,88.0,14552,4.6,1736,Yes,Comprehensive coverage with wellness rewards included.
+Tata AIG General Insurance,Senior Citizen Plan - Tata,Senior,66090,5507.5,1500000,0,89.0,11290,4.3,9504,Yes,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Comprehensive Max - Tata,Individual,74678,6223.17,5000000,1,90.0,7537,4.2,2303,Yes,Affordable plan with decent claim settlement ratio.
+Bajaj Allianz General Insurance,Individual Basic - Bajaj,Individual,19894,1657.83,1000000,1,98.0,10710,4.0,12378,Yes,Smooth cashless claim process and good hospital network.
+Bajaj Allianz General Insurance,Individual Premium - Bajaj,Individual,35256,2938.0,1500000,1,91.0,6603,4.0,11636,Yes,Comprehensive coverage with wellness rewards included.
+Bajaj Allianz General Insurance,Family Floater - Bajaj,Family,33562,2796.83,2000000,3,98.0,9367,4.6,17237,Yes,Comprehensive coverage with wellness rewards included.
+Bajaj Allianz General Insurance,Senior Citizen Plan - Bajaj,Senior,45522,3793.5,1000000,0,97.0,10419,4.7,9371,No,Premium slightly higher but offers strong coverage benefits.
+Bajaj Allianz General Insurance,Comprehensive Max - Bajaj,Individual,56003,4666.92,5000000,3,99.0,8556,3.9,18645,No,Comprehensive coverage with wellness rewards included.
+SBI General Insurance,Individual Basic - SBI,Individual,12973,1081.08,500000,3,99.0,15521,4.5,3951,Yes,Smooth cashless claim process and good hospital network.
+SBI General Insurance,Individual Premium - SBI,Individual,37265,3105.42,2000000,0,90.0,6541,4.6,23269,Yes,Affordable plan with decent claim settlement ratio.
+SBI General Insurance,Family Floater - SBI,Family,29199,2433.25,3000000,1,90.0,12400,4.8,3830,No,Comprehensive coverage with wellness rewards included.
+SBI General Insurance,Senior Citizen Plan - SBI,Senior,51490,4290.83,500000,0,89.0,11605,4.2,17122,No,Quick claim approval and responsive customer support.
+SBI General Insurance,Comprehensive Max - SBI,Individual,86768,7230.67,3000000,2,89.0,15580,4.4,23931,No,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,Individual Basic - ManipalCigna,Individual,13267,1105.58,500000,1,96.0,8356,4.6,15039,Yes,Affordable plan with decent claim settlement ratio.
+ManipalCigna Health Insurance,Individual Premium - ManipalCigna,Individual,32781,2731.75,1500000,1,91.0,8728,4.6,19128,No,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,Family Floater - ManipalCigna,Family,49223,4101.92,1000000,2,93.0,7268,4.3,21232,No,Affordable plan with decent claim settlement ratio.
+ManipalCigna Health Insurance,Senior Citizen Plan - ManipalCigna,Senior,58251,4854.25,1000000,0,96.0,8254,4.1,14114,No,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,Comprehensive Max - ManipalCigna,Individual,45025,3752.08,5000000,0,89.0,5856,4.0,15313,No,Premium slightly higher but offers strong coverage benefits.
+National Insurance Company,Individual Basic - National,Individual,13474,1122.83,1000000,0,90.0,10153,4.5,12444,Yes,Smooth cashless claim process and good hospital network.
+National Insurance Company,Individual Premium - National,Individual,21003,1750.25,1500000,0,89.0,10259,4.6,24558,No,Premium slightly higher but offers strong coverage benefits.
+National Insurance Company,Family Floater - National,Family,36517,3043.08,2000000,0,90.0,12968,4.3,12267,No,Quick claim approval and responsive customer support.
+National Insurance Company,Senior Citizen Plan - National,Senior,68859,5738.25,1000000,2,99.0,6469,4.1,14076,Yes,Premium slightly higher but offers strong coverage benefits.
+National Insurance Company,Comprehensive Max - National,Individual,69624,5802.0,3000000,0,95.0,10431,4.1,23398,No,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Individual Basic - Oriental,Individual,14801,1233.42,500000,2,90.0,9893,4.7,1499,No,Affordable plan with decent claim settlement ratio.
+Oriental Insurance Company,Individual Premium - Oriental,Individual,32366,2697.17,2000000,0,96.0,5798,4.1,1546,Yes,Affordable plan with decent claim settlement ratio.
+Oriental Insurance Company,Family Floater - Oriental,Family,55104,4592.0,1000000,1,94.0,14881,4.3,13215,No,Affordable plan with decent claim settlement ratio.
+Oriental Insurance Company,Senior Citizen Plan - Oriental,Senior,36599,3049.92,1000000,3,88.0,6579,4.2,17453,No,Quick claim approval and responsive customer support.
+Oriental Insurance Company,Comprehensive Max - Oriental,Individual,84451,7037.58,3000000,3,96.0,12958,4.6,14237,No,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,ReAssure 2.0 Bronze+,Individual,12500,1041.67,500000,2,92.0,10000,4.4,15200,Yes,Great value with lock-the-clock feature.
+Niva Bupa Health Insurance,ReAssure 2.0 Platinum+,Individual,22400,1866.67,1000000,0,92.0,10000,4.6,18400,Yes,Comprehensive plan with safeguard benefits.
+Niva Bupa Health Insurance,ReAssure 2.0 Titanium+,Family,38500,3208.33,2000000,1,92.0,10000,4.7,12100,Yes,Excellent floater with high sum insured options.
+Niva Bupa Health Insurance,Health Companion,Senior,48200,4016.67,1000000,2,92.0,10000,4.2,9500,No,Reliable support for senior citizens.
+HDFC ERGO General Insurance,Optima Secure,Individual,18500,1541.67,1000000,1,98.0,12000,4.8,24500,Yes,Secure benefit doubles cover from day one.
+HDFC ERGO General Insurance,Optima Restore,Family,29800,2483.33,1500000,0,98.0,12000,4.7,21200,No,Classic restoration benefit is very helpful.
+HDFC ERGO General Insurance,my:health Suraksha,Individual,14200,1183.33,500000,2,98.0,12000,4.5,15800,Yes,Balanced features for everyday health.
+HDFC ERGO General Insurance,Optima Secure (Super),Senior,55600,4633.33,2000000,1,98.0,12000,4.4,8900,Yes,Top-tier protection for elderly parents.
+Care Health Insurance,Care Supreme,Individual,11800,983.33,700000,2,96.0,11400,4.5,14200,Yes,Up to 7x coverage increase is amazing.
+Care Health Insurance,Care Advantage,Family,42000,3500.0,10000000,1,96.0,11400,4.6,11000,No,Huge sum insured for full family security.
+Care Health Insurance,Care Senior,Senior,32500,2708.33,500000,1,96.0,11400,4.1,7400,No,Focused care for senior medical needs.
+Care Health Insurance,Care Classic,Individual,9500,791.67,300000,3,96.0,11400,4.2,5600,No,Budget friendly basic health insurance.
+ICICI Lombard General Insurance,Elevate,Individual,21500,1791.67,1000000,0,97.0,13000,4.7,22100,Yes,Infinite restoration and high-tech claims.
+ICICI Lombard General Insurance,Health Shield,Family,31000,2583.33,1500000,1,97.0,13000,4.5,19500,No,Solid network and fast cashless approval.
+ICICI Lombard General Insurance,iHealth Senior,Senior,59000,4916.67,1000000,2,97.0,13000,4.3,10200,Yes,Comprehensive coverage for elderly care.
+ICICI Lombard General Insurance,Personal Protect,Individual,8200,683.33,500000,4,97.0,13000,4.0,4800,No,Essential accident and health support.
+Star Health and Allied Insurance,Star Health Assure,Individual,16800,1400.0,1000000,1,90.0,14000,4.4,19800,Yes,Modern features like home care treatment.
+Star Health and Allied Insurance,Young Star Insurance,Individual,12500,1041.67,1500000,0,90.0,14000,4.5,14300,Yes,Best for youth starting early with health.
+Star Health and Allied Insurance,Star Comprehensive,Family,35600,2966.67,2000000,2,90.0,14000,4.6,17500,Yes,Includes maternity and OPD benefits.
+Star Health and Allied Insurance,Medi Classic,Individual,11200,933.33,500000,3,90.0,14000,4.1,9200,No,Traditional and trusted health plan.
+Aditya Birla Health Insurance,Activ Health Platinum Enhanced,Individual,13200,1100.0,1000000,1,95.0,10500,4.6,16200,Yes,Earn back premium via health returns.
+Aditya Birla Health Insurance,Activ Fit,Individual,8500,708.33,500000,2,95.0,10500,4.7,12500,Yes,Tailored for active and fit individuals.
+Aditya Birla Health Insurance,Activ Care,Senior,42000,3500.0,1000000,2,95.0,10500,4.2,8300,Yes,Includes dedicated health coach for seniors.
+Aditya Birla Health Insurance,Global Health Secure,Family,95000,7916.67,5000000,1,95.0,10500,4.8,5400,No,Coverage for international treatments.
+Tata AIG General Insurance,MediCare Premier,Individual,22500,1875.0,1500000,1,96.0,10000,4.7,13800,Yes,World-class features and high restoration.
+Tata AIG General Insurance,MediCare Protect,Individual,9800,816.67,500000,2,96.0,10000,4.3,8900,No,Simplified and affordable protection.
+Tata AIG General Insurance,Elder Care,Senior,51000,4250.0,1000000,2,96.0,10000,4.4,6200,Yes,Comprehensive support for elderly needs.
+Tata AIG General Insurance,MediCare Floater,Family,28500,2375.0,1000000,1,96.0,10000,4.5,11200,No,Smooth claim settlement for families.
+Bajaj Allianz General Insurance,Health Guard Gold,Individual,15600,1300.0,1000000,2,98.0,9000,4.6,14500,Yes,Covers day care and organ donor expenses.
+Bajaj Allianz General Insurance,Global Health Care,Individual,75000,6250.0,5000000,1,98.0,9000,4.8,3100,No,Premium global treatment coverage.
+Bajaj Allianz General Insurance,Silver Health,Senior,29500,2458.33,500000,1,98.0,9000,4.2,7800,No,Specific senior plan with low waiting.
+Bajaj Allianz General Insurance,Tax Gain,Family,18200,1516.67,500000,2,98.0,9000,4.3,9200,No,Focus on OPD and tax saving benefits.
+Reliance General Insurance,Health Infinity,Individual,13800,1150.0,1000000,1,93.0,9000,4.4,11200,Yes,Infinite restoration of sum insured.
+Reliance General Insurance,Health Gain,Individual,9200,766.67,500000,2,93.0,9000,4.1,8500,No,Basic and easy to understand plan.
+Reliance General Insurance,Reliance Senior,Senior,38000,3166.67,500000,2,93.0,9000,4.0,5600,No,Affordable senior citizen medical cover.
+Reliance General Insurance,Health Wise,Family,25400,2116.67,1000000,1,93.0,9000,4.2,7900,No,Flexible family floater for small families.
+SBI General Insurance,Health Edge,Individual,14500,1208.33,1000000,2,95.0,8000,4.3,12400,Yes,Flexible modular health insurance policy.
+SBI General Insurance,Arogya Sanjeevani,Individual,8500,708.33,500000,4,95.0,8000,4.0,21000,No,Standard IRDAI mandated health product.
+SBI General Insurance,Health Premier,Individual,19200,1600.0,1500000,1,95.0,8000,4.5,9800,Yes,High-end protection for the mass market.
+SBI General Insurance,Senior Citizen Health,Senior,44000,3666.67,500000,1,95.0,8000,4.1,6700,No,Simple coverage with minimal paperwork.
+Star Health and Allied Insurance,Star Advantage 1000,Individual,86162,1632.08,750000,2,84.9,14364,4.8,1952,No,Affordable plan with decent claim settlement ratio.
+ManipalCigna Health Insurance,ManipalCigna Basic 1001,Family,49610,3217.5,1000000,0,94.5,14816,4.5,20854,No,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Star Advantage 1002,Family,68587,2894.5,2000000,3,84.8,10234,3.9,8573,No,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Oriental Basic 1003,Family,89958,3021.17,5000000,1,92.8,17955,4.5,21117,No,Premium slightly higher but offers strong coverage benefits.
+Tata AIG General Insurance,Tata Secure 1004,Senior,69297,4987.17,1500000,1,85.5,4425,4.1,11986,Yes,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,HDFC Smart 1005,Family,71895,1443.67,1500000,1,87.1,11161,4.7,2891,Yes,Affordable plan with decent claim settlement ratio.
+Oriental Insurance Company,Oriental Elite 1006,Individual,35527,2094.25,500000,1,86.2,12782,4.8,7643,Yes,Premium slightly higher but offers strong coverage benefits.
+Tata AIG General Insurance,Tata Plus 1007,Senior,87474,2290.0,5000000,0,99.3,7414,4.0,24124,Yes,Affordable plan with decent claim settlement ratio.
+Niva Bupa Health Insurance,Niva Secure 1008,Individual,28680,4638.42,750000,1,97.3,4506,5.0,6371,No,Premium slightly higher but offers strong coverage benefits.
+Care Health Insurance,Care Premium 1009,Senior,56150,7247.83,300000,1,87.4,12110,4.9,11899,No,Quick claim approval and responsive customer support.
+ManipalCigna Health Insurance,ManipalCigna Advantage 1010,Individual,38418,1043.92,500000,3,96.5,16597,4.8,7395,No,Premium slightly higher but offers strong coverage benefits.
+Care Health Insurance,Care Premium 1011,Individual,64610,2764.67,500000,0,97.8,12217,4.9,1056,Yes,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,HDFC Premium 1012,Individual,57541,2174.25,5000000,0,86.8,17624,4.8,15200,Yes,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Tata Premium 1013,Senior,64368,6445.25,300000,3,96.3,6660,4.7,23564,Yes,Comprehensive coverage with wellness rewards included.
+Care Health Insurance,Care Elite 1014,Family,61249,7701.83,1000000,2,96.2,7419,3.9,8443,No,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Niva Premium 1015,Senior,61739,1152.92,1500000,2,97.7,11470,5.0,10214,No,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Star Advantage 1016,Individual,27217,3304.17,500000,3,92.1,5818,4.6,16893,No,Quick claim approval and responsive customer support.
+Care Health Insurance,Care Basic 1017,Individual,43039,4143.75,5000000,0,82.9,8656,4.9,11522,No,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Aditya Premium 1018,Senior,11394,5460.25,1000000,1,85.5,13135,4.8,19485,No,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Tata Smart 1019,Individual,52734,5340.0,2000000,2,83.5,5618,4.3,15825,Yes,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,ManipalCigna Plus 1020,Family,28265,1588.58,1500000,0,96.1,8196,4.5,23173,Yes,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Niva Plus 1021,Individual,56833,2211.33,2000000,0,90.4,4062,4.9,23881,No,Smooth cashless claim process and good hospital network.
+National Insurance Company,National Basic 1022,Family,47586,4979.58,1500000,1,94.9,6106,4.6,8367,Yes,Quick claim approval and responsive customer support.
+Care Health Insurance,Care Elite 1023,Family,83499,2932.17,1500000,2,95.7,14007,5.0,24701,No,Premium slightly higher but offers strong coverage benefits.
+Niva Bupa Health Insurance,Niva Basic 1024,Individual,68155,6222.83,750000,3,98.5,12954,4.4,23552,No,Affordable plan with decent claim settlement ratio.
+ICICI Lombard General Insurance,ICICI Premium 1025,Family,30651,1314.17,5000000,2,87.9,13464,5.0,24740,No,Affordable plan with decent claim settlement ratio.
+ICICI Lombard General Insurance,ICICI Advantage 1026,Family,32227,2077.25,5000000,3,89.9,13134,3.8,18553,Yes,Affordable plan with decent claim settlement ratio.
+Oriental Insurance Company,Oriental Advantage 1027,Family,43366,3184.92,500000,0,98.7,14002,4.0,3386,Yes,Affordable plan with decent claim settlement ratio.
+National Insurance Company,National Basic 1028,Individual,73743,3525.58,300000,0,82.4,14917,4.8,4074,Yes,Premium slightly higher but offers strong coverage benefits.
+Aditya Birla Health Insurance,Aditya Advantage 1029,Individual,49749,6109.17,750000,3,96.0,15988,3.6,17961,No,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Tata Advantage 1030,Individual,82345,1284.83,500000,2,94.7,8341,4.4,19282,Yes,Premium slightly higher but offers strong coverage benefits.
+Bajaj Allianz General Insurance,Bajaj Basic 1031,Family,14705,3198.33,5000000,2,85.0,9093,3.9,5842,No,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Smart 1032,Senior,63265,2431.5,1000000,1,89.3,4477,4.0,1736,Yes,Comprehensive coverage with wellness rewards included.
+ManipalCigna Health Insurance,ManipalCigna Elite 1033,Family,70095,5507.5,300000,0,88.4,8235,3.5,9504,Yes,Quick claim approval and responsive customer support.
+Reliance General Insurance,Reliance Smart 1034,Senior,21185,6223.17,5000000,1,96.0,11646,4.2,2303,Yes,Affordable plan with decent claim settlement ratio.
+Star Health and Allied Insurance,Star Premium 1035,Individual,84760,1657.83,500000,1,88.7,10536,4.3,12378,Yes,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Plus 1036,Individual,69361,2938.0,750000,1,90.3,10312,3.6,11636,Yes,Comprehensive coverage with wellness rewards included.
+Tata AIG General Insurance,Tata Basic 1037,Senior,45368,2796.83,750000,3,92.7,4117,4.8,17237,Yes,Comprehensive coverage with wellness rewards included.
+Star Health and Allied Insurance,Star Advantage 1038,Individual,48992,3793.5,1500000,0,90.9,8252,4.8,9371,No,Premium slightly higher but offers strong coverage benefits.
+ICICI Lombard General Insurance,ICICI Premium 1039,Family,71321,4666.92,750000,3,90.5,16039,4.4,18645,No,Comprehensive coverage with wellness rewards included.
+Niva Bupa Health Insurance,Niva Premium 1040,Family,78983,1081.08,5000000,3,98.8,16897,4.6,3951,Yes,Smooth cashless claim process and good hospital network.
+Care Health Insurance,Care Premium 1041,Individual,41735,3105.42,300000,0,92.4,14025,4.3,23269,Yes,Affordable plan with decent claim settlement ratio.
+Oriental Insurance Company,Oriental Basic 1042,Senior,89211,2433.25,1000000,1,82.5,16513,3.8,3830,No,Comprehensive coverage with wellness rewards included.
+Star Health and Allied Insurance,Star Smart 1043,Family,83328,4290.83,1500000,0,94.7,14017,3.8,17122,No,Quick claim approval and responsive customer support.
+Oriental Insurance Company,Oriental Advantage 1044,Family,81022,7230.67,500000,2,85.0,14175,4.6,23931,No,Smooth cashless claim process and good hospital network.
+Star Health and Allied Insurance,Star Max 1045,Family,16085,1105.58,300000,1,96.6,16717,4.1,15039,Yes,Affordable plan with decent claim settlement ratio.
+ManipalCigna Health Insurance,ManipalCigna Advantage 1046,Senior,17458,2731.75,5000000,1,92.7,7721,3.5,19128,No,Smooth cashless claim process and good hospital network.
+Reliance General Insurance,Reliance Secure 1047,Senior,66579,4101.92,300000,2,97.5,6735,4.0,21232,No,Affordable plan with decent claim settlement ratio.
+Tata AIG General Insurance,Tata Plus 1048,Individual,69862,4854.25,1000000,0,97.9,10688,4.9,14114,No,Smooth cashless claim process and good hospital network.
+Care Health Insurance,Care Basic 1049,Senior,50481,3752.08,300000,0,83.2,5514,4.6,15313,No,Premium slightly higher but offers strong coverage benefits.
+HDFC ERGO General Insurance,HDFC Basic 1050,Family,89256,1122.83,500000,0,94.1,16820,4.8,12444,Yes,Smooth cashless claim process and good hospital network.
+Tata AIG General Insurance,Tata Secure 1051,Individual,80597,1750.25,5000000,0,87.0,15159,3.9,24558,No,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Star Elite 1052,Family,59739,3043.08,1000000,0,88.2,7759,3.6,12267,No,Quick claim approval and responsive customer support.
+National Insurance Company,National Basic 1053,Family,50613,5738.25,5000000,2,92.3,11781,4.3,14076,Yes,Premium slightly higher but offers strong coverage benefits.
+HDFC ERGO General Insurance,HDFC Advantage 1054,Senior,40060,5802.0,750000,0,83.4,17036,4.3,23398,No,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Oriental Smart 1055,Family,52228,1233.42,500000,2,94.9,11807,4.0,1499,No,Affordable plan with decent claim settlement ratio.
+ICICI Lombard General Insurance,ICICI Premium 1056,Senior,34174,2697.17,2000000,0,94.9,4057,4.6,1546,Yes,Affordable plan with decent claim settlement ratio.
+ManipalCigna Health Insurance,ManipalCigna Basic 1057,Senior,57338,4592.0,1000000,1,99.1,12261,4.4,13215,No,Affordable plan with decent claim settlement ratio.
+Star Health and Allied Insurance,Star Plus 1058,Individual,35795,3049.92,750000,3,88.9,11504,3.7,17453,No,Quick claim approval and responsive customer support.
+ManipalCigna Health Insurance,ManipalCigna Premium 1059,Individual,47216,7037.58,300000,3,88.6,6406,4.8,14237,No,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,ManipalCigna Advantage 1060,Individual,41863,1041.67,1000000,2,97.4,16097,4.6,15200,Yes,Great value with lock-the-clock feature.
+ICICI Lombard General Insurance,ICICI Smart 1061,Individual,75991,1866.67,500000,0,83.1,8013,3.7,18400,Yes,Comprehensive plan with safeguard benefits.
+Aditya Birla Health Insurance,Aditya Advantage 1062,Individual,47651,3208.33,300000,1,93.4,10512,3.7,12100,Yes,Excellent floater with high sum insured options.
+Aditya Birla Health Insurance,Aditya Premium 1063,Senior,71401,4016.67,300000,2,91.1,9867,4.1,9500,No,Reliable support for senior citizens.
+Care Health Insurance,Care Elite 1064,Individual,11371,1541.67,2000000,1,95.6,14441,4.0,24500,Yes,Secure benefit doubles cover from day one.
+ManipalCigna Health Insurance,ManipalCigna Smart 1065,Family,38538,2483.33,500000,0,98.5,10723,4.0,21200,No,Classic restoration benefit is very helpful.
+Reliance General Insurance,Reliance Elite 1066,Senior,80333,1183.33,1000000,2,89.2,7517,4.2,15800,Yes,Balanced features for everyday health.
+ManipalCigna Health Insurance,ManipalCigna Basic 1067,Individual,21413,4633.33,300000,1,85.7,5271,3.7,8900,Yes,Top-tier protection for elderly parents.
+National Insurance Company,National Secure 1068,Family,24215,983.33,300000,2,96.5,17040,4.6,14200,Yes,Up to 7x coverage increase is amazing.
+Star Health and Allied Insurance,Star Elite 1069,Senior,12645,3500.0,750000,1,95.3,17902,4.2,11000,No,Huge sum insured for full family security.
+Tata AIG General Insurance,Tata Elite 1070,Senior,84255,2708.33,2000000,1,92.5,4110,4.6,7400,No,Focused care for senior medical needs.
+Aditya Birla Health Insurance,Aditya Smart 1071,Senior,54093,791.67,1500000,3,94.3,11443,4.9,5600,No,Budget friendly basic health insurance.
+Aditya Birla Health Insurance,Aditya Premium 1072,Individual,52657,1791.67,1500000,0,90.9,4489,3.6,22100,Yes,Infinite restoration and high-tech claims.
+Niva Bupa Health Insurance,Niva Max 1073,Family,89155,2583.33,500000,1,82.2,6357,4.6,19500,No,Solid network and fast cashless approval.
+SBI General Insurance,SBI Premium 1074,Senior,65748,4916.67,2000000,2,91.5,4137,4.1,10200,Yes,Comprehensive coverage for elderly care.
+Aditya Birla Health Insurance,Aditya Secure 1075,Senior,15540,683.33,1500000,4,86.6,5645,4.4,4800,No,Essential accident and health support.
+Star Health and Allied Insurance,Star Secure 1076,Family,57087,1400.0,1500000,1,88.9,9697,3.8,19800,Yes,Modern features like home care treatment.
+SBI General Insurance,SBI Smart 1077,Individual,77433,1041.67,1000000,0,87.5,17539,4.7,14300,Yes,Best for youth starting early with health.
+Bajaj Allianz General Insurance,Bajaj Advantage 1078,Individual,62095,2966.67,500000,2,86.0,17898,4.4,17500,Yes,Includes maternity and OPD benefits.
+Star Health and Allied Insurance,Star Elite 1079,Senior,66412,933.33,1000000,3,86.6,6482,3.8,9200,No,Traditional and trusted health plan.
+Tata AIG General Insurance,Tata Advantage 1080,Family,37498,1100.0,500000,1,98.5,11681,3.9,16200,Yes,Earn back premium via health returns.
+ManipalCigna Health Insurance,ManipalCigna Secure 1081,Family,82215,708.33,1000000,2,87.3,16396,4.6,12500,Yes,Tailored for active and fit individuals.
+ICICI Lombard General Insurance,ICICI Elite 1082,Individual,13056,3500.0,750000,2,94.4,15536,3.5,8300,Yes,Includes dedicated health coach for seniors.
+Reliance General Insurance,Reliance Plus 1083,Family,31440,7916.67,500000,1,93.2,13408,4.1,5400,No,Coverage for international treatments.
+SBI General Insurance,SBI Premium 1084,Individual,73960,1875.0,1500000,1,83.7,17271,4.9,13800,Yes,World-class features and high restoration.
+ManipalCigna Health Insurance,ManipalCigna Max 1085,Senior,71960,816.67,2000000,2,89.3,11319,4.9,8900,No,Simplified and affordable protection.
+SBI General Insurance,SBI Basic 1086,Senior,8311,4250.0,1500000,2,95.7,11647,4.9,6200,Yes,Comprehensive support for elderly needs.
+ICICI Lombard General Insurance,ICICI Basic 1087,Family,33869,2375.0,750000,1,95.6,6521,3.6,11200,No,Smooth claim settlement for families.
+Niva Bupa Health Insurance,Niva Smart 1088,Family,89430,1300.0,1500000,2,98.9,8680,4.4,14500,Yes,Covers day care and organ donor expenses.
+Aditya Birla Health Insurance,Aditya Max 1089,Individual,43610,6250.0,1000000,1,86.7,13945,4.1,3100,No,Premium global treatment coverage.
+Tata AIG General Insurance,Tata Premium 1090,Family,34798,2458.33,300000,1,98.5,11213,3.6,7800,No,Specific senior plan with low waiting.
+Tata AIG General Insurance,Tata Smart 1091,Senior,57510,1516.67,500000,2,97.8,5937,4.8,9200,No,Focus on OPD and tax saving benefits.
+ICICI Lombard General Insurance,ICICI Basic 1092,Family,23679,1150.0,1500000,1,83.5,13374,3.5,11200,Yes,Infinite restoration of sum insured.
+Care Health Insurance,Care Advantage 1093,Family,59263,766.67,500000,2,94.9,5463,4.5,8500,No,Basic and easy to understand plan.
+SBI General Insurance,SBI Smart 1094,Individual,67872,3166.67,5000000,2,84.8,8729,4.6,5600,No,Affordable senior citizen medical cover.
+ICICI Lombard General Insurance,ICICI Max 1095,Family,21575,2116.67,750000,1,97.8,11426,4.0,7900,No,Flexible family floater for small families.
+Tata AIG General Insurance,Tata Basic 1096,Family,79403,1208.33,1500000,2,90.9,9637,3.6,12400,Yes,Flexible modular health insurance policy.
+Care Health Insurance,Care Max 1097,Individual,16218,708.33,1000000,4,93.4,14397,4.8,21000,No,Standard IRDAI mandated health product.
+National Insurance Company,National Secure 1098,Senior,70346,1600.0,1000000,1,98.4,6876,3.5,9800,Yes,High-end protection for the mass market.
+ICICI Lombard General Insurance,ICICI Advantage 1099,Senior,84399,3666.67,300000,1,94.4,15417,4.2,6700,No,Simple coverage with minimal paperwork.
+National Insurance Company,National Smart 1100,Senior,81658,1632.08,1000000,2,85.5,11484,3.8,1952,No,Affordable plan with decent claim settlement ratio.
+Oriental Insurance Company,Oriental Plus 1101,Individual,59852,3217.5,2000000,0,94.7,15396,3.6,20854,No,Premium slightly higher but offers strong coverage benefits.
+National Insurance Company,National Elite 1102,Individual,54200,2894.5,300000,3,91.5,5643,4.3,8573,No,Smooth cashless claim process and good hospital network.
+Tata AIG General Insurance,Tata Plus 1103,Senior,16246,3021.17,300000,1,91.0,10522,4.3,21117,No,Premium slightly higher but offers strong coverage benefits.
+SBI General Insurance,SBI Advantage 1104,Individual,45564,4987.17,750000,1,84.6,5359,4.4,11986,Yes,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,HDFC Basic 1105,Senior,88452,1443.67,2000000,1,85.7,13202,4.3,2891,Yes,Affordable plan with decent claim settlement ratio.
+Bajaj Allianz General Insurance,Bajaj Basic 1106,Family,33609,2094.25,750000,1,85.7,12640,3.8,7643,Yes,Premium slightly higher but offers strong coverage benefits.
+Bajaj Allianz General Insurance,Bajaj Elite 1107,Family,25675,2290.0,1000000,0,89.6,14239,3.6,24124,Yes,Affordable plan with decent claim settlement ratio.
+SBI General Insurance,SBI Secure 1108,Individual,71382,4638.42,1500000,1,95.5,14759,3.8,6371,No,Premium slightly higher but offers strong coverage benefits.
+SBI General Insurance,SBI Secure 1109,Family,50718,7247.83,500000,1,99.0,11572,3.6,11899,No,Quick claim approval and responsive customer support.
+Reliance General Insurance,Reliance Advantage 1110,Family,87591,1043.92,750000,3,99.3,4936,4.5,7395,No,Premium slightly higher but offers strong coverage benefits.
+Aditya Birla Health Insurance,Aditya Secure 1111,Senior,30666,2764.67,5000000,0,96.4,6562,4.2,1056,Yes,Smooth cashless claim process and good hospital network.
+Star Health and Allied Insurance,Star Elite 1112,Individual,44362,2174.25,500000,0,97.8,15960,4.2,15200,Yes,Quick claim approval and responsive customer support.
+Star Health and Allied Insurance,Star Premium 1113,Individual,10348,6445.25,500000,3,85.6,17378,4.4,23564,Yes,Comprehensive coverage with wellness rewards included.
+Oriental Insurance Company,Oriental Plus 1114,Individual,70337,7701.83,2000000,2,98.0,4145,4.0,8443,No,Smooth cashless claim process and good hospital network.
+Bajaj Allianz General Insurance,Bajaj Plus 1115,Individual,17925,1152.92,2000000,2,92.2,17637,4.1,10214,No,Premium slightly higher but offers strong coverage benefits.
+Reliance General Insurance,Reliance Basic 1116,Senior,17242,3304.17,2000000,3,90.4,15153,3.7,16893,No,Quick claim approval and responsive customer support.
+Reliance General Insurance,Reliance Smart 1117,Individual,58044,4143.75,300000,0,97.6,14466,4.0,11522,No,Affordable plan with decent claim settlement ratio.
+Star Health and Allied Insurance,Star Secure 1118,Senior,88625,5460.25,750000,1,92.6,14583,4.4,19485,No,Quick claim approval and responsive customer support.
+Bajaj Allianz General Insurance,Bajaj Premium 1119,Family,52382,5340.0,1500000,2,95.2,12638,4.5,15825,Yes,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Oriental Premium 1120,Family,67825,1588.58,5000000,0,83.4,8270,3.8,23173,Yes,Smooth cashless claim process and good hospital network.
+National Insurance Company,National Max 1121,Family,27274,2211.33,750000,0,91.3,8286,3.8,23881,No,Smooth cashless claim process and good hospital network.
+Aditya Birla Health Insurance,Aditya Smart 1122,Family,16216,4979.58,1500000,1,82.4,5809,3.7,8367,Yes,Quick claim approval and responsive customer support.
+Reliance General Insurance,Reliance Secure 1123,Senior,45749,2932.17,5000000,2,94.2,14205,3.7,24701,No,Premium slightly higher but offers strong coverage benefits.
+HDFC ERGO General Insurance,HDFC Max 1124,Individual,74175,6222.83,5000000,3,91.9,17019,5.0,23552,No,Affordable plan with decent claim settlement ratio.
+Star Health and Allied Insurance,Star Elite 1125,Senior,8609,1314.17,1500000,2,87.0,13194,3.8,24740,No,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Aditya Advantage 1126,Senior,22829,2077.25,500000,3,89.5,15326,4.9,18553,Yes,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Aditya Plus 1127,Individual,62056,3184.92,5000000,0,82.3,15175,3.9,3386,Yes,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Aditya Advantage 1128,Family,66553,3525.58,5000000,0,93.2,4275,5.0,4074,Yes,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Star Secure 1129,Family,51566,6109.17,500000,3,97.6,6887,3.8,17961,No,Quick claim approval and responsive customer support.
+ICICI Lombard General Insurance,ICICI Elite 1130,Family,55326,1284.83,500000,2,93.6,16423,4.6,19282,Yes,Premium slightly higher but offers strong coverage benefits.
+HDFC ERGO General Insurance,HDFC Elite 1131,Senior,50720,3198.33,500000,2,82.6,13289,4.2,5842,No,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Niva Max 1132,Family,32264,2431.5,1500000,1,87.2,12796,3.7,1736,Yes,Comprehensive coverage with wellness rewards included.
+HDFC ERGO General Insurance,HDFC Secure 1133,Family,57748,5507.5,1500000,0,88.0,10673,4.0,9504,Yes,Quick claim approval and responsive customer support.
+National Insurance Company,National Smart 1134,Individual,56021,6223.17,1500000,1,98.9,9977,4.2,2303,Yes,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Aditya Premium 1135,Individual,57197,1657.83,300000,1,84.7,16825,4.9,12378,Yes,Smooth cashless claim process and good hospital network.
+Bajaj Allianz General Insurance,Bajaj Premium 1136,Senior,13629,2938.0,2000000,1,91.4,13044,3.6,11636,Yes,Comprehensive coverage with wellness rewards included.
+Bajaj Allianz General Insurance,Bajaj Secure 1137,Family,15125,2796.83,500000,3,86.2,13514,4.9,17237,Yes,Comprehensive coverage with wellness rewards included.
+Tata AIG General Insurance,Tata Elite 1138,Family,84428,3793.5,500000,0,84.1,4881,3.7,9371,No,Premium slightly higher but offers strong coverage benefits.
+SBI General Insurance,SBI Smart 1139,Individual,69762,4666.92,300000,3,89.5,7157,4.2,18645,No,Comprehensive coverage with wellness rewards included.
+SBI General Insurance,SBI Advantage 1140,Individual,26025,1081.08,1000000,3,86.3,16020,3.6,3951,Yes,Smooth cashless claim process and good hospital network.
+Tata AIG General Insurance,Tata Premium 1141,Senior,61414,3105.42,5000000,0,98.6,12743,4.8,23269,Yes,Affordable plan with decent claim settlement ratio.
+SBI General Insurance,SBI Elite 1142,Individual,25134,2433.25,2000000,1,92.1,11586,4.9,3830,No,Comprehensive coverage with wellness rewards included.
+Aditya Birla Health Insurance,Aditya Smart 1143,Senior,86322,4290.83,5000000,0,83.4,9606,3.9,17122,No,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Tata Smart 1144,Family,39182,7230.67,1000000,2,83.6,4830,4.3,23931,No,Smooth cashless claim process and good hospital network.
+National Insurance Company,National Secure 1145,Individual,34349,1105.58,500000,1,97.6,11721,3.9,15039,Yes,Affordable plan with decent claim settlement ratio.
+Bajaj Allianz General Insurance,Bajaj Premium 1146,Family,33495,2731.75,300000,1,84.0,9533,4.6,19128,No,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,ManipalCigna Plus 1147,Family,48433,4101.92,1500000,2,82.2,17963,4.5,21232,No,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Aditya Advantage 1148,Senior,34670,4854.25,500000,0,85.0,16001,4.1,14114,No,Smooth cashless claim process and good hospital network.
+National Insurance Company,National Elite 1149,Family,47236,3752.08,750000,0,93.1,8490,4.0,15313,No,Premium slightly higher but offers strong coverage benefits.
+Reliance General Insurance,Reliance Plus 1150,Senior,77704,1122.83,5000000,0,85.3,16438,5.0,12444,Yes,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,HDFC Secure 1151,Individual,23926,1750.25,750000,0,93.0,7389,4.3,24558,No,Premium slightly higher but offers strong coverage benefits.
+Oriental Insurance Company,Oriental Max 1152,Senior,32140,3043.08,500000,0,90.2,12079,3.7,12267,No,Quick claim approval and responsive customer support.
+Bajaj Allianz General Insurance,Bajaj Max 1153,Individual,73644,5738.25,500000,2,95.9,16528,4.1,14076,Yes,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Star Advantage 1154,Family,29995,5802.0,2000000,0,92.4,13586,4.7,23398,No,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Niva Plus 1155,Individual,14569,1233.42,750000,2,91.1,15591,4.6,1499,No,Affordable plan with decent claim settlement ratio.
+ICICI Lombard General Insurance,ICICI Smart 1156,Senior,18253,2697.17,2000000,0,96.3,8043,4.9,1546,Yes,Affordable plan with decent claim settlement ratio.
+Niva Bupa Health Insurance,Niva Advantage 1157,Individual,74075,4592.0,5000000,1,83.7,17334,4.4,13215,No,Affordable plan with decent claim settlement ratio.
+HDFC ERGO General Insurance,HDFC Basic 1158,Individual,65274,3049.92,2000000,3,85.3,6447,4.7,17453,No,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Tata Plus 1159,Individual,85465,7037.58,750000,3,89.5,16413,4.1,14237,No,Smooth cashless claim process and good hospital network.
+Star Health and Allied Insurance,Star Secure 1160,Individual,49191,1041.67,1000000,2,97.5,7631,4.5,15200,Yes,Great value with lock-the-clock feature.
+ManipalCigna Health Insurance,ManipalCigna Max 1161,Individual,62741,1866.67,300000,0,84.1,13396,4.7,18400,Yes,Comprehensive plan with safeguard benefits.
+Oriental Insurance Company,Oriental Basic 1162,Senior,10917,3208.33,1500000,1,87.3,10031,4.9,12100,Yes,Excellent floater with high sum insured options.
+Oriental Insurance Company,Oriental Premium 1163,Individual,42787,4016.67,500000,2,97.8,5733,3.7,9500,No,Reliable support for senior citizens.
+Bajaj Allianz General Insurance,Bajaj Secure 1164,Senior,32912,1541.67,2000000,1,98.3,15898,3.7,24500,Yes,Secure benefit doubles cover from day one.
+Aditya Birla Health Insurance,Aditya Basic 1165,Individual,59344,2483.33,500000,0,96.7,9823,3.8,21200,No,Classic restoration benefit is very helpful.
+Oriental Insurance Company,Oriental Advantage 1166,Senior,12967,1183.33,5000000,2,98.9,14469,4.2,15800,Yes,Balanced features for everyday health.
+Care Health Insurance,Care Plus 1167,Individual,67738,4633.33,1000000,1,96.0,16528,3.9,8900,Yes,Top-tier protection for elderly parents.
+HDFC ERGO General Insurance,HDFC Premium 1168,Senior,16531,983.33,500000,2,89.4,4647,4.9,14200,Yes,Up to 7x coverage increase is amazing.
+National Insurance Company,National Premium 1169,Family,53889,3500.0,2000000,1,82.0,7774,3.8,11000,No,Huge sum insured for full family security.
+Aditya Birla Health Insurance,Aditya Smart 1170,Individual,64492,2708.33,1000000,1,97.0,9913,4.8,7400,No,Focused care for senior medical needs.
+Oriental Insurance Company,Oriental Plus 1171,Senior,82419,791.67,1500000,3,88.0,6066,4.3,5600,No,Budget friendly basic health insurance.
+Niva Bupa Health Insurance,Niva Premium 1172,Family,89133,1791.67,1000000,0,95.5,5252,4.9,22100,Yes,Infinite restoration and high-tech claims.
+SBI General Insurance,SBI Advantage 1173,Senior,81302,2583.33,750000,1,96.9,14115,3.7,19500,No,Solid network and fast cashless approval.
+Oriental Insurance Company,Oriental Plus 1174,Senior,81669,4916.67,500000,2,88.6,15213,3.9,10200,Yes,Comprehensive coverage for elderly care.
+ManipalCigna Health Insurance,ManipalCigna Advantage 1175,Senior,87017,683.33,1500000,4,89.6,8366,4.7,4800,No,Essential accident and health support.
+HDFC ERGO General Insurance,HDFC Smart 1176,Family,60379,1400.0,1000000,1,92.8,13997,3.6,19800,Yes,Modern features like home care treatment.
+Oriental Insurance Company,Oriental Max 1177,Individual,37113,1041.67,5000000,0,91.0,10298,4.6,14300,Yes,Best for youth starting early with health.
+HDFC ERGO General Insurance,HDFC Basic 1178,Family,89032,2966.67,1500000,2,91.6,9326,4.9,17500,Yes,Includes maternity and OPD benefits.
+Star Health and Allied Insurance,Star Secure 1179,Senior,14776,933.33,750000,3,83.4,4913,4.6,9200,No,Traditional and trusted health plan.
+Aditya Birla Health Insurance,Aditya Premium 1180,Individual,82803,1100.0,2000000,1,83.9,13070,4.9,16200,Yes,Earn back premium via health returns.
+Reliance General Insurance,Reliance Max 1181,Senior,30495,708.33,300000,2,93.2,14976,3.9,12500,Yes,Tailored for active and fit individuals.
+Oriental Insurance Company,Oriental Premium 1182,Family,67798,3500.0,2000000,2,96.7,7003,3.8,8300,Yes,Includes dedicated health coach for seniors.
+Bajaj Allianz General Insurance,Bajaj Elite 1183,Family,46991,7916.67,500000,1,85.6,15240,5.0,5400,No,Coverage for international treatments.
+National Insurance Company,National Premium 1184,Individual,38101,1875.0,2000000,1,91.9,13242,4.3,13800,Yes,World-class features and high restoration.
+Care Health Insurance,Care Elite 1185,Individual,24035,816.67,1500000,2,99.2,7468,5.0,8900,No,Simplified and affordable protection.
+Niva Bupa Health Insurance,Niva Advantage 1186,Family,61567,4250.0,500000,2,99.4,4183,4.5,6200,Yes,Comprehensive support for elderly needs.
+ICICI Lombard General Insurance,ICICI Smart 1187,Family,33829,2375.0,5000000,1,85.5,7200,3.5,11200,No,Smooth claim settlement for families.
+Star Health and Allied Insurance,Star Smart 1188,Family,10966,1300.0,500000,2,83.4,6852,3.8,14500,Yes,Covers day care and organ donor expenses.
+HDFC ERGO General Insurance,HDFC Max 1189,Family,19898,6250.0,750000,1,84.1,7178,4.8,3100,No,Premium global treatment coverage.
+ManipalCigna Health Insurance,ManipalCigna Premium 1190,Individual,85544,2458.33,500000,1,91.9,12373,4.5,7800,No,Specific senior plan with low waiting.
+Niva Bupa Health Insurance,Niva Secure 1191,Family,77307,1516.67,300000,2,92.2,6488,3.6,9200,No,Focus on OPD and tax saving benefits.
+Star Health and Allied Insurance,Star Secure 1192,Senior,23186,1150.0,2000000,1,96.9,4628,4.2,11200,Yes,Infinite restoration of sum insured.
+Tata AIG General Insurance,Tata Smart 1193,Family,29570,766.67,500000,2,87.7,12693,3.9,8500,No,Basic and easy to understand plan.
+SBI General Insurance,SBI Basic 1194,Senior,50729,3166.67,750000,2,99.1,13509,4.9,5600,No,Affordable senior citizen medical cover.
+ManipalCigna Health Insurance,ManipalCigna Basic 1195,Family,33173,2116.67,750000,1,92.8,8800,4.5,7900,No,Flexible family floater for small families.
+Aditya Birla Health Insurance,Aditya Plus 1196,Family,77166,1208.33,750000,2,96.2,13949,4.4,12400,Yes,Flexible modular health insurance policy.
+Bajaj Allianz General Insurance,Bajaj Basic 1197,Family,77398,708.33,1500000,4,87.3,7367,4.2,21000,No,Standard IRDAI mandated health product.
+Star Health and Allied Insurance,Star Premium 1198,Family,26650,1600.0,2000000,1,92.9,5654,4.9,9800,Yes,High-end protection for the mass market.
+Tata AIG General Insurance,Tata Plus 1199,Family,9536,3666.67,750000,1,90.6,6577,4.0,6700,No,Simple coverage with minimal paperwork.
+Niva Bupa Health Insurance,Niva Elite 1200,Family,23935,1632.08,750000,2,99.4,14405,5.0,1952,No,Affordable plan with decent claim settlement ratio.
+Care Health Insurance,Care Plus 1201,Senior,76502,3217.5,300000,0,95.1,17067,4.6,20854,No,Premium slightly higher but offers strong coverage benefits.
+SBI General Insurance,SBI Smart 1202,Family,12423,2894.5,500000,3,97.1,11622,4.1,8573,No,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,ManipalCigna Smart 1203,Family,8736,3021.17,500000,1,97.6,9222,4.4,21117,No,Premium slightly higher but offers strong coverage benefits.
+SBI General Insurance,SBI Secure 1204,Individual,88712,4987.17,750000,1,82.2,13558,4.7,11986,Yes,Smooth cashless claim process and good hospital network.
+Reliance General Insurance,Reliance Smart 1205,Family,19406,1443.67,1000000,1,93.5,6087,3.5,2891,Yes,Affordable plan with decent claim settlement ratio.
+Star Health and Allied Insurance,Star Smart 1206,Senior,80291,2094.25,750000,1,85.8,14079,4.4,7643,Yes,Premium slightly higher but offers strong coverage benefits.
+Niva Bupa Health Insurance,Niva Secure 1207,Senior,28658,2290.0,1500000,0,93.2,16908,4.2,24124,Yes,Affordable plan with decent claim settlement ratio.
+ManipalCigna Health Insurance,ManipalCigna Secure 1208,Family,58257,4638.42,5000000,1,89.9,5782,3.7,6371,No,Premium slightly higher but offers strong coverage benefits.
+Bajaj Allianz General Insurance,Bajaj Secure 1209,Individual,72290,7247.83,300000,1,83.6,11899,4.1,11899,No,Quick claim approval and responsive customer support.
+Care Health Insurance,Care Elite 1210,Individual,69432,1043.92,5000000,3,92.0,13412,3.8,7395,No,Premium slightly higher but offers strong coverage benefits.
+HDFC ERGO General Insurance,HDFC Smart 1211,Senior,84826,2764.67,500000,0,82.4,11937,4.5,1056,Yes,Smooth cashless claim process and good hospital network.
+Reliance General Insurance,Reliance Elite 1212,Individual,10158,2174.25,750000,0,87.6,13587,4.8,15200,Yes,Quick claim approval and responsive customer support.
+Aditya Birla Health Insurance,Aditya Plus 1213,Individual,67383,6445.25,500000,3,92.1,7318,3.9,23564,Yes,Comprehensive coverage with wellness rewards included.
+Care Health Insurance,Care Max 1214,Senior,32562,7701.83,300000,2,82.5,15222,3.7,8443,No,Smooth cashless claim process and good hospital network.
+Star Health and Allied Insurance,Star Elite 1215,Senior,60727,1152.92,5000000,2,87.8,10389,5.0,10214,No,Premium slightly higher but offers strong coverage benefits.
+Bajaj Allianz General Insurance,Bajaj Smart 1216,Individual,8441,3304.17,2000000,3,98.4,10951,4.3,16893,No,Quick claim approval and responsive customer support.
+National Insurance Company,National Basic 1217,Senior,47561,4143.75,1000000,0,88.5,11845,4.0,11522,No,Affordable plan with decent claim settlement ratio.
+Care Health Insurance,Care Basic 1218,Senior,29380,5460.25,1000000,1,97.6,7776,4.7,19485,No,Quick claim approval and responsive customer support.
+Care Health Insurance,Care Smart 1219,Senior,77983,5340.0,2000000,2,98.5,16528,4.6,15825,Yes,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Oriental Smart 1220,Senior,20287,1588.58,750000,0,85.5,5590,4.8,23173,Yes,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Oriental Premium 1221,Individual,88530,2211.33,500000,0,89.2,15683,3.8,23881,No,Smooth cashless claim process and good hospital network.
+Aditya Birla Health Insurance,Aditya Elite 1222,Family,58850,4979.58,1500000,1,85.9,14101,4.2,8367,Yes,Quick claim approval and responsive customer support.
+SBI General Insurance,SBI Smart 1223,Senior,47759,2932.17,500000,2,88.2,17113,3.7,24701,No,Premium slightly higher but offers strong coverage benefits.
+ICICI Lombard General Insurance,ICICI Advantage 1224,Senior,41026,6222.83,750000,3,90.9,12034,4.3,23552,No,Affordable plan with decent claim settlement ratio.
+Reliance General Insurance,Reliance Secure 1225,Individual,24315,1314.17,5000000,2,86.6,8104,4.7,24740,No,Affordable plan with decent claim settlement ratio.
+Niva Bupa Health Insurance,Niva Smart 1226,Family,65024,2077.25,750000,3,85.1,10494,4.3,18553,Yes,Affordable plan with decent claim settlement ratio.
+Niva Bupa Health Insurance,Niva Secure 1227,Individual,30280,3184.92,750000,0,94.2,16148,3.8,3386,Yes,Affordable plan with decent claim settlement ratio.
+ManipalCigna Health Insurance,ManipalCigna Secure 1228,Individual,63200,3525.58,300000,0,85.1,8313,3.9,4074,Yes,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Star Advantage 1229,Family,25532,6109.17,300000,3,93.3,5311,3.7,17961,No,Quick claim approval and responsive customer support.
+SBI General Insurance,SBI Premium 1230,Senior,32092,1284.83,5000000,2,85.8,13272,4.8,19282,Yes,Premium slightly higher but offers strong coverage benefits.
+Reliance General Insurance,Reliance Max 1231,Senior,75236,3198.33,500000,2,88.4,15575,4.0,5842,No,Smooth cashless claim process and good hospital network.
+National Insurance Company,National Elite 1232,Family,27817,2431.5,300000,1,87.7,9784,3.7,1736,Yes,Comprehensive coverage with wellness rewards included.
+HDFC ERGO General Insurance,HDFC Max 1233,Family,34541,5507.5,500000,0,90.6,11796,4.0,9504,Yes,Quick claim approval and responsive customer support.
+Niva Bupa Health Insurance,Niva Elite 1234,Senior,82514,6223.17,1000000,1,95.4,14282,3.5,2303,Yes,Affordable plan with decent claim settlement ratio.
+ICICI Lombard General Insurance,ICICI Premium 1235,Individual,17569,1657.83,750000,1,84.1,14042,3.9,12378,Yes,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Niva Premium 1236,Family,80372,2938.0,1000000,1,85.2,13400,4.5,11636,Yes,Comprehensive coverage with wellness rewards included.
+HDFC ERGO General Insurance,HDFC Secure 1237,Individual,76839,2796.83,750000,3,89.8,9711,4.3,17237,Yes,Comprehensive coverage with wellness rewards included.
+Reliance General Insurance,Reliance Secure 1238,Senior,81243,3793.5,1500000,0,88.9,12955,4.4,9371,No,Premium slightly higher but offers strong coverage benefits.
+SBI General Insurance,SBI Premium 1239,Senior,39580,4666.92,1500000,3,86.4,6110,3.9,18645,No,Comprehensive coverage with wellness rewards included.
+ICICI Lombard General Insurance,ICICI Max 1240,Family,50052,1081.08,750000,3,92.8,17741,4.0,3951,Yes,Smooth cashless claim process and good hospital network.
+Care Health Insurance,Care Secure 1241,Senior,77989,3105.42,5000000,0,95.4,4647,4.6,23269,Yes,Affordable plan with decent claim settlement ratio.
+Care Health Insurance,Care Elite 1242,Family,11355,2433.25,2000000,1,83.2,14677,3.9,3830,No,Comprehensive coverage with wellness rewards included.
+HDFC ERGO General Insurance,HDFC Max 1243,Family,89316,4290.83,5000000,0,83.5,8752,4.2,17122,No,Quick claim approval and responsive customer support.
+ManipalCigna Health Insurance,ManipalCigna Max 1244,Family,71377,7230.67,5000000,2,94.1,6025,3.6,23931,No,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Elite 1245,Family,10418,1105.58,1500000,1,95.8,15690,3.8,15039,Yes,Affordable plan with decent claim settlement ratio.
+Star Health and Allied Insurance,Star Max 1246,Family,33795,2731.75,300000,1,83.6,9772,3.7,19128,No,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Premium 1247,Senior,28065,4101.92,750000,2,91.0,11693,4.6,21232,No,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Aditya Basic 1248,Individual,20207,4854.25,2000000,0,90.2,15944,4.8,14114,No,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Secure 1249,Family,47537,3752.08,1500000,0,86.1,7355,4.8,15313,No,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Star Max 1250,Family,38726,1122.83,5000000,0,82.1,17805,4.3,12444,Yes,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Smart 1251,Senior,24068,1750.25,750000,0,88.0,6750,4.5,24558,No,Premium slightly higher but offers strong coverage benefits.
+HDFC ERGO General Insurance,HDFC Basic 1252,Family,25706,3043.08,500000,0,83.9,14822,4.8,12267,No,Quick claim approval and responsive customer support.
+Reliance General Insurance,Reliance Elite 1253,Senior,28198,5738.25,750000,2,97.5,5500,4.0,14076,Yes,Premium slightly higher but offers strong coverage benefits.
+Aditya Birla Health Insurance,Aditya Advantage 1254,Individual,39672,5802.0,1500000,0,96.1,11755,4.4,23398,No,Smooth cashless claim process and good hospital network.
+Care Health Insurance,Care Smart 1255,Senior,33039,1233.42,1500000,2,97.6,7491,4.7,1499,No,Affordable plan with decent claim settlement ratio.
+ICICI Lombard General Insurance,ICICI Premium 1256,Individual,17565,2697.17,5000000,0,99.2,13385,3.9,1546,Yes,Affordable plan with decent claim settlement ratio.
+HDFC ERGO General Insurance,HDFC Basic 1257,Individual,12662,4592.0,300000,1,83.4,15666,4.2,13215,No,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Aditya Max 1258,Senior,29805,3049.92,500000,3,97.9,16126,4.8,17453,No,Quick claim approval and responsive customer support.
+Reliance General Insurance,Reliance Premium 1259,Senior,43670,7037.58,300000,3,93.2,16575,4.3,14237,No,Smooth cashless claim process and good hospital network.
+ICICI Lombard General Insurance,ICICI Elite 1260,Family,43813,1041.67,500000,2,99.2,16184,4.1,15200,Yes,Great value with lock-the-clock feature.
+Star Health and Allied Insurance,Star Plus 1261,Family,40776,1866.67,1000000,0,85.3,16946,3.7,18400,Yes,Comprehensive plan with safeguard benefits.
+Niva Bupa Health Insurance,Niva Elite 1262,Individual,88346,3208.33,500000,1,98.1,17877,4.3,12100,Yes,Excellent floater with high sum insured options.
+Reliance General Insurance,Reliance Elite 1263,Individual,89208,4016.67,5000000,2,88.7,15311,4.2,9500,No,Reliable support for senior citizens.
+Reliance General Insurance,Reliance Max 1264,Senior,66715,1541.67,2000000,1,94.9,16371,4.3,24500,Yes,Secure benefit doubles cover from day one.
+Aditya Birla Health Insurance,Aditya Secure 1265,Individual,23359,2483.33,500000,0,82.1,10760,3.8,21200,No,Classic restoration benefit is very helpful.
+HDFC ERGO General Insurance,HDFC Secure 1266,Family,87000,1183.33,750000,2,95.6,5464,4.4,15800,Yes,Balanced features for everyday health.
+SBI General Insurance,SBI Premium 1267,Family,49740,4633.33,1000000,1,99.3,17817,4.3,8900,Yes,Top-tier protection for elderly parents.
+Aditya Birla Health Insurance,Aditya Premium 1268,Senior,33562,983.33,2000000,2,98.6,8817,5.0,14200,Yes,Up to 7x coverage increase is amazing.
+Bajaj Allianz General Insurance,Bajaj Premium 1269,Individual,49271,3500.0,1000000,1,97.9,16387,3.8,11000,No,Huge sum insured for full family security.
+Oriental Insurance Company,Oriental Premium 1270,Family,22228,2708.33,2000000,1,84.9,9375,4.5,7400,No,Focused care for senior medical needs.
+Reliance General Insurance,Reliance Premium 1271,Senior,78888,791.67,5000000,3,93.0,6740,4.2,5600,No,Budget friendly basic health insurance.
+Oriental Insurance Company,Oriental Max 1272,Senior,25546,1791.67,1000000,0,84.5,6389,4.5,22100,Yes,Infinite restoration and high-tech claims.
+ICICI Lombard General Insurance,ICICI Secure 1273,Family,65681,2583.33,5000000,1,98.1,16751,3.9,19500,No,Solid network and fast cashless approval.
+Bajaj Allianz General Insurance,Bajaj Max 1274,Senior,80512,4916.67,300000,2,85.4,14722,4.8,10200,Yes,Comprehensive coverage for elderly care.
+HDFC ERGO General Insurance,HDFC Premium 1275,Family,58331,683.33,750000,4,87.2,15316,4.8,4800,No,Essential accident and health support.
+National Insurance Company,National Max 1276,Family,74253,1400.0,300000,1,89.0,4516,4.7,19800,Yes,Modern features like home care treatment.
+ICICI Lombard General Insurance,ICICI Max 1277,Senior,20597,1041.67,500000,0,89.0,9981,4.6,14300,Yes,Best for youth starting early with health.
+Oriental Insurance Company,Oriental Advantage 1278,Senior,35933,2966.67,1500000,2,88.9,8684,3.8,17500,Yes,Includes maternity and OPD benefits.
+National Insurance Company,National Max 1279,Individual,89820,933.33,2000000,3,82.2,9203,4.1,9200,No,Traditional and trusted health plan.
+Reliance General Insurance,Reliance Plus 1280,Individual,25714,1100.0,500000,1,96.0,11276,4.4,16200,Yes,Earn back premium via health returns.
+Care Health Insurance,Care Basic 1281,Individual,29505,708.33,1000000,2,83.3,10697,3.9,12500,Yes,Tailored for active and fit individuals.
+Aditya Birla Health Insurance,Aditya Plus 1282,Senior,32795,3500.0,5000000,2,98.5,10279,4.0,8300,Yes,Includes dedicated health coach for seniors.
+ICICI Lombard General Insurance,ICICI Premium 1283,Family,87344,7916.67,1000000,1,94.0,10309,4.4,5400,No,Coverage for international treatments.
+ICICI Lombard General Insurance,ICICI Max 1284,Senior,86246,1875.0,500000,1,89.0,13007,4.6,13800,Yes,World-class features and high restoration.
+Niva Bupa Health Insurance,Niva Max 1285,Senior,74591,816.67,1500000,2,86.6,7761,4.2,8900,No,Simplified and affordable protection.
+Bajaj Allianz General Insurance,Bajaj Max 1286,Family,43741,4250.0,300000,2,85.8,10559,3.6,6200,Yes,Comprehensive support for elderly needs.
+Reliance General Insurance,Reliance Smart 1287,Individual,84833,2375.0,1000000,1,93.5,17067,3.8,11200,No,Smooth claim settlement for families.
+Oriental Insurance Company,Oriental Premium 1288,Individual,12413,1300.0,1500000,2,89.5,11339,5.0,14500,Yes,Covers day care and organ donor expenses.
+Bajaj Allianz General Insurance,Bajaj Max 1289,Individual,55428,6250.0,750000,1,84.5,16778,4.9,3100,No,Premium global treatment coverage.
+HDFC ERGO General Insurance,HDFC Elite 1290,Senior,37299,2458.33,5000000,1,96.7,7920,4.3,7800,No,Specific senior plan with low waiting.
+SBI General Insurance,SBI Elite 1291,Family,24694,1516.67,5000000,2,94.6,12632,3.9,9200,No,Focus on OPD and tax saving benefits.
+HDFC ERGO General Insurance,HDFC Plus 1292,Family,53744,1150.0,5000000,1,91.6,4607,3.7,11200,Yes,Infinite restoration of sum insured.
+Tata AIG General Insurance,Tata Advantage 1293,Family,40503,766.67,2000000,2,98.8,13453,4.4,8500,No,Basic and easy to understand plan.
+ICICI Lombard General Insurance,ICICI Advantage 1294,Senior,68738,3166.67,1500000,2,82.2,9212,4.7,5600,No,Affordable senior citizen medical cover.
+Star Health and Allied Insurance,Star Plus 1295,Senior,35210,2116.67,1500000,1,82.7,13883,4.3,7900,No,Flexible family floater for small families.
+Care Health Insurance,Care Premium 1296,Senior,21537,1208.33,750000,2,84.5,8397,4.3,12400,Yes,Flexible modular health insurance policy.
+HDFC ERGO General Insurance,HDFC Premium 1297,Individual,62217,708.33,1000000,4,85.2,6101,4.0,21000,No,Standard IRDAI mandated health product.
+Aditya Birla Health Insurance,Aditya Advantage 1298,Senior,44996,1600.0,1500000,1,87.6,4353,4.8,9800,Yes,High-end protection for the mass market.
+Aditya Birla Health Insurance,Aditya Secure 1299,Senior,25861,3666.67,500000,1,95.3,5994,4.3,6700,No,Simple coverage with minimal paperwork.
+SBI General Insurance,SBI Advantage 1300,Family,69103,1632.08,5000000,2,91.6,14755,4.2,1952,No,Affordable plan with decent claim settlement ratio.
+Oriental Insurance Company,Oriental Secure 1301,Senior,64258,3217.5,500000,0,82.5,8228,3.5,20854,No,Premium slightly higher but offers strong coverage benefits.
+ICICI Lombard General Insurance,ICICI Secure 1302,Family,85530,2894.5,5000000,3,90.6,6038,4.3,8573,No,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,ManipalCigna Advantage 1303,Individual,65057,3021.17,2000000,1,86.8,8950,3.9,21117,No,Premium slightly higher but offers strong coverage benefits.
+National Insurance Company,National Advantage 1304,Individual,78659,4987.17,5000000,1,99.2,8100,4.7,11986,Yes,Smooth cashless claim process and good hospital network.
+Reliance General Insurance,Reliance Premium 1305,Senior,24221,1443.67,5000000,1,99.3,16413,4.3,2891,Yes,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Aditya Max 1306,Individual,85947,2094.25,750000,1,84.0,10855,4.4,7643,Yes,Premium slightly higher but offers strong coverage benefits.
+Niva Bupa Health Insurance,Niva Max 1307,Individual,74524,2290.0,1500000,0,94.1,8717,4.3,24124,Yes,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Aditya Plus 1308,Senior,58884,4638.42,500000,1,94.0,11082,4.5,6371,No,Premium slightly higher but offers strong coverage benefits.
+ICICI Lombard General Insurance,ICICI Plus 1309,Family,15453,7247.83,500000,1,96.8,14015,4.6,11899,No,Quick claim approval and responsive customer support.
+Star Health and Allied Insurance,Star Advantage 1310,Individual,55800,1043.92,5000000,3,86.8,6190,3.7,7395,No,Premium slightly higher but offers strong coverage benefits.
+Care Health Insurance,Care Premium 1311,Family,84162,2764.67,750000,0,83.1,11365,4.6,1056,Yes,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,HDFC Max 1312,Individual,8325,2174.25,300000,0,90.8,17263,3.7,15200,Yes,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Tata Secure 1313,Family,74428,6445.25,2000000,3,97.8,15811,4.9,23564,Yes,Comprehensive coverage with wellness rewards included.
+National Insurance Company,National Elite 1314,Family,47424,7701.83,1500000,2,82.5,16942,4.2,8443,No,Smooth cashless claim process and good hospital network.
+National Insurance Company,National Basic 1315,Family,69695,1152.92,5000000,2,90.7,11917,4.9,10214,No,Premium slightly higher but offers strong coverage benefits.
+Bajaj Allianz General Insurance,Bajaj Max 1316,Individual,46105,3304.17,500000,3,88.6,9525,3.7,16893,No,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Tata Secure 1317,Senior,41343,4143.75,1500000,0,96.7,11310,3.6,11522,No,Affordable plan with decent claim settlement ratio.
+HDFC ERGO General Insurance,HDFC Basic 1318,Senior,62446,5460.25,2000000,1,98.8,13293,4.1,19485,No,Quick claim approval and responsive customer support.
+Reliance General Insurance,Reliance Advantage 1319,Individual,17408,5340.0,750000,2,92.0,11247,4.1,15825,Yes,Smooth cashless claim process and good hospital network.
+National Insurance Company,National Smart 1320,Family,52384,1588.58,1000000,0,92.0,5454,4.9,23173,Yes,Smooth cashless claim process and good hospital network.
+Aditya Birla Health Insurance,Aditya Secure 1321,Family,39339,2211.33,2000000,0,89.9,17490,4.4,23881,No,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Secure 1322,Senior,77506,4979.58,300000,1,97.0,10240,3.5,8367,Yes,Quick claim approval and responsive customer support.
+Aditya Birla Health Insurance,Aditya Elite 1323,Family,30467,2932.17,750000,2,84.5,11202,3.9,24701,No,Premium slightly higher but offers strong coverage benefits.
+Reliance General Insurance,Reliance Elite 1324,Senior,68313,6222.83,500000,3,85.2,14669,4.0,23552,No,Affordable plan with decent claim settlement ratio.
+Bajaj Allianz General Insurance,Bajaj Premium 1325,Family,33271,1314.17,750000,2,94.1,16117,3.5,24740,No,Affordable plan with decent claim settlement ratio.
+Reliance General Insurance,Reliance Plus 1326,Family,36069,2077.25,1000000,3,91.1,15123,3.9,18553,Yes,Affordable plan with decent claim settlement ratio.
+SBI General Insurance,SBI Advantage 1327,Family,44320,3184.92,1000000,0,92.8,4554,4.3,3386,Yes,Affordable plan with decent claim settlement ratio.
+Star Health and Allied Insurance,Star Advantage 1328,Senior,28046,3525.58,750000,0,97.2,16535,3.7,4074,Yes,Premium slightly higher but offers strong coverage benefits.
+National Insurance Company,National Plus 1329,Individual,74315,6109.17,750000,3,95.3,13583,5.0,17961,No,Quick claim approval and responsive customer support.
+Care Health Insurance,Care Secure 1330,Senior,65157,1284.83,5000000,2,84.7,11046,3.6,19282,Yes,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Star Premium 1331,Family,68166,3198.33,300000,2,83.3,13939,4.6,5842,No,Smooth cashless claim process and good hospital network.
+Bajaj Allianz General Insurance,Bajaj Basic 1332,Senior,19017,2431.5,2000000,1,96.4,10511,4.3,1736,Yes,Comprehensive coverage with wellness rewards included.
+Oriental Insurance Company,Oriental Premium 1333,Family,21354,5507.5,5000000,0,83.5,9155,3.7,9504,Yes,Quick claim approval and responsive customer support.
+Care Health Insurance,Care Secure 1334,Senior,33607,6223.17,2000000,1,94.1,6445,4.7,2303,Yes,Affordable plan with decent claim settlement ratio.
+ManipalCigna Health Insurance,ManipalCigna Plus 1335,Individual,13508,1657.83,1500000,1,87.0,6796,4.6,12378,Yes,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Oriental Plus 1336,Family,71100,2938.0,1500000,1,84.2,10371,4.5,11636,Yes,Comprehensive coverage with wellness rewards included.
+Tata AIG General Insurance,Tata Basic 1337,Family,74616,2796.83,5000000,3,92.4,9650,4.0,17237,Yes,Comprehensive coverage with wellness rewards included.
+Oriental Insurance Company,Oriental Plus 1338,Individual,84637,3793.5,300000,0,96.8,13783,4.9,9371,No,Premium slightly higher but offers strong coverage benefits.
+ICICI Lombard General Insurance,ICICI Elite 1339,Individual,33597,4666.92,500000,3,94.6,10690,4.7,18645,No,Comprehensive coverage with wellness rewards included.
+Aditya Birla Health Insurance,Aditya Smart 1340,Family,36368,1081.08,750000,3,96.5,16433,3.5,3951,Yes,Smooth cashless claim process and good hospital network.
+ICICI Lombard General Insurance,ICICI Premium 1341,Family,20489,3105.42,750000,0,96.1,10022,4.5,23269,Yes,Affordable plan with decent claim settlement ratio.
+National Insurance Company,National Smart 1342,Family,53374,2433.25,2000000,1,95.5,17738,3.8,3830,No,Comprehensive coverage with wellness rewards included.
+Oriental Insurance Company,Oriental Basic 1343,Individual,26326,4290.83,1500000,0,82.5,7253,4.1,17122,No,Quick claim approval and responsive customer support.
+Care Health Insurance,Care Max 1344,Family,67140,7230.67,300000,2,83.5,6606,3.6,23931,No,Smooth cashless claim process and good hospital network.
+National Insurance Company,National Secure 1345,Family,9383,1105.58,1000000,1,84.2,12001,4.5,15039,Yes,Affordable plan with decent claim settlement ratio.
+HDFC ERGO General Insurance,HDFC Max 1346,Individual,56490,2731.75,300000,1,96.3,10532,4.3,19128,No,Smooth cashless claim process and good hospital network.
+ICICI Lombard General Insurance,ICICI Smart 1347,Family,59193,4101.92,2000000,2,84.0,14741,4.3,21232,No,Affordable plan with decent claim settlement ratio.
+Reliance General Insurance,Reliance Max 1348,Senior,80262,4854.25,5000000,0,97.6,15378,4.9,14114,No,Smooth cashless claim process and good hospital network.
+Tata AIG General Insurance,Tata Max 1349,Senior,47273,3752.08,2000000,0,91.6,13992,3.9,15313,No,Premium slightly higher but offers strong coverage benefits.
+Bajaj Allianz General Insurance,Bajaj Premium 1350,Family,10931,1122.83,1500000,0,86.9,14692,4.8,12444,Yes,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Plus 1351,Family,86402,1750.25,1500000,0,93.6,17841,3.6,24558,No,Premium slightly higher but offers strong coverage benefits.
+ManipalCigna Health Insurance,ManipalCigna Premium 1352,Family,66016,3043.08,5000000,0,83.9,4235,4.3,12267,No,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Tata Advantage 1353,Senior,22959,5738.25,1500000,2,94.6,5786,4.2,14076,Yes,Premium slightly higher but offers strong coverage benefits.
+ManipalCigna Health Insurance,ManipalCigna Secure 1354,Individual,85379,5802.0,2000000,0,98.8,10790,4.4,23398,No,Smooth cashless claim process and good hospital network.
+ICICI Lombard General Insurance,ICICI Secure 1355,Family,67234,1233.42,500000,2,87.3,4734,4.4,1499,No,Affordable plan with decent claim settlement ratio.
+Star Health and Allied Insurance,Star Secure 1356,Individual,69445,2697.17,300000,0,96.8,4074,4.4,1546,Yes,Affordable plan with decent claim settlement ratio.
+ICICI Lombard General Insurance,ICICI Advantage 1357,Family,20437,4592.0,2000000,1,82.3,4750,3.9,13215,No,Affordable plan with decent claim settlement ratio.
+HDFC ERGO General Insurance,HDFC Secure 1358,Individual,45327,3049.92,500000,3,96.5,4652,4.6,17453,No,Quick claim approval and responsive customer support.
+HDFC ERGO General Insurance,HDFC Basic 1359,Individual,74819,7037.58,750000,3,85.0,5062,4.1,14237,No,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,HDFC Smart 1360,Senior,58818,1041.67,5000000,2,93.9,11736,4.9,15200,Yes,Great value with lock-the-clock feature.
+Bajaj Allianz General Insurance,Bajaj Premium 1361,Family,28870,1866.67,500000,0,91.1,15826,4.4,18400,Yes,Comprehensive plan with safeguard benefits.
+Aditya Birla Health Insurance,Aditya Premium 1362,Individual,21152,3208.33,1000000,1,92.0,12912,4.1,12100,Yes,Excellent floater with high sum insured options.
+Oriental Insurance Company,Oriental Smart 1363,Family,78734,4016.67,2000000,2,89.8,10038,3.5,9500,No,Reliable support for senior citizens.
+Aditya Birla Health Insurance,Aditya Advantage 1364,Individual,83652,1541.67,500000,1,94.4,9761,4.7,24500,Yes,Secure benefit doubles cover from day one.
+Niva Bupa Health Insurance,Niva Max 1365,Individual,78482,2483.33,750000,0,92.3,10585,4.5,21200,No,Classic restoration benefit is very helpful.
+ManipalCigna Health Insurance,ManipalCigna Secure 1366,Family,59034,1183.33,500000,2,83.6,16770,3.7,15800,Yes,Balanced features for everyday health.
+Star Health and Allied Insurance,Star Secure 1367,Individual,36871,4633.33,1000000,1,97.5,5681,3.9,8900,Yes,Top-tier protection for elderly parents.
+National Insurance Company,National Smart 1368,Family,22452,983.33,2000000,2,83.6,14014,4.0,14200,Yes,Up to 7x coverage increase is amazing.
+ManipalCigna Health Insurance,ManipalCigna Elite 1369,Senior,11514,3500.0,1500000,1,82.1,7300,4.6,11000,No,Huge sum insured for full family security.
+HDFC ERGO General Insurance,HDFC Elite 1370,Individual,88026,2708.33,5000000,1,96.0,17396,4.4,7400,No,Focused care for senior medical needs.
+HDFC ERGO General Insurance,HDFC Basic 1371,Senior,56234,791.67,2000000,3,90.6,15851,3.7,5600,No,Budget friendly basic health insurance.
+Star Health and Allied Insurance,Star Basic 1372,Individual,19140,1791.67,2000000,0,97.4,6551,4.9,22100,Yes,Infinite restoration and high-tech claims.
+Reliance General Insurance,Reliance Max 1373,Senior,76394,2583.33,300000,1,92.1,7418,3.5,19500,No,Solid network and fast cashless approval.
+ICICI Lombard General Insurance,ICICI Plus 1374,Individual,23957,4916.67,2000000,2,97.6,14116,3.8,10200,Yes,Comprehensive coverage for elderly care.
+ManipalCigna Health Insurance,ManipalCigna Advantage 1375,Family,69490,683.33,300000,4,84.9,4832,3.7,4800,No,Essential accident and health support.
+ManipalCigna Health Insurance,ManipalCigna Premium 1376,Individual,45726,1400.0,1500000,1,87.4,9462,3.6,19800,Yes,Modern features like home care treatment.
+ICICI Lombard General Insurance,ICICI Basic 1377,Individual,48721,1041.67,1500000,0,86.1,12254,3.9,14300,Yes,Best for youth starting early with health.
+ManipalCigna Health Insurance,ManipalCigna Smart 1378,Individual,73560,2966.67,750000,2,84.6,5102,3.8,17500,Yes,Includes maternity and OPD benefits.
+ManipalCigna Health Insurance,ManipalCigna Advantage 1379,Senior,87559,933.33,5000000,3,99.4,10843,3.5,9200,No,Traditional and trusted health plan.
+Niva Bupa Health Insurance,Niva Advantage 1380,Individual,57155,1100.0,1000000,1,92.4,17480,3.9,16200,Yes,Earn back premium via health returns.
+Reliance General Insurance,Reliance Elite 1381,Senior,16416,708.33,500000,2,95.5,8956,3.6,12500,Yes,Tailored for active and fit individuals.
+ICICI Lombard General Insurance,ICICI Max 1382,Senior,70442,3500.0,5000000,2,93.2,12050,4.4,8300,Yes,Includes dedicated health coach for seniors.
+Tata AIG General Insurance,Tata Basic 1383,Family,55197,7916.67,5000000,1,82.2,16563,3.5,5400,No,Coverage for international treatments.
+Aditya Birla Health Insurance,Aditya Elite 1384,Senior,83152,1875.0,1500000,1,83.8,12402,4.5,13800,Yes,World-class features and high restoration.
+Aditya Birla Health Insurance,Aditya Smart 1385,Senior,27525,816.67,2000000,2,86.6,6186,4.1,8900,No,Simplified and affordable protection.
+Bajaj Allianz General Insurance,Bajaj Elite 1386,Family,54421,4250.0,5000000,2,87.4,7950,3.9,6200,Yes,Comprehensive support for elderly needs.
+Bajaj Allianz General Insurance,Bajaj Secure 1387,Senior,57712,2375.0,5000000,1,82.7,16800,4.7,11200,No,Smooth claim settlement for families.
+Oriental Insurance Company,Oriental Plus 1388,Family,89769,1300.0,2000000,2,97.3,8866,4.5,14500,Yes,Covers day care and organ donor expenses.
+HDFC ERGO General Insurance,HDFC Smart 1389,Individual,13724,6250.0,1500000,1,95.3,5334,3.8,3100,No,Premium global treatment coverage.
+HDFC ERGO General Insurance,HDFC Elite 1390,Individual,32969,2458.33,1000000,1,83.2,12200,3.9,7800,No,Specific senior plan with low waiting.
+Reliance General Insurance,Reliance Premium 1391,Family,55661,1516.67,750000,2,90.1,10475,3.8,9200,No,Focus on OPD and tax saving benefits.
+National Insurance Company,National Secure 1392,Family,40900,1150.0,1500000,1,90.4,4698,3.7,11200,Yes,Infinite restoration of sum insured.
+ICICI Lombard General Insurance,ICICI Max 1393,Family,30072,766.67,2000000,2,86.4,10332,3.7,8500,No,Basic and easy to understand plan.
+Star Health and Allied Insurance,Star Elite 1394,Individual,80052,3166.67,1500000,2,96.6,5726,4.6,5600,No,Affordable senior citizen medical cover.
+Oriental Insurance Company,Oriental Premium 1395,Senior,66229,2116.67,1500000,1,97.2,12590,3.7,7900,No,Flexible family floater for small families.
+Aditya Birla Health Insurance,Aditya Smart 1396,Individual,47744,1208.33,1000000,2,83.6,17886,3.9,12400,Yes,Flexible modular health insurance policy.
+National Insurance Company,National Elite 1397,Family,33380,708.33,1500000,4,94.8,16901,4.5,21000,No,Standard IRDAI mandated health product.
+Niva Bupa Health Insurance,Niva Max 1398,Individual,12682,1600.0,5000000,1,83.7,16746,4.3,9800,Yes,High-end protection for the mass market.
+SBI General Insurance,SBI Plus 1399,Individual,16558,3666.67,500000,1,96.7,17299,4.7,6700,No,Simple coverage with minimal paperwork.
+Tata AIG General Insurance,Tata Max 1400,Senior,70033,1632.08,500000,2,83.6,12610,4.5,1952,No,Affordable plan with decent claim settlement ratio.
+ICICI Lombard General Insurance,ICICI Premium 1401,Individual,75653,3217.5,2000000,0,99.4,15236,4.6,20854,No,Premium slightly higher but offers strong coverage benefits.
+Reliance General Insurance,Reliance Max 1402,Individual,61886,2894.5,300000,3,97.1,11237,4.6,8573,No,Smooth cashless claim process and good hospital network.
+Care Health Insurance,Care Secure 1403,Family,80410,3021.17,750000,1,95.9,5017,4.7,21117,No,Premium slightly higher but offers strong coverage benefits.
+ManipalCigna Health Insurance,ManipalCigna Basic 1404,Family,51741,4987.17,300000,1,91.3,9192,3.6,11986,Yes,Smooth cashless claim process and good hospital network.
+Star Health and Allied Insurance,Star Smart 1405,Senior,19427,1443.67,750000,1,97.5,9440,3.6,2891,Yes,Affordable plan with decent claim settlement ratio.
+Care Health Insurance,Care Smart 1406,Individual,69018,2094.25,1000000,1,94.2,5073,4.0,7643,Yes,Premium slightly higher but offers strong coverage benefits.
+National Insurance Company,National Advantage 1407,Family,89687,2290.0,750000,0,93.6,4423,4.5,24124,Yes,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Aditya Elite 1408,Family,13222,4638.42,300000,1,90.3,14135,4.3,6371,No,Premium slightly higher but offers strong coverage benefits.
+Bajaj Allianz General Insurance,Bajaj Premium 1409,Individual,33672,7247.83,5000000,1,88.4,11480,4.0,11899,No,Quick claim approval and responsive customer support.
+Star Health and Allied Insurance,Star Advantage 1410,Senior,63160,1043.92,1000000,3,91.8,9559,3.5,7395,No,Premium slightly higher but offers strong coverage benefits.
+ICICI Lombard General Insurance,ICICI Max 1411,Family,33015,2764.67,500000,0,87.8,11597,3.6,1056,Yes,Smooth cashless claim process and good hospital network.
+National Insurance Company,National Premium 1412,Family,72095,2174.25,5000000,0,95.6,10728,4.5,15200,Yes,Quick claim approval and responsive customer support.
+Care Health Insurance,Care Premium 1413,Individual,34534,6445.25,1000000,3,83.8,7189,3.8,23564,Yes,Comprehensive coverage with wellness rewards included.
+Aditya Birla Health Insurance,Aditya Basic 1414,Individual,23483,7701.83,750000,2,86.7,13524,3.9,8443,No,Smooth cashless claim process and good hospital network.
+ICICI Lombard General Insurance,ICICI Basic 1415,Family,63173,1152.92,300000,2,82.2,4966,4.5,10214,No,Premium slightly higher but offers strong coverage benefits.
+Reliance General Insurance,Reliance Max 1416,Senior,37198,3304.17,500000,3,89.3,16233,4.5,16893,No,Quick claim approval and responsive customer support.
+Oriental Insurance Company,Oriental Advantage 1417,Family,26580,4143.75,1500000,0,95.0,15660,4.4,11522,No,Affordable plan with decent claim settlement ratio.
+Niva Bupa Health Insurance,Niva Smart 1418,Senior,83140,5460.25,2000000,1,99.4,7106,4.8,19485,No,Quick claim approval and responsive customer support.
+Care Health Insurance,Care Elite 1419,Individual,80831,5340.0,750000,2,97.5,17821,3.6,15825,Yes,Smooth cashless claim process and good hospital network.
+National Insurance Company,National Advantage 1420,Senior,23791,1588.58,5000000,0,89.4,10061,4.2,23173,Yes,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,ManipalCigna Elite 1421,Senior,34031,2211.33,500000,0,87.0,13462,4.2,23881,No,Smooth cashless claim process and good hospital network.
+Tata AIG General Insurance,Tata Premium 1422,Senior,79078,4979.58,300000,1,89.2,11028,5.0,8367,Yes,Quick claim approval and responsive customer support.
+Reliance General Insurance,Reliance Smart 1423,Individual,17427,2932.17,750000,2,82.1,12824,4.6,24701,No,Premium slightly higher but offers strong coverage benefits.
+National Insurance Company,National Smart 1424,Family,56062,6222.83,750000,3,86.6,10061,4.4,23552,No,Affordable plan with decent claim settlement ratio.
+Tata AIG General Insurance,Tata Basic 1425,Individual,41841,1314.17,2000000,2,89.4,7244,4.2,24740,No,Affordable plan with decent claim settlement ratio.
+Niva Bupa Health Insurance,Niva Elite 1426,Senior,32981,2077.25,750000,3,96.0,11862,3.6,18553,Yes,Affordable plan with decent claim settlement ratio.
+SBI General Insurance,SBI Elite 1427,Senior,19643,3184.92,750000,0,96.0,10227,4.7,3386,Yes,Affordable plan with decent claim settlement ratio.
+ManipalCigna Health Insurance,ManipalCigna Plus 1428,Family,27485,3525.58,300000,0,88.1,6061,3.8,4074,Yes,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Star Basic 1429,Senior,48046,6109.17,750000,3,86.3,13693,4.6,17961,No,Quick claim approval and responsive customer support.
+ManipalCigna Health Insurance,ManipalCigna Elite 1430,Individual,56133,1284.83,300000,2,90.2,16970,4.2,19282,Yes,Premium slightly higher but offers strong coverage benefits.
+Oriental Insurance Company,Oriental Max 1431,Senior,76594,3198.33,500000,2,92.8,15324,3.9,5842,No,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,ManipalCigna Plus 1432,Individual,29758,2431.5,300000,1,91.2,8098,4.4,1736,Yes,Comprehensive coverage with wellness rewards included.
+National Insurance Company,National Smart 1433,Individual,47979,5507.5,1500000,0,91.5,15329,5.0,9504,Yes,Quick claim approval and responsive customer support.
+National Insurance Company,National Basic 1434,Family,17538,6223.17,300000,1,85.8,11952,3.6,2303,Yes,Affordable plan with decent claim settlement ratio.
+HDFC ERGO General Insurance,HDFC Basic 1435,Senior,44590,1657.83,5000000,1,94.9,10797,4.2,12378,Yes,Smooth cashless claim process and good hospital network.
+Bajaj Allianz General Insurance,Bajaj Elite 1436,Family,47407,2938.0,500000,1,96.6,17941,4.5,11636,Yes,Comprehensive coverage with wellness rewards included.
+HDFC ERGO General Insurance,HDFC Plus 1437,Individual,14523,2796.83,1500000,3,97.5,15356,4.9,17237,Yes,Comprehensive coverage with wellness rewards included.
+ManipalCigna Health Insurance,ManipalCigna Elite 1438,Individual,55293,3793.5,2000000,0,86.2,8232,4.2,9371,No,Premium slightly higher but offers strong coverage benefits.
+Niva Bupa Health Insurance,Niva Premium 1439,Family,40335,4666.92,5000000,3,98.1,7929,3.7,18645,No,Comprehensive coverage with wellness rewards included.
+National Insurance Company,National Basic 1440,Senior,84444,1081.08,300000,3,88.1,5746,4.0,3951,Yes,Smooth cashless claim process and good hospital network.
+National Insurance Company,National Max 1441,Family,71887,3105.42,1500000,0,98.9,14067,4.7,23269,Yes,Affordable plan with decent claim settlement ratio.
+Oriental Insurance Company,Oriental Basic 1442,Senior,47047,2433.25,750000,1,99.1,9835,4.3,3830,No,Comprehensive coverage with wellness rewards included.
+Oriental Insurance Company,Oriental Max 1443,Individual,17097,4290.83,300000,0,86.0,10797,3.8,17122,No,Quick claim approval and responsive customer support.
+SBI General Insurance,SBI Secure 1444,Family,65135,7230.67,2000000,2,85.3,13102,3.9,23931,No,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Max 1445,Family,73420,1105.58,300000,1,98.9,5919,4.3,15039,Yes,Affordable plan with decent claim settlement ratio.
+Care Health Insurance,Care Advantage 1446,Family,43429,2731.75,2000000,1,89.9,5148,4.8,19128,No,Smooth cashless claim process and good hospital network.
+Tata AIG General Insurance,Tata Max 1447,Senior,10722,4101.92,500000,2,99.2,4958,4.8,21232,No,Affordable plan with decent claim settlement ratio.
+Bajaj Allianz General Insurance,Bajaj Max 1448,Family,77668,4854.25,5000000,0,83.9,17022,4.8,14114,No,Smooth cashless claim process and good hospital network.
+Care Health Insurance,Care Max 1449,Senior,25010,3752.08,1500000,0,97.7,8691,4.8,15313,No,Premium slightly higher but offers strong coverage benefits.
+Reliance General Insurance,Reliance Plus 1450,Family,64585,1122.83,1000000,0,88.0,6515,3.8,12444,Yes,Smooth cashless claim process and good hospital network.
+Bajaj Allianz General Insurance,Bajaj Plus 1451,Family,51432,1750.25,300000,0,93.8,13172,3.6,24558,No,Premium slightly higher but offers strong coverage benefits.
+ManipalCigna Health Insurance,ManipalCigna Advantage 1452,Individual,45318,3043.08,2000000,0,89.5,8234,3.8,12267,No,Quick claim approval and responsive customer support.
+HDFC ERGO General Insurance,HDFC Secure 1453,Individual,74621,5738.25,1000000,2,88.9,9075,4.8,14076,Yes,Premium slightly higher but offers strong coverage benefits.
+Tata AIG General Insurance,Tata Basic 1454,Family,27182,5802.0,1000000,0,98.9,5244,4.7,23398,No,Smooth cashless claim process and good hospital network.
+Reliance General Insurance,Reliance Elite 1455,Family,87965,1233.42,1000000,2,98.5,7880,3.6,1499,No,Affordable plan with decent claim settlement ratio.
+ICICI Lombard General Insurance,ICICI Advantage 1456,Individual,20301,2697.17,1000000,0,91.9,11449,4.5,1546,Yes,Affordable plan with decent claim settlement ratio.
+National Insurance Company,National Max 1457,Senior,35556,4592.0,2000000,1,93.0,14298,4.0,13215,No,Affordable plan with decent claim settlement ratio.
+National Insurance Company,National Plus 1458,Family,41148,3049.92,2000000,3,84.2,14355,4.3,17453,No,Quick claim approval and responsive customer support.
+ICICI Lombard General Insurance,ICICI Secure 1459,Individual,40938,7037.58,750000,3,94.3,5167,4.0,14237,No,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,HDFC Advantage 1460,Family,72899,1041.67,750000,2,91.8,15958,4.5,15200,Yes,Great value with lock-the-clock feature.
+Oriental Insurance Company,Oriental Secure 1461,Individual,13940,1866.67,1500000,0,98.3,5673,4.2,18400,Yes,Comprehensive plan with safeguard benefits.
+SBI General Insurance,SBI Basic 1462,Family,45731,3208.33,300000,1,97.9,9321,3.8,12100,Yes,Excellent floater with high sum insured options.
+ICICI Lombard General Insurance,ICICI Basic 1463,Individual,9723,4016.67,300000,2,97.0,15024,3.7,9500,No,Reliable support for senior citizens.
+Star Health and Allied Insurance,Star Plus 1464,Family,21957,1541.67,750000,1,90.6,13310,3.5,24500,Yes,Secure benefit doubles cover from day one.
+Niva Bupa Health Insurance,Niva Smart 1465,Family,31639,2483.33,500000,0,96.7,5542,4.7,21200,No,Classic restoration benefit is very helpful.
+Oriental Insurance Company,Oriental Elite 1466,Individual,67968,1183.33,300000,2,97.3,10527,3.8,15800,Yes,Balanced features for everyday health.
+ManipalCigna Health Insurance,ManipalCigna Plus 1467,Individual,53599,4633.33,1500000,1,98.6,16183,4.7,8900,Yes,Top-tier protection for elderly parents.
+Niva Bupa Health Insurance,Niva Basic 1468,Family,85066,983.33,2000000,2,87.9,14465,4.2,14200,Yes,Up to 7x coverage increase is amazing.
+National Insurance Company,National Elite 1469,Senior,74877,3500.0,2000000,1,83.5,14540,4.1,11000,No,Huge sum insured for full family security.
+Niva Bupa Health Insurance,Niva Premium 1470,Family,29149,2708.33,5000000,1,84.1,5913,4.0,7400,No,Focused care for senior medical needs.
+Bajaj Allianz General Insurance,Bajaj Advantage 1471,Family,57456,791.67,1000000,3,90.3,6367,5.0,5600,No,Budget friendly basic health insurance.
+HDFC ERGO General Insurance,HDFC Max 1472,Senior,83034,1791.67,5000000,0,98.3,6157,3.6,22100,Yes,Infinite restoration and high-tech claims.
+Niva Bupa Health Insurance,Niva Advantage 1473,Senior,56887,2583.33,750000,1,83.4,8931,4.5,19500,No,Solid network and fast cashless approval.
+SBI General Insurance,SBI Smart 1474,Individual,20482,4916.67,2000000,2,93.5,17613,4.4,10200,Yes,Comprehensive coverage for elderly care.
+ManipalCigna Health Insurance,ManipalCigna Secure 1475,Senior,50418,683.33,1000000,4,98.8,17825,4.4,4800,No,Essential accident and health support.
+Tata AIG General Insurance,Tata Smart 1476,Senior,10548,1400.0,1500000,1,82.9,17050,4.3,19800,Yes,Modern features like home care treatment.
+Aditya Birla Health Insurance,Aditya Elite 1477,Senior,15154,1041.67,750000,0,89.2,13413,4.5,14300,Yes,Best for youth starting early with health.
+Bajaj Allianz General Insurance,Bajaj Smart 1478,Family,45402,2966.67,300000,2,99.1,10580,3.6,17500,Yes,Includes maternity and OPD benefits.
+Reliance General Insurance,Reliance Premium 1479,Family,12375,933.33,1000000,3,88.1,14327,4.3,9200,No,Traditional and trusted health plan.
+Care Health Insurance,Care Advantage 1480,Senior,45818,1100.0,500000,1,92.1,11072,3.7,16200,Yes,Earn back premium via health returns.
+ManipalCigna Health Insurance,ManipalCigna Max 1481,Senior,82683,708.33,300000,2,97.9,11053,3.8,12500,Yes,Tailored for active and fit individuals.
+SBI General Insurance,SBI Advantage 1482,Individual,11910,3500.0,2000000,2,98.0,8899,3.6,8300,Yes,Includes dedicated health coach for seniors.
+ICICI Lombard General Insurance,ICICI Smart 1483,Senior,27206,7916.67,1500000,1,82.1,17795,4.3,5400,No,Coverage for international treatments.
+Tata AIG General Insurance,Tata Plus 1484,Individual,31884,1875.0,5000000,1,97.0,16538,3.7,13800,Yes,World-class features and high restoration.
+Star Health and Allied Insurance,Star Max 1485,Family,12453,816.67,500000,2,86.2,10850,3.9,8900,No,Simplified and affordable protection.
+Bajaj Allianz General Insurance,Bajaj Max 1486,Individual,61671,4250.0,1000000,2,85.7,11195,4.0,6200,Yes,Comprehensive support for elderly needs.
+ICICI Lombard General Insurance,ICICI Elite 1487,Senior,74314,2375.0,5000000,1,97.5,10785,4.3,11200,No,Smooth claim settlement for families.
+Oriental Insurance Company,Oriental Max 1488,Family,10768,1300.0,750000,2,89.7,17019,4.2,14500,Yes,Covers day care and organ donor expenses.
+National Insurance Company,National Premium 1489,Senior,59731,6250.0,1500000,1,83.0,14162,3.8,3100,No,Premium global treatment coverage.
+HDFC ERGO General Insurance,HDFC Secure 1490,Individual,65217,2458.33,750000,1,90.5,5848,4.9,7800,No,Specific senior plan with low waiting.
+ManipalCigna Health Insurance,ManipalCigna Max 1491,Individual,19140,1516.67,1000000,2,89.1,7506,4.3,9200,No,Focus on OPD and tax saving benefits.
+Oriental Insurance Company,Oriental Premium 1492,Individual,31703,1150.0,750000,1,90.9,13793,3.7,11200,Yes,Infinite restoration of sum insured.
+Aditya Birla Health Insurance,Aditya Plus 1493,Individual,38887,766.67,500000,2,86.8,7599,4.2,8500,No,Basic and easy to understand plan.
+Star Health and Allied Insurance,Star Advantage 1494,Senior,71236,3166.67,750000,2,99.2,5689,4.8,5600,No,Affordable senior citizen medical cover.
+ManipalCigna Health Insurance,ManipalCigna Elite 1495,Senior,33150,2116.67,5000000,1,97.7,12042,4.3,7900,No,Flexible family floater for small families.
+Tata AIG General Insurance,Tata Smart 1496,Senior,21105,1208.33,500000,2,95.8,11010,4.8,12400,Yes,Flexible modular health insurance policy.
+Aditya Birla Health Insurance,Aditya Premium 1497,Senior,78183,708.33,1000000,4,94.1,4998,4.5,21000,No,Standard IRDAI mandated health product.
+ICICI Lombard General Insurance,ICICI Elite 1498,Family,30812,1600.0,5000000,1,83.3,17181,3.5,9800,Yes,High-end protection for the mass market.
+SBI General Insurance,SBI Secure 1499,Senior,15926,3666.67,300000,1,89.4,8092,3.7,6700,No,Simple coverage with minimal paperwork.
+Star Health and Allied Insurance,Star Max 1500,Senior,74203,1632.08,5000000,2,95.6,17220,3.5,1952,No,Affordable plan with decent claim settlement ratio.
+Star Health and Allied Insurance,Star Elite 1501,Senior,51772,3217.5,5000000,0,89.8,11190,4.6,20854,No,Premium slightly higher but offers strong coverage benefits.
+Reliance General Insurance,Reliance Secure 1502,Senior,83742,2894.5,5000000,3,93.9,16396,4.4,8573,No,Smooth cashless claim process and good hospital network.
+Bajaj Allianz General Insurance,Bajaj Max 1503,Senior,83486,3021.17,1500000,1,89.5,16191,4.7,21117,No,Premium slightly higher but offers strong coverage benefits.
+Oriental Insurance Company,Oriental Advantage 1504,Individual,10912,4987.17,1500000,1,88.8,15765,4.7,11986,Yes,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Oriental Smart 1505,Family,81518,1443.67,2000000,1,89.6,10566,4.8,2891,Yes,Affordable plan with decent claim settlement ratio.
+Care Health Insurance,Care Smart 1506,Senior,73183,2094.25,5000000,1,85.2,17206,4.5,7643,Yes,Premium slightly higher but offers strong coverage benefits.
+HDFC ERGO General Insurance,HDFC Basic 1507,Senior,48191,2290.0,500000,0,92.6,7795,3.7,24124,Yes,Affordable plan with decent claim settlement ratio.
+National Insurance Company,National Basic 1508,Individual,77462,4638.42,5000000,1,83.2,7432,4.8,6371,No,Premium slightly higher but offers strong coverage benefits.
+ManipalCigna Health Insurance,ManipalCigna Plus 1509,Family,49134,7247.83,500000,1,84.9,8472,5.0,11899,No,Quick claim approval and responsive customer support.
+Aditya Birla Health Insurance,Aditya Max 1510,Family,23665,1043.92,1500000,3,86.8,4245,4.0,7395,No,Premium slightly higher but offers strong coverage benefits.
+Oriental Insurance Company,Oriental Advantage 1511,Senior,24399,2764.67,5000000,0,85.1,8147,4.0,1056,Yes,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,HDFC Plus 1512,Individual,26985,2174.25,5000000,0,84.7,6297,4.7,15200,Yes,Quick claim approval and responsive customer support.
+Niva Bupa Health Insurance,Niva Advantage 1513,Senior,40112,6445.25,1500000,3,86.1,15624,4.0,23564,Yes,Comprehensive coverage with wellness rewards included.
+HDFC ERGO General Insurance,HDFC Plus 1514,Family,57545,7701.83,1500000,2,86.0,14048,3.9,8443,No,Smooth cashless claim process and good hospital network.
+National Insurance Company,National Advantage 1515,Individual,66675,1152.92,300000,2,85.1,7166,3.5,10214,No,Premium slightly higher but offers strong coverage benefits.
+SBI General Insurance,SBI Advantage 1516,Individual,49061,3304.17,2000000,3,95.7,9914,3.8,16893,No,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Tata Premium 1517,Family,23514,4143.75,1500000,0,89.9,16845,4.7,11522,No,Affordable plan with decent claim settlement ratio.
+Care Health Insurance,Care Max 1518,Senior,86622,5460.25,750000,1,88.1,11428,3.9,19485,No,Quick claim approval and responsive customer support.
+Oriental Insurance Company,Oriental Plus 1519,Family,73446,5340.0,1500000,2,82.6,12190,4.2,15825,Yes,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Basic 1520,Senior,51514,1588.58,1500000,0,97.0,10061,4.5,23173,Yes,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Basic 1521,Family,53878,2211.33,1500000,0,82.3,11455,4.6,23881,No,Smooth cashless claim process and good hospital network.
+Star Health and Allied Insurance,Star Secure 1522,Family,67790,4979.58,1000000,1,96.8,11371,3.8,8367,Yes,Quick claim approval and responsive customer support.
+Bajaj Allianz General Insurance,Bajaj Advantage 1523,Senior,36231,2932.17,500000,2,82.1,16745,4.2,24701,No,Premium slightly higher but offers strong coverage benefits.
+Bajaj Allianz General Insurance,Bajaj Advantage 1524,Family,87236,6222.83,2000000,3,89.7,5740,4.3,23552,No,Affordable plan with decent claim settlement ratio.
+Care Health Insurance,Care Plus 1525,Senior,59837,1314.17,2000000,2,82.2,9345,3.6,24740,No,Affordable plan with decent claim settlement ratio.
+Star Health and Allied Insurance,Star Max 1526,Senior,16832,2077.25,300000,3,92.7,13843,3.8,18553,Yes,Affordable plan with decent claim settlement ratio.
+Bajaj Allianz General Insurance,Bajaj Plus 1527,Individual,50355,3184.92,750000,0,95.8,9244,3.9,3386,Yes,Affordable plan with decent claim settlement ratio.
+SBI General Insurance,SBI Elite 1528,Family,26303,3525.58,2000000,0,88.5,6175,4.3,4074,Yes,Premium slightly higher but offers strong coverage benefits.
+Aditya Birla Health Insurance,Aditya Premium 1529,Family,42251,6109.17,500000,3,90.1,12468,4.2,17961,No,Quick claim approval and responsive customer support.
+SBI General Insurance,SBI Basic 1530,Individual,26347,1284.83,500000,2,88.3,10475,4.3,19282,Yes,Premium slightly higher but offers strong coverage benefits.
+Bajaj Allianz General Insurance,Bajaj Basic 1531,Senior,76788,3198.33,300000,2,87.6,15344,3.7,5842,No,Smooth cashless claim process and good hospital network.
+Bajaj Allianz General Insurance,Bajaj Basic 1532,Family,78149,2431.5,5000000,1,87.6,4003,5.0,1736,Yes,Comprehensive coverage with wellness rewards included.
+Care Health Insurance,Care Plus 1533,Family,32080,5507.5,300000,0,97.0,16908,3.6,9504,Yes,Quick claim approval and responsive customer support.
+National Insurance Company,National Premium 1534,Senior,30370,6223.17,300000,1,87.4,15780,4.6,2303,Yes,Affordable plan with decent claim settlement ratio.
+National Insurance Company,National Basic 1535,Family,81653,1657.83,1500000,1,95.4,17729,4.1,12378,Yes,Smooth cashless claim process and good hospital network.
+Bajaj Allianz General Insurance,Bajaj Premium 1536,Family,82077,2938.0,300000,1,97.2,13383,4.4,11636,Yes,Comprehensive coverage with wellness rewards included.
+Oriental Insurance Company,Oriental Plus 1537,Senior,76442,2796.83,2000000,3,98.6,10048,3.8,17237,Yes,Comprehensive coverage with wellness rewards included.
+Care Health Insurance,Care Basic 1538,Individual,63514,3793.5,500000,0,83.1,12513,4.5,9371,No,Premium slightly higher but offers strong coverage benefits.
+Care Health Insurance,Care Plus 1539,Senior,39084,4666.92,750000,3,83.3,12453,3.6,18645,No,Comprehensive coverage with wellness rewards included.
+ManipalCigna Health Insurance,ManipalCigna Premium 1540,Family,44807,1081.08,2000000,3,86.2,16284,4.8,3951,Yes,Smooth cashless claim process and good hospital network.
+Aditya Birla Health Insurance,Aditya Max 1541,Individual,76987,3105.42,300000,0,98.9,6019,3.6,23269,Yes,Affordable plan with decent claim settlement ratio.
+Bajaj Allianz General Insurance,Bajaj Premium 1542,Individual,40685,2433.25,1000000,1,94.4,14107,4.7,3830,No,Comprehensive coverage with wellness rewards included.
+Tata AIG General Insurance,Tata Basic 1543,Family,31015,4290.83,5000000,0,83.6,13504,3.7,17122,No,Quick claim approval and responsive customer support.
+ICICI Lombard General Insurance,ICICI Secure 1544,Senior,14284,7230.67,500000,2,96.9,8565,4.3,23931,No,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,ManipalCigna Elite 1545,Individual,51979,1105.58,2000000,1,84.1,10179,3.9,15039,Yes,Affordable plan with decent claim settlement ratio.
+Star Health and Allied Insurance,Star Advantage 1546,Family,39575,2731.75,1500000,1,83.4,5660,4.7,19128,No,Smooth cashless claim process and good hospital network.
+Aditya Birla Health Insurance,Aditya Premium 1547,Individual,24438,4101.92,1500000,2,98.3,11657,4.7,21232,No,Affordable plan with decent claim settlement ratio.
+Care Health Insurance,Care Advantage 1548,Family,89786,4854.25,1000000,0,89.2,17109,3.5,14114,No,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Oriental Max 1549,Family,17552,3752.08,500000,0,90.0,12562,4.7,15313,No,Premium slightly higher but offers strong coverage benefits.
+Niva Bupa Health Insurance,Niva Plus 1550,Family,21598,1122.83,2000000,0,97.8,13139,4.1,12444,Yes,Smooth cashless claim process and good hospital network.
+Tata AIG General Insurance,Tata Secure 1551,Senior,62385,1750.25,1000000,0,98.3,14904,3.7,24558,No,Premium slightly higher but offers strong coverage benefits.
+Tata AIG General Insurance,Tata Elite 1552,Individual,24471,3043.08,750000,0,84.7,14144,3.9,12267,No,Quick claim approval and responsive customer support.
+Star Health and Allied Insurance,Star Plus 1553,Individual,20420,5738.25,750000,2,82.3,4739,4.6,14076,Yes,Premium slightly higher but offers strong coverage benefits.
+Oriental Insurance Company,Oriental Premium 1554,Family,76923,5802.0,750000,0,97.9,8977,4.3,23398,No,Smooth cashless claim process and good hospital network.
+National Insurance Company,National Max 1555,Individual,37648,1233.42,5000000,2,87.2,4227,4.4,1499,No,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Aditya Plus 1556,Senior,62398,2697.17,2000000,0,90.6,10873,3.8,1546,Yes,Affordable plan with decent claim settlement ratio.
+Niva Bupa Health Insurance,Niva Plus 1557,Individual,43744,4592.0,300000,1,96.4,10315,4.5,13215,No,Affordable plan with decent claim settlement ratio.
+SBI General Insurance,SBI Secure 1558,Family,27707,3049.92,5000000,3,87.1,9582,4.4,17453,No,Quick claim approval and responsive customer support.
+Reliance General Insurance,Reliance Advantage 1559,Individual,88756,7037.58,1500000,3,98.0,17517,4.2,14237,No,Smooth cashless claim process and good hospital network.
+Care Health Insurance,Care Secure 1560,Individual,19502,1041.67,300000,2,86.1,6702,4.6,15200,Yes,Great value with lock-the-clock feature.
+Star Health and Allied Insurance,Star Plus 1561,Individual,54939,1866.67,300000,0,89.3,16636,3.6,18400,Yes,Comprehensive plan with safeguard benefits.
+Reliance General Insurance,Reliance Secure 1562,Family,67479,3208.33,5000000,1,96.0,16625,4.3,12100,Yes,Excellent floater with high sum insured options.
+Niva Bupa Health Insurance,Niva Max 1563,Individual,71086,4016.67,1000000,2,91.8,16339,3.6,9500,No,Reliable support for senior citizens.
+Oriental Insurance Company,Oriental Secure 1564,Family,40722,1541.67,2000000,1,88.0,17497,4.6,24500,Yes,Secure benefit doubles cover from day one.
+SBI General Insurance,SBI Plus 1565,Family,49807,2483.33,2000000,0,89.6,15574,3.7,21200,No,Classic restoration benefit is very helpful.
+Reliance General Insurance,Reliance Basic 1566,Individual,60721,1183.33,750000,2,83.2,17327,3.7,15800,Yes,Balanced features for everyday health.
+Reliance General Insurance,Reliance Advantage 1567,Individual,71638,4633.33,300000,1,82.2,8250,5.0,8900,Yes,Top-tier protection for elderly parents.
+ManipalCigna Health Insurance,ManipalCigna Secure 1568,Family,82089,983.33,500000,2,82.2,15279,4.7,14200,Yes,Up to 7x coverage increase is amazing.
+ManipalCigna Health Insurance,ManipalCigna Elite 1569,Family,60237,3500.0,2000000,1,99.3,13323,3.6,11000,No,Huge sum insured for full family security.
+Niva Bupa Health Insurance,Niva Basic 1570,Senior,85078,2708.33,5000000,1,88.2,14833,5.0,7400,No,Focused care for senior medical needs.
+National Insurance Company,National Advantage 1571,Family,23895,791.67,500000,3,90.5,12646,3.8,5600,No,Budget friendly basic health insurance.
+Oriental Insurance Company,Oriental Secure 1572,Senior,69102,1791.67,5000000,0,94.8,13632,3.7,22100,Yes,Infinite restoration and high-tech claims.
+Reliance General Insurance,Reliance Secure 1573,Senior,14408,2583.33,750000,1,87.2,4345,4.7,19500,No,Solid network and fast cashless approval.
+National Insurance Company,National Advantage 1574,Family,10766,4916.67,2000000,2,86.6,7051,4.0,10200,Yes,Comprehensive coverage for elderly care.
+ManipalCigna Health Insurance,ManipalCigna Plus 1575,Family,46715,683.33,2000000,4,92.6,12160,4.9,4800,No,Essential accident and health support.
+SBI General Insurance,SBI Secure 1576,Family,24521,1400.0,2000000,1,91.3,12332,4.3,19800,Yes,Modern features like home care treatment.
+ManipalCigna Health Insurance,ManipalCigna Advantage 1577,Family,31316,1041.67,1000000,0,89.4,11134,4.2,14300,Yes,Best for youth starting early with health.
+Bajaj Allianz General Insurance,Bajaj Smart 1578,Senior,43420,2966.67,500000,2,91.9,6036,4.3,17500,Yes,Includes maternity and OPD benefits.
+Oriental Insurance Company,Oriental Premium 1579,Senior,12013,933.33,750000,3,83.1,4245,3.5,9200,No,Traditional and trusted health plan.
+Reliance General Insurance,Reliance Premium 1580,Senior,81823,1100.0,300000,1,85.2,10296,4.6,16200,Yes,Earn back premium via health returns.
+Aditya Birla Health Insurance,Aditya Secure 1581,Senior,83691,708.33,1500000,2,87.5,8195,3.9,12500,Yes,Tailored for active and fit individuals.
+Care Health Insurance,Care Smart 1582,Individual,9644,3500.0,1500000,2,89.5,17761,3.9,8300,Yes,Includes dedicated health coach for seniors.
+Oriental Insurance Company,Oriental Plus 1583,Family,11574,7916.67,500000,1,89.5,4322,4.6,5400,No,Coverage for international treatments.
+Tata AIG General Insurance,Tata Secure 1584,Family,64530,1875.0,750000,1,86.7,9126,4.4,13800,Yes,World-class features and high restoration.
+Bajaj Allianz General Insurance,Bajaj Plus 1585,Senior,11621,816.67,750000,2,94.8,15721,3.7,8900,No,Simplified and affordable protection.
+Niva Bupa Health Insurance,Niva Smart 1586,Senior,27091,4250.0,2000000,2,95.1,11997,4.3,6200,Yes,Comprehensive support for elderly needs.
+SBI General Insurance,SBI Plus 1587,Individual,68693,2375.0,750000,1,95.2,10359,4.9,11200,No,Smooth claim settlement for families.
+SBI General Insurance,SBI Advantage 1588,Senior,49365,1300.0,500000,2,91.4,6108,3.9,14500,Yes,Covers day care and organ donor expenses.
+ManipalCigna Health Insurance,ManipalCigna Smart 1589,Senior,14771,6250.0,1000000,1,84.5,16635,4.9,3100,No,Premium global treatment coverage.
+Bajaj Allianz General Insurance,Bajaj Advantage 1590,Senior,21890,2458.33,2000000,1,90.6,4922,3.8,7800,No,Specific senior plan with low waiting.
+ICICI Lombard General Insurance,ICICI Advantage 1591,Family,50223,1516.67,500000,2,97.5,4146,3.6,9200,No,Focus on OPD and tax saving benefits.
+HDFC ERGO General Insurance,HDFC Basic 1592,Senior,77916,1150.0,1000000,1,85.8,15830,4.7,11200,Yes,Infinite restoration of sum insured.
+HDFC ERGO General Insurance,HDFC Basic 1593,Individual,84261,766.67,1500000,2,88.0,9334,3.8,8500,No,Basic and easy to understand plan.
+ICICI Lombard General Insurance,ICICI Secure 1594,Individual,80276,3166.67,1000000,2,94.5,9035,4.4,5600,No,Affordable senior citizen medical cover.
+National Insurance Company,National Plus 1595,Family,84441,2116.67,750000,1,88.7,10604,3.7,7900,No,Flexible family floater for small families.
+Tata AIG General Insurance,Tata Advantage 1596,Family,85249,1208.33,500000,2,84.8,8581,4.9,12400,Yes,Flexible modular health insurance policy.
+SBI General Insurance,SBI Basic 1597,Individual,71066,708.33,2000000,4,87.7,12607,4.9,21000,No,Standard IRDAI mandated health product.
+Star Health and Allied Insurance,Star Secure 1598,Senior,53043,1600.0,300000,1,89.1,6525,3.8,9800,Yes,High-end protection for the mass market.
+HDFC ERGO General Insurance,HDFC Max 1599,Individual,83090,3666.67,500000,1,88.5,7398,4.2,6700,No,Simple coverage with minimal paperwork.
+Tata AIG General Insurance,Tata Secure 1600,Individual,71177,1632.08,1500000,2,92.7,13248,3.7,1952,No,Affordable plan with decent claim settlement ratio.
+SBI General Insurance,SBI Smart 1601,Family,79141,3217.5,300000,0,90.0,11281,4.6,20854,No,Premium slightly higher but offers strong coverage benefits.
+SBI General Insurance,SBI Max 1602,Individual,60587,2894.5,750000,3,86.3,6453,3.8,8573,No,Smooth cashless claim process and good hospital network.
+ICICI Lombard General Insurance,ICICI Basic 1603,Senior,73363,3021.17,2000000,1,95.5,17914,4.2,21117,No,Premium slightly higher but offers strong coverage benefits.
+Bajaj Allianz General Insurance,Bajaj Advantage 1604,Senior,89104,4987.17,2000000,1,89.6,5955,4.8,11986,Yes,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,ManipalCigna Secure 1605,Individual,33645,1443.67,500000,1,87.4,11344,4.8,2891,Yes,Affordable plan with decent claim settlement ratio.
+Reliance General Insurance,Reliance Max 1606,Senior,81440,2094.25,750000,1,92.8,4248,4.9,7643,Yes,Premium slightly higher but offers strong coverage benefits.
+National Insurance Company,National Premium 1607,Family,9285,2290.0,2000000,0,95.3,17780,4.0,24124,Yes,Affordable plan with decent claim settlement ratio.
+Reliance General Insurance,Reliance Advantage 1608,Individual,31425,4638.42,750000,1,96.8,10092,3.8,6371,No,Premium slightly higher but offers strong coverage benefits.
+ICICI Lombard General Insurance,ICICI Max 1609,Family,48018,7247.83,500000,1,86.4,17516,4.1,11899,No,Quick claim approval and responsive customer support.
+Reliance General Insurance,Reliance Plus 1610,Individual,33700,1043.92,1500000,3,95.8,5065,4.3,7395,No,Premium slightly higher but offers strong coverage benefits.
+Care Health Insurance,Care Basic 1611,Senior,88668,2764.67,2000000,0,82.0,16617,4.9,1056,Yes,Smooth cashless claim process and good hospital network.
+Care Health Insurance,Care Elite 1612,Family,86055,2174.25,1000000,0,92.1,11735,4.2,15200,Yes,Quick claim approval and responsive customer support.
+Bajaj Allianz General Insurance,Bajaj Basic 1613,Senior,26947,6445.25,1500000,3,95.7,16921,3.8,23564,Yes,Comprehensive coverage with wellness rewards included.
+Tata AIG General Insurance,Tata Advantage 1614,Senior,46039,7701.83,750000,2,83.2,5001,4.9,8443,No,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Secure 1615,Senior,76466,1152.92,300000,2,97.4,7934,3.8,10214,No,Premium slightly higher but offers strong coverage benefits.
+ICICI Lombard General Insurance,ICICI Max 1616,Family,9695,3304.17,1000000,3,87.1,7704,4.1,16893,No,Quick claim approval and responsive customer support.
+Bajaj Allianz General Insurance,Bajaj Elite 1617,Family,15923,4143.75,750000,0,83.9,10740,4.4,11522,No,Affordable plan with decent claim settlement ratio.
+Niva Bupa Health Insurance,Niva Advantage 1618,Senior,13883,5460.25,1000000,1,90.1,17877,4.2,19485,No,Quick claim approval and responsive customer support.
+ManipalCigna Health Insurance,ManipalCigna Elite 1619,Family,42129,5340.0,500000,2,99.3,11921,4.1,15825,Yes,Smooth cashless claim process and good hospital network.
+Bajaj Allianz General Insurance,Bajaj Basic 1620,Individual,50997,1588.58,500000,0,93.1,9486,3.6,23173,Yes,Smooth cashless claim process and good hospital network.
+Care Health Insurance,Care Elite 1621,Family,32854,2211.33,300000,0,91.2,13945,4.3,23881,No,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Niva Advantage 1622,Family,48804,4979.58,5000000,1,93.5,17213,3.6,8367,Yes,Quick claim approval and responsive customer support.
+Reliance General Insurance,Reliance Max 1623,Family,33774,2932.17,500000,2,82.4,14182,3.8,24701,No,Premium slightly higher but offers strong coverage benefits.
+Bajaj Allianz General Insurance,Bajaj Plus 1624,Family,32910,6222.83,500000,3,82.3,12676,5.0,23552,No,Affordable plan with decent claim settlement ratio.
+SBI General Insurance,SBI Secure 1625,Family,71827,1314.17,5000000,2,85.3,16379,3.7,24740,No,Affordable plan with decent claim settlement ratio.
+Care Health Insurance,Care Elite 1626,Individual,13684,2077.25,2000000,3,89.6,8558,3.8,18553,Yes,Affordable plan with decent claim settlement ratio.
+ICICI Lombard General Insurance,ICICI Smart 1627,Senior,80576,3184.92,300000,0,84.7,10589,4.1,3386,Yes,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Aditya Max 1628,Individual,43089,3525.58,2000000,0,82.1,16441,3.7,4074,Yes,Premium slightly higher but offers strong coverage benefits.
+SBI General Insurance,SBI Secure 1629,Individual,54579,6109.17,1500000,3,95.5,9502,4.2,17961,No,Quick claim approval and responsive customer support.
+Star Health and Allied Insurance,Star Plus 1630,Individual,80554,1284.83,300000,2,95.4,12284,3.5,19282,Yes,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Star Basic 1631,Senior,22922,3198.33,1500000,2,90.1,9374,4.6,5842,No,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Oriental Elite 1632,Family,32127,2431.5,750000,1,97.3,5873,3.9,1736,Yes,Comprehensive coverage with wellness rewards included.
+Niva Bupa Health Insurance,Niva Basic 1633,Senior,49452,5507.5,2000000,0,91.5,17902,4.4,9504,Yes,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Tata Plus 1634,Family,31700,6223.17,5000000,1,83.5,16146,4.1,2303,Yes,Affordable plan with decent claim settlement ratio.
+National Insurance Company,National Basic 1635,Family,40804,1657.83,5000000,1,95.3,16202,4.8,12378,Yes,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Niva Smart 1636,Individual,87184,2938.0,750000,1,97.9,9947,4.0,11636,Yes,Comprehensive coverage with wellness rewards included.
+Aditya Birla Health Insurance,Aditya Smart 1637,Family,39342,2796.83,1000000,3,88.9,13132,4.7,17237,Yes,Comprehensive coverage with wellness rewards included.
+Niva Bupa Health Insurance,Niva Secure 1638,Family,51575,3793.5,1500000,0,96.1,8086,4.1,9371,No,Premium slightly higher but offers strong coverage benefits.
+ICICI Lombard General Insurance,ICICI Advantage 1639,Individual,64549,4666.92,1000000,3,92.4,7901,3.9,18645,No,Comprehensive coverage with wellness rewards included.
+ICICI Lombard General Insurance,ICICI Secure 1640,Family,33872,1081.08,750000,3,83.7,10899,4.0,3951,Yes,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Niva Max 1641,Family,37141,3105.42,500000,0,96.3,10369,4.9,23269,Yes,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Aditya Max 1642,Family,20135,2433.25,500000,1,87.4,17299,3.6,3830,No,Comprehensive coverage with wellness rewards included.
+Care Health Insurance,Care Advantage 1643,Senior,40010,4290.83,2000000,0,93.7,16237,4.7,17122,No,Quick claim approval and responsive customer support.
+Care Health Insurance,Care Elite 1644,Family,8455,7230.67,2000000,2,84.8,5449,4.8,23931,No,Smooth cashless claim process and good hospital network.
+ICICI Lombard General Insurance,ICICI Advantage 1645,Family,36577,1105.58,2000000,1,98.2,6694,3.6,15039,Yes,Affordable plan with decent claim settlement ratio.
+National Insurance Company,National Secure 1646,Individual,74166,2731.75,1500000,1,94.7,17846,3.9,19128,No,Smooth cashless claim process and good hospital network.
+Care Health Insurance,Care Max 1647,Senior,59952,4101.92,5000000,2,89.1,16028,4.1,21232,No,Affordable plan with decent claim settlement ratio.
+Reliance General Insurance,Reliance Max 1648,Senior,84045,4854.25,500000,0,91.8,4662,4.8,14114,No,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Oriental Secure 1649,Senior,85557,3752.08,1000000,0,92.4,16978,3.7,15313,No,Premium slightly higher but offers strong coverage benefits.
+Oriental Insurance Company,Oriental Smart 1650,Family,24350,1122.83,5000000,0,84.5,14825,3.7,12444,Yes,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Advantage 1651,Individual,31628,1750.25,1500000,0,95.0,5744,4.7,24558,No,Premium slightly higher but offers strong coverage benefits.
+ManipalCigna Health Insurance,ManipalCigna Premium 1652,Family,49953,3043.08,750000,0,89.8,13172,3.6,12267,No,Quick claim approval and responsive customer support.
+Niva Bupa Health Insurance,Niva Basic 1653,Individual,71108,5738.25,5000000,2,82.2,14872,4.7,14076,Yes,Premium slightly higher but offers strong coverage benefits.
+Niva Bupa Health Insurance,Niva Smart 1654,Family,59899,5802.0,5000000,0,98.5,7292,4.8,23398,No,Smooth cashless claim process and good hospital network.
+Aditya Birla Health Insurance,Aditya Advantage 1655,Senior,61252,1233.42,2000000,2,83.1,16974,4.2,1499,No,Affordable plan with decent claim settlement ratio.
+Niva Bupa Health Insurance,Niva Secure 1656,Individual,15640,2697.17,2000000,0,97.5,7213,3.5,1546,Yes,Affordable plan with decent claim settlement ratio.
+National Insurance Company,National Elite 1657,Family,89069,4592.0,300000,1,85.0,15977,4.6,13215,No,Affordable plan with decent claim settlement ratio.
+Reliance General Insurance,Reliance Premium 1658,Family,47550,3049.92,500000,3,84.2,10249,4.2,17453,No,Quick claim approval and responsive customer support.
+Reliance General Insurance,Reliance Smart 1659,Individual,51660,7037.58,1500000,3,93.3,10364,3.9,14237,No,Smooth cashless claim process and good hospital network.
+National Insurance Company,National Plus 1660,Senior,10611,1041.67,1000000,2,83.7,7547,3.8,15200,Yes,Great value with lock-the-clock feature.
+ManipalCigna Health Insurance,ManipalCigna Secure 1661,Family,51719,1866.67,300000,0,90.4,9477,4.1,18400,Yes,Comprehensive plan with safeguard benefits.
+Tata AIG General Insurance,Tata Max 1662,Individual,13197,3208.33,1000000,1,88.7,13480,4.2,12100,Yes,Excellent floater with high sum insured options.
+Aditya Birla Health Insurance,Aditya Secure 1663,Senior,52675,4016.67,1000000,2,98.8,13814,4.8,9500,No,Reliable support for senior citizens.
+Bajaj Allianz General Insurance,Bajaj Premium 1664,Family,83760,1541.67,1500000,1,87.7,8848,4.8,24500,Yes,Secure benefit doubles cover from day one.
+Reliance General Insurance,Reliance Basic 1665,Individual,36890,2483.33,5000000,0,83.7,15850,4.3,21200,No,Classic restoration benefit is very helpful.
+Aditya Birla Health Insurance,Aditya Basic 1666,Senior,82171,1183.33,1000000,2,88.4,5776,4.9,15800,Yes,Balanced features for everyday health.
+Aditya Birla Health Insurance,Aditya Plus 1667,Individual,67637,4633.33,1500000,1,91.6,9999,4.3,8900,Yes,Top-tier protection for elderly parents.
+Aditya Birla Health Insurance,Aditya Max 1668,Senior,59534,983.33,300000,2,84.1,15346,4.9,14200,Yes,Up to 7x coverage increase is amazing.
+Care Health Insurance,Care Basic 1669,Individual,80269,3500.0,300000,1,83.8,14362,4.6,11000,No,Huge sum insured for full family security.
+Star Health and Allied Insurance,Star Basic 1670,Individual,47223,2708.33,750000,1,90.5,15534,5.0,7400,No,Focused care for senior medical needs.
+SBI General Insurance,SBI Basic 1671,Senior,84534,791.67,2000000,3,84.5,13569,4.2,5600,No,Budget friendly basic health insurance.
+Oriental Insurance Company,Oriental Elite 1672,Family,60102,1791.67,750000,0,97.0,8328,4.9,22100,Yes,Infinite restoration and high-tech claims.
+Reliance General Insurance,Reliance Max 1673,Senior,50750,2583.33,1500000,1,90.6,14293,4.9,19500,No,Solid network and fast cashless approval.
+National Insurance Company,National Advantage 1674,Family,69307,4916.67,1000000,2,82.2,10927,4.3,10200,Yes,Comprehensive coverage for elderly care.
+Star Health and Allied Insurance,Star Basic 1675,Family,10749,683.33,750000,4,95.5,5091,4.9,4800,No,Essential accident and health support.
+ICICI Lombard General Insurance,ICICI Secure 1676,Senior,76072,1400.0,1500000,1,86.1,8603,4.1,19800,Yes,Modern features like home care treatment.
+SBI General Insurance,SBI Secure 1677,Individual,38478,1041.67,500000,0,91.6,12678,4.3,14300,Yes,Best for youth starting early with health.
+Niva Bupa Health Insurance,Niva Plus 1678,Senior,31387,2966.67,750000,2,92.1,16291,3.8,17500,Yes,Includes maternity and OPD benefits.
+Reliance General Insurance,Reliance Basic 1679,Senior,64672,933.33,500000,3,82.2,5053,4.1,9200,No,Traditional and trusted health plan.
+Tata AIG General Insurance,Tata Max 1680,Senior,47640,1100.0,1000000,1,93.0,4902,3.9,16200,Yes,Earn back premium via health returns.
+Aditya Birla Health Insurance,Aditya Elite 1681,Senior,41932,708.33,1000000,2,84.0,10464,4.2,12500,Yes,Tailored for active and fit individuals.
+Tata AIG General Insurance,Tata Smart 1682,Individual,38749,3500.0,2000000,2,87.3,17395,4.0,8300,Yes,Includes dedicated health coach for seniors.
+Niva Bupa Health Insurance,Niva Plus 1683,Senior,71900,7916.67,750000,1,87.3,9343,4.3,5400,No,Coverage for international treatments.
+National Insurance Company,National Secure 1684,Senior,56333,1875.0,300000,1,84.3,12044,3.6,13800,Yes,World-class features and high restoration.
+Niva Bupa Health Insurance,Niva Max 1685,Senior,12292,816.67,1500000,2,87.7,4680,4.0,8900,No,Simplified and affordable protection.
+ICICI Lombard General Insurance,ICICI Max 1686,Individual,59725,4250.0,500000,2,88.1,6480,4.2,6200,Yes,Comprehensive support for elderly needs.
+Reliance General Insurance,Reliance Basic 1687,Senior,61515,2375.0,5000000,1,93.2,12374,4.0,11200,No,Smooth claim settlement for families.
+Niva Bupa Health Insurance,Niva Secure 1688,Senior,56878,1300.0,500000,2,96.1,12823,3.6,14500,Yes,Covers day care and organ donor expenses.
+Reliance General Insurance,Reliance Elite 1689,Individual,26977,6250.0,300000,1,85.9,13752,5.0,3100,No,Premium global treatment coverage.
+Niva Bupa Health Insurance,Niva Basic 1690,Senior,43810,2458.33,500000,1,85.4,17460,3.9,7800,No,Specific senior plan with low waiting.
+Reliance General Insurance,Reliance Premium 1691,Individual,85111,1516.67,1000000,2,93.2,12563,4.8,9200,No,Focus on OPD and tax saving benefits.
+ManipalCigna Health Insurance,ManipalCigna Plus 1692,Senior,32168,1150.0,2000000,1,83.6,11261,4.2,11200,Yes,Infinite restoration of sum insured.
+Aditya Birla Health Insurance,Aditya Max 1693,Family,79220,766.67,2000000,2,85.8,8741,3.7,8500,No,Basic and easy to understand plan.
+National Insurance Company,National Plus 1694,Individual,81723,3166.67,1000000,2,92.5,7134,4.7,5600,No,Affordable senior citizen medical cover.
+Star Health and Allied Insurance,Star Premium 1695,Family,76630,2116.67,1000000,1,91.2,12076,4.7,7900,No,Flexible family floater for small families.
+ManipalCigna Health Insurance,ManipalCigna Elite 1696,Family,12182,1208.33,500000,2,87.5,15153,3.9,12400,Yes,Flexible modular health insurance policy.
+HDFC ERGO General Insurance,HDFC Max 1697,Individual,84862,708.33,1500000,4,82.6,14687,3.7,21000,No,Standard IRDAI mandated health product.
+ICICI Lombard General Insurance,ICICI Smart 1698,Individual,20061,1600.0,500000,1,95.8,15666,4.7,9800,Yes,High-end protection for the mass market.
+Niva Bupa Health Insurance,Niva Advantage 1699,Individual,33614,3666.67,500000,1,87.2,13707,4.8,6700,No,Simple coverage with minimal paperwork.
+Reliance General Insurance,Reliance Basic 1700,Senior,75004,1632.08,300000,2,92.9,10559,3.7,1952,No,Affordable plan with decent claim settlement ratio.
+Care Health Insurance,Care Basic 1701,Family,85337,3217.5,5000000,0,84.0,10717,3.6,20854,No,Premium slightly higher but offers strong coverage benefits.
+Aditya Birla Health Insurance,Aditya Secure 1702,Senior,43240,2894.5,5000000,3,91.8,16627,3.7,8573,No,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Niva Premium 1703,Family,61638,3021.17,1500000,1,93.3,13761,4.0,21117,No,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Star Premium 1704,Individual,61013,4987.17,500000,1,85.8,13502,4.3,11986,Yes,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Oriental Advantage 1705,Individual,71981,1443.67,750000,1,83.1,6975,3.9,2891,Yes,Affordable plan with decent claim settlement ratio.
+Reliance General Insurance,Reliance Basic 1706,Family,40479,2094.25,1500000,1,88.1,11518,3.7,7643,Yes,Premium slightly higher but offers strong coverage benefits.
+ICICI Lombard General Insurance,ICICI Elite 1707,Individual,56986,2290.0,5000000,0,97.1,15828,3.6,24124,Yes,Affordable plan with decent claim settlement ratio.
+Reliance General Insurance,Reliance Basic 1708,Family,39223,4638.42,750000,1,90.0,13643,4.5,6371,No,Premium slightly higher but offers strong coverage benefits.
+Niva Bupa Health Insurance,Niva Max 1709,Senior,47449,7247.83,1500000,1,84.1,5803,4.0,11899,No,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Tata Premium 1710,Family,17013,1043.92,300000,3,97.4,10904,4.8,7395,No,Premium slightly higher but offers strong coverage benefits.
+Reliance General Insurance,Reliance Premium 1711,Family,83865,2764.67,5000000,0,94.7,9571,4.2,1056,Yes,Smooth cashless claim process and good hospital network.
+Bajaj Allianz General Insurance,Bajaj Smart 1712,Senior,30294,2174.25,1500000,0,95.9,11555,4.2,15200,Yes,Quick claim approval and responsive customer support.
+Oriental Insurance Company,Oriental Plus 1713,Family,40565,6445.25,300000,3,90.9,14127,4.0,23564,Yes,Comprehensive coverage with wellness rewards included.
+Reliance General Insurance,Reliance Smart 1714,Senior,56818,7701.83,750000,2,94.7,17636,4.2,8443,No,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Niva Secure 1715,Senior,43073,1152.92,750000,2,84.6,14826,4.4,10214,No,Premium slightly higher but offers strong coverage benefits.
+SBI General Insurance,SBI Plus 1716,Family,64184,3304.17,2000000,3,92.4,9412,4.1,16893,No,Quick claim approval and responsive customer support.
+ICICI Lombard General Insurance,ICICI Smart 1717,Family,66199,4143.75,1000000,0,92.1,14418,3.6,11522,No,Affordable plan with decent claim settlement ratio.
+Tata AIG General Insurance,Tata Max 1718,Family,34071,5460.25,1500000,1,88.9,14480,3.6,19485,No,Quick claim approval and responsive customer support.
+Niva Bupa Health Insurance,Niva Smart 1719,Senior,54128,5340.0,750000,2,88.6,6326,4.4,15825,Yes,Smooth cashless claim process and good hospital network.
+Reliance General Insurance,Reliance Advantage 1720,Senior,41064,1588.58,1000000,0,89.9,15630,4.3,23173,Yes,Smooth cashless claim process and good hospital network.
+Care Health Insurance,Care Advantage 1721,Individual,54434,2211.33,1500000,0,92.2,7408,5.0,23881,No,Smooth cashless claim process and good hospital network.
+Bajaj Allianz General Insurance,Bajaj Premium 1722,Senior,58643,4979.58,2000000,1,88.2,10764,4.4,8367,Yes,Quick claim approval and responsive customer support.
+National Insurance Company,National Basic 1723,Family,26692,2932.17,1500000,2,89.9,15754,5.0,24701,No,Premium slightly higher but offers strong coverage benefits.
+Niva Bupa Health Insurance,Niva Elite 1724,Individual,56809,6222.83,750000,3,96.8,12542,4.6,23552,No,Affordable plan with decent claim settlement ratio.
+National Insurance Company,National Premium 1725,Individual,32873,1314.17,2000000,2,89.6,4622,3.6,24740,No,Affordable plan with decent claim settlement ratio.
+National Insurance Company,National Elite 1726,Individual,43721,2077.25,500000,3,93.8,16017,4.9,18553,Yes,Affordable plan with decent claim settlement ratio.
+Tata AIG General Insurance,Tata Advantage 1727,Family,32600,3184.92,1500000,0,99.1,5847,3.8,3386,Yes,Affordable plan with decent claim settlement ratio.
+HDFC ERGO General Insurance,HDFC Premium 1728,Family,43684,3525.58,300000,0,84.0,4062,3.7,4074,Yes,Premium slightly higher but offers strong coverage benefits.
+HDFC ERGO General Insurance,HDFC Basic 1729,Family,53095,6109.17,2000000,3,87.2,7733,4.2,17961,No,Quick claim approval and responsive customer support.
+Aditya Birla Health Insurance,Aditya Advantage 1730,Family,24382,1284.83,300000,2,87.0,12800,3.8,19282,Yes,Premium slightly higher but offers strong coverage benefits.
+National Insurance Company,National Plus 1731,Individual,82461,3198.33,500000,2,99.2,9725,4.4,5842,No,Smooth cashless claim process and good hospital network.
+Care Health Insurance,Care Plus 1732,Family,86796,2431.5,500000,1,87.7,15149,4.7,1736,Yes,Comprehensive coverage with wellness rewards included.
+Aditya Birla Health Insurance,Aditya Max 1733,Family,11680,5507.5,2000000,0,82.3,17985,4.0,9504,Yes,Quick claim approval and responsive customer support.
+HDFC ERGO General Insurance,HDFC Basic 1734,Senior,35699,6223.17,500000,1,93.6,7641,5.0,2303,Yes,Affordable plan with decent claim settlement ratio.
+SBI General Insurance,SBI Max 1735,Family,39763,1657.83,300000,1,93.5,4803,4.5,12378,Yes,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Secure 1736,Family,86530,2938.0,300000,1,87.4,16530,4.9,11636,Yes,Comprehensive coverage with wellness rewards included.
+Reliance General Insurance,Reliance Max 1737,Senior,11027,2796.83,1000000,3,94.0,16734,4.4,17237,Yes,Comprehensive coverage with wellness rewards included.
+Star Health and Allied Insurance,Star Max 1738,Individual,15996,3793.5,300000,0,93.0,17611,3.9,9371,No,Premium slightly higher but offers strong coverage benefits.
+SBI General Insurance,SBI Max 1739,Family,55779,4666.92,1500000,3,85.4,7443,4.8,18645,No,Comprehensive coverage with wellness rewards included.
+Bajaj Allianz General Insurance,Bajaj Secure 1740,Senior,49352,1081.08,1500000,3,95.3,6457,3.7,3951,Yes,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,HDFC Max 1741,Senior,75130,3105.42,300000,0,90.8,11960,4.7,23269,Yes,Affordable plan with decent claim settlement ratio.
+ManipalCigna Health Insurance,ManipalCigna Premium 1742,Family,22655,2433.25,500000,1,91.3,16675,4.9,3830,No,Comprehensive coverage with wellness rewards included.
+HDFC ERGO General Insurance,HDFC Smart 1743,Senior,81688,4290.83,750000,0,87.4,8652,4.0,17122,No,Quick claim approval and responsive customer support.
+Bajaj Allianz General Insurance,Bajaj Smart 1744,Family,81582,7230.67,2000000,2,95.6,11025,4.4,23931,No,Smooth cashless claim process and good hospital network.
+Star Health and Allied Insurance,Star Premium 1745,Family,41325,1105.58,2000000,1,98.1,17032,3.7,15039,Yes,Affordable plan with decent claim settlement ratio.
+HDFC ERGO General Insurance,HDFC Max 1746,Family,67438,2731.75,750000,1,97.8,15788,4.5,19128,No,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,ManipalCigna Premium 1747,Family,71448,4101.92,500000,2,85.0,4713,3.7,21232,No,Affordable plan with decent claim settlement ratio.
+National Insurance Company,National Secure 1748,Senior,65431,4854.25,2000000,0,94.2,11419,3.8,14114,No,Smooth cashless claim process and good hospital network.
+Star Health and Allied Insurance,Star Premium 1749,Family,44387,3752.08,300000,0,94.3,11199,4.3,15313,No,Premium slightly higher but offers strong coverage benefits.
+Tata AIG General Insurance,Tata Max 1750,Family,84994,1122.83,750000,0,86.7,17910,4.9,12444,Yes,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Oriental Max 1751,Individual,45710,1750.25,2000000,0,91.7,16594,4.1,24558,No,Premium slightly higher but offers strong coverage benefits.
+ManipalCigna Health Insurance,ManipalCigna Elite 1752,Individual,74107,3043.08,500000,0,91.6,15778,3.7,12267,No,Quick claim approval and responsive customer support.
+Oriental Insurance Company,Oriental Plus 1753,Family,44905,5738.25,500000,2,96.1,10097,4.5,14076,Yes,Premium slightly higher but offers strong coverage benefits.
+Care Health Insurance,Care Smart 1754,Individual,75279,5802.0,1500000,0,85.0,6608,4.6,23398,No,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Elite 1755,Senior,31320,1233.42,1500000,2,96.3,5317,4.7,1499,No,Affordable plan with decent claim settlement ratio.
+Tata AIG General Insurance,Tata Advantage 1756,Individual,34560,2697.17,750000,0,83.6,10307,4.4,1546,Yes,Affordable plan with decent claim settlement ratio.
+HDFC ERGO General Insurance,HDFC Secure 1757,Individual,55483,4592.0,300000,1,89.5,10131,4.5,13215,No,Affordable plan with decent claim settlement ratio.
+SBI General Insurance,SBI Max 1758,Senior,45363,3049.92,1000000,3,88.9,13819,4.5,17453,No,Quick claim approval and responsive customer support.
+SBI General Insurance,SBI Secure 1759,Individual,63816,7037.58,1500000,3,90.1,10926,4.2,14237,No,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,ManipalCigna Basic 1760,Individual,59410,1041.67,2000000,2,83.3,14106,4.2,15200,Yes,Great value with lock-the-clock feature.
+HDFC ERGO General Insurance,HDFC Plus 1761,Senior,64698,1866.67,5000000,0,96.6,16396,4.9,18400,Yes,Comprehensive plan with safeguard benefits.
+National Insurance Company,National Elite 1762,Senior,86735,3208.33,2000000,1,83.3,12277,4.1,12100,Yes,Excellent floater with high sum insured options.
+Aditya Birla Health Insurance,Aditya Basic 1763,Senior,10626,4016.67,2000000,2,94.6,13043,3.8,9500,No,Reliable support for senior citizens.
+Niva Bupa Health Insurance,Niva Secure 1764,Individual,29569,1541.67,750000,1,86.8,7363,4.0,24500,Yes,Secure benefit doubles cover from day one.
+Reliance General Insurance,Reliance Advantage 1765,Senior,72666,2483.33,2000000,0,88.1,11763,5.0,21200,No,Classic restoration benefit is very helpful.
+ManipalCigna Health Insurance,ManipalCigna Advantage 1766,Family,22409,1183.33,2000000,2,90.7,7398,4.9,15800,Yes,Balanced features for everyday health.
+Tata AIG General Insurance,Tata Secure 1767,Individual,46844,4633.33,1000000,1,93.1,16553,4.1,8900,Yes,Top-tier protection for elderly parents.
+HDFC ERGO General Insurance,HDFC Secure 1768,Individual,70970,983.33,500000,2,85.8,7909,4.3,14200,Yes,Up to 7x coverage increase is amazing.
+Tata AIG General Insurance,Tata Max 1769,Senior,38988,3500.0,2000000,1,98.6,4024,4.2,11000,No,Huge sum insured for full family security.
+HDFC ERGO General Insurance,HDFC Basic 1770,Individual,12068,2708.33,2000000,1,89.8,9397,4.9,7400,No,Focused care for senior medical needs.
+Care Health Insurance,Care Smart 1771,Senior,75785,791.67,5000000,3,86.2,13062,4.6,5600,No,Budget friendly basic health insurance.
+Care Health Insurance,Care Plus 1772,Individual,49120,1791.67,300000,0,94.7,13576,4.0,22100,Yes,Infinite restoration and high-tech claims.
+SBI General Insurance,SBI Plus 1773,Family,39220,2583.33,300000,1,87.7,11405,4.0,19500,No,Solid network and fast cashless approval.
+Niva Bupa Health Insurance,Niva Premium 1774,Family,54529,4916.67,1500000,2,99.1,8571,4.5,10200,Yes,Comprehensive coverage for elderly care.
+Reliance General Insurance,Reliance Elite 1775,Family,14919,683.33,1000000,4,98.5,5619,4.3,4800,No,Essential accident and health support.
+HDFC ERGO General Insurance,HDFC Advantage 1776,Senior,50511,1400.0,5000000,1,88.8,13979,4.1,19800,Yes,Modern features like home care treatment.
+ManipalCigna Health Insurance,ManipalCigna Elite 1777,Senior,54399,1041.67,300000,0,97.7,16252,4.4,14300,Yes,Best for youth starting early with health.
+Aditya Birla Health Insurance,Aditya Plus 1778,Family,60162,2966.67,750000,2,82.3,14983,4.2,17500,Yes,Includes maternity and OPD benefits.
+Star Health and Allied Insurance,Star Advantage 1779,Senior,10834,933.33,500000,3,91.3,7112,3.9,9200,No,Traditional and trusted health plan.
+Bajaj Allianz General Insurance,Bajaj Advantage 1780,Family,41314,1100.0,750000,1,95.5,15731,4.5,16200,Yes,Earn back premium via health returns.
+Tata AIG General Insurance,Tata Elite 1781,Family,66771,708.33,5000000,2,91.0,7337,3.5,12500,Yes,Tailored for active and fit individuals.
+ManipalCigna Health Insurance,ManipalCigna Secure 1782,Individual,31513,3500.0,5000000,2,99.0,13503,3.6,8300,Yes,Includes dedicated health coach for seniors.
+Aditya Birla Health Insurance,Aditya Plus 1783,Individual,87311,7916.67,2000000,1,96.2,7178,3.9,5400,No,Coverage for international treatments.
+ICICI Lombard General Insurance,ICICI Advantage 1784,Family,66894,1875.0,1500000,1,90.5,7442,3.9,13800,Yes,World-class features and high restoration.
+Aditya Birla Health Insurance,Aditya Advantage 1785,Individual,26470,816.67,500000,2,89.7,15173,4.7,8900,No,Simplified and affordable protection.
+Reliance General Insurance,Reliance Smart 1786,Individual,14942,4250.0,5000000,2,87.8,17356,4.8,6200,Yes,Comprehensive support for elderly needs.
+Star Health and Allied Insurance,Star Smart 1787,Individual,11520,2375.0,750000,1,86.8,10985,3.5,11200,No,Smooth claim settlement for families.
+ManipalCigna Health Insurance,ManipalCigna Premium 1788,Senior,60499,1300.0,500000,2,89.4,17895,4.4,14500,Yes,Covers day care and organ donor expenses.
+ICICI Lombard General Insurance,ICICI Premium 1789,Individual,30715,6250.0,300000,1,95.5,14838,4.2,3100,No,Premium global treatment coverage.
+Niva Bupa Health Insurance,Niva Plus 1790,Family,25286,2458.33,2000000,1,98.5,14169,4.7,7800,No,Specific senior plan with low waiting.
+SBI General Insurance,SBI Max 1791,Family,63932,1516.67,2000000,2,94.8,16576,4.5,9200,No,Focus on OPD and tax saving benefits.
+National Insurance Company,National Smart 1792,Family,81805,1150.0,2000000,1,86.2,8975,3.8,11200,Yes,Infinite restoration of sum insured.
+SBI General Insurance,SBI Plus 1793,Family,13884,766.67,300000,2,95.3,7919,4.4,8500,No,Basic and easy to understand plan.
+Star Health and Allied Insurance,Star Max 1794,Individual,65561,3166.67,1500000,2,89.6,15252,4.1,5600,No,Affordable senior citizen medical cover.
+ICICI Lombard General Insurance,ICICI Basic 1795,Family,80402,2116.67,1000000,1,97.9,16854,4.2,7900,No,Flexible family floater for small families.
+Niva Bupa Health Insurance,Niva Elite 1796,Senior,81178,1208.33,2000000,2,91.3,15386,3.9,12400,Yes,Flexible modular health insurance policy.
+National Insurance Company,National Secure 1797,Family,51526,708.33,2000000,4,92.0,17126,4.7,21000,No,Standard IRDAI mandated health product.
+Star Health and Allied Insurance,Star Elite 1798,Family,86902,1600.0,750000,1,91.6,5353,4.7,9800,Yes,High-end protection for the mass market.
+Bajaj Allianz General Insurance,Bajaj Elite 1799,Family,77387,3666.67,500000,1,88.7,11575,4.6,6700,No,Simple coverage with minimal paperwork.
+Tata AIG General Insurance,Tata Plus 1800,Senior,70223,1632.08,5000000,2,91.7,16029,5.0,1952,No,Affordable plan with decent claim settlement ratio.
+Tata AIG General Insurance,Tata Max 1801,Family,81568,3217.5,2000000,0,86.2,4531,4.5,20854,No,Premium slightly higher but offers strong coverage benefits.
+Oriental Insurance Company,Oriental Basic 1802,Senior,9865,2894.5,1500000,3,97.2,10077,3.8,8573,No,Smooth cashless claim process and good hospital network.
+Star Health and Allied Insurance,Star Plus 1803,Family,78970,3021.17,500000,1,83.2,6441,4.1,21117,No,Premium slightly higher but offers strong coverage benefits.
+Oriental Insurance Company,Oriental Smart 1804,Individual,28347,4987.17,500000,1,92.5,6457,4.7,11986,Yes,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Oriental Smart 1805,Family,62962,1443.67,1000000,1,97.8,12901,4.5,2891,Yes,Affordable plan with decent claim settlement ratio.
+Niva Bupa Health Insurance,Niva Plus 1806,Family,61626,2094.25,500000,1,99.3,7953,4.2,7643,Yes,Premium slightly higher but offers strong coverage benefits.
+Aditya Birla Health Insurance,Aditya Premium 1807,Family,58165,2290.0,1000000,0,86.5,9861,4.4,24124,Yes,Affordable plan with decent claim settlement ratio.
+Care Health Insurance,Care Basic 1808,Senior,49575,4638.42,2000000,1,84.4,8204,4.6,6371,No,Premium slightly higher but offers strong coverage benefits.
+SBI General Insurance,SBI Secure 1809,Individual,13731,7247.83,1500000,1,87.8,12077,3.6,11899,No,Quick claim approval and responsive customer support.
+ICICI Lombard General Insurance,ICICI Plus 1810,Senior,82101,1043.92,500000,3,82.4,15407,4.0,7395,No,Premium slightly higher but offers strong coverage benefits.
+Niva Bupa Health Insurance,Niva Max 1811,Individual,17497,2764.67,2000000,0,83.4,13926,4.3,1056,Yes,Smooth cashless claim process and good hospital network.
+ICICI Lombard General Insurance,ICICI Basic 1812,Individual,12806,2174.25,750000,0,84.8,16197,3.8,15200,Yes,Quick claim approval and responsive customer support.
+Bajaj Allianz General Insurance,Bajaj Basic 1813,Individual,48322,6445.25,500000,3,86.1,14381,4.3,23564,Yes,Comprehensive coverage with wellness rewards included.
+Care Health Insurance,Care Premium 1814,Family,43109,7701.83,2000000,2,91.5,7061,4.7,8443,No,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Niva Premium 1815,Individual,33866,1152.92,1000000,2,88.0,9118,4.0,10214,No,Premium slightly higher but offers strong coverage benefits.
+Reliance General Insurance,Reliance Secure 1816,Senior,78101,3304.17,2000000,3,97.7,17706,3.5,16893,No,Quick claim approval and responsive customer support.
+SBI General Insurance,SBI Smart 1817,Senior,37995,4143.75,2000000,0,91.3,13322,3.8,11522,No,Affordable plan with decent claim settlement ratio.
+Bajaj Allianz General Insurance,Bajaj Smart 1818,Individual,53768,5460.25,5000000,1,86.6,13844,4.7,19485,No,Quick claim approval and responsive customer support.
+Care Health Insurance,Care Plus 1819,Family,20487,5340.0,2000000,2,86.3,4476,4.7,15825,Yes,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Niva Basic 1820,Family,23223,1588.58,750000,0,82.8,13564,4.5,23173,Yes,Smooth cashless claim process and good hospital network.
+Care Health Insurance,Care Basic 1821,Family,56117,2211.33,1000000,0,99.3,12172,4.4,23881,No,Smooth cashless claim process and good hospital network.
+Star Health and Allied Insurance,Star Plus 1822,Individual,44134,4979.58,300000,1,88.7,11073,4.6,8367,Yes,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Tata Advantage 1823,Individual,59298,2932.17,300000,2,84.6,11022,3.9,24701,No,Premium slightly higher but offers strong coverage benefits.
+Reliance General Insurance,Reliance Max 1824,Senior,28039,6222.83,2000000,3,89.4,10260,4.1,23552,No,Affordable plan with decent claim settlement ratio.
+ICICI Lombard General Insurance,ICICI Secure 1825,Individual,27449,1314.17,1500000,2,92.9,7907,4.1,24740,No,Affordable plan with decent claim settlement ratio.
+ICICI Lombard General Insurance,ICICI Secure 1826,Family,10686,2077.25,5000000,3,83.8,6630,3.7,18553,Yes,Affordable plan with decent claim settlement ratio.
+Care Health Insurance,Care Secure 1827,Family,64137,3184.92,500000,0,97.2,12149,4.3,3386,Yes,Affordable plan with decent claim settlement ratio.
+Oriental Insurance Company,Oriental Advantage 1828,Senior,49923,3525.58,300000,0,93.1,6577,4.6,4074,Yes,Premium slightly higher but offers strong coverage benefits.
+ManipalCigna Health Insurance,ManipalCigna Smart 1829,Senior,71753,6109.17,5000000,3,93.9,16430,5.0,17961,No,Quick claim approval and responsive customer support.
+Aditya Birla Health Insurance,Aditya Premium 1830,Individual,76267,1284.83,750000,2,88.7,6335,4.8,19282,Yes,Premium slightly higher but offers strong coverage benefits.
+Aditya Birla Health Insurance,Aditya Smart 1831,Family,18624,3198.33,2000000,2,95.4,4311,4.1,5842,No,Smooth cashless claim process and good hospital network.
+ICICI Lombard General Insurance,ICICI Premium 1832,Individual,13732,2431.5,2000000,1,94.2,4459,4.7,1736,Yes,Comprehensive coverage with wellness rewards included.
+Reliance General Insurance,Reliance Premium 1833,Family,19056,5507.5,5000000,0,95.4,5225,5.0,9504,Yes,Quick claim approval and responsive customer support.
+HDFC ERGO General Insurance,HDFC Smart 1834,Family,64861,6223.17,300000,1,93.8,7176,4.5,2303,Yes,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Aditya Elite 1835,Family,36019,1657.83,300000,1,92.3,7685,3.7,12378,Yes,Smooth cashless claim process and good hospital network.
+Niva Bupa Health Insurance,Niva Elite 1836,Individual,81010,2938.0,300000,1,87.9,7070,4.0,11636,Yes,Comprehensive coverage with wellness rewards included.
+Niva Bupa Health Insurance,Niva Smart 1837,Senior,84604,2796.83,2000000,3,82.6,15099,3.8,17237,Yes,Comprehensive coverage with wellness rewards included.
+Bajaj Allianz General Insurance,Bajaj Premium 1838,Individual,46513,3793.5,2000000,0,99.4,13623,4.8,9371,No,Premium slightly higher but offers strong coverage benefits.
+Reliance General Insurance,Reliance Plus 1839,Family,53208,4666.92,500000,3,87.5,17404,3.6,18645,No,Comprehensive coverage with wellness rewards included.
+Oriental Insurance Company,Oriental Secure 1840,Individual,35259,1081.08,1000000,3,94.5,5124,4.4,3951,Yes,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Plus 1841,Senior,23622,3105.42,5000000,0,85.5,4496,4.8,23269,Yes,Affordable plan with decent claim settlement ratio.
+Bajaj Allianz General Insurance,Bajaj Max 1842,Individual,31044,2433.25,2000000,1,90.2,15440,3.8,3830,No,Comprehensive coverage with wellness rewards included.
+Star Health and Allied Insurance,Star Basic 1843,Individual,54072,4290.83,5000000,0,97.7,7902,4.1,17122,No,Quick claim approval and responsive customer support.
+HDFC ERGO General Insurance,HDFC Plus 1844,Individual,40878,7230.67,2000000,2,88.0,15075,4.0,23931,No,Smooth cashless claim process and good hospital network.
+Tata AIG General Insurance,Tata Elite 1845,Family,57228,1105.58,750000,1,96.9,13516,3.6,15039,Yes,Affordable plan with decent claim settlement ratio.
+ManipalCigna Health Insurance,ManipalCigna Advantage 1846,Senior,75953,2731.75,5000000,1,90.8,11864,4.3,19128,No,Smooth cashless claim process and good hospital network.
+Reliance General Insurance,Reliance Secure 1847,Individual,65796,4101.92,5000000,2,82.0,6643,3.9,21232,No,Affordable plan with decent claim settlement ratio.
+Oriental Insurance Company,Oriental Premium 1848,Family,10983,4854.25,1000000,0,99.0,9427,3.8,14114,No,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,HDFC Elite 1849,Family,54350,3752.08,1500000,0,85.2,17700,4.9,15313,No,Premium slightly higher but offers strong coverage benefits.
+Tata AIG General Insurance,Tata Plus 1850,Senior,26090,1122.83,5000000,0,99.4,13964,4.5,12444,Yes,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Advantage 1851,Individual,81023,1750.25,300000,0,83.1,15051,3.7,24558,No,Premium slightly higher but offers strong coverage benefits.
+Care Health Insurance,Care Secure 1852,Senior,8294,3043.08,2000000,0,88.7,13139,4.2,12267,No,Quick claim approval and responsive customer support.
+ICICI Lombard General Insurance,ICICI Basic 1853,Individual,10476,5738.25,2000000,2,88.7,12981,4.0,14076,Yes,Premium slightly higher but offers strong coverage benefits.
+Tata AIG General Insurance,Tata Elite 1854,Individual,44811,5802.0,5000000,0,89.0,12031,4.3,23398,No,Smooth cashless claim process and good hospital network.
+Reliance General Insurance,Reliance Max 1855,Senior,22401,1233.42,750000,2,84.0,7484,3.6,1499,No,Affordable plan with decent claim settlement ratio.
+Niva Bupa Health Insurance,Niva Max 1856,Family,84535,2697.17,5000000,0,97.5,5733,4.9,1546,Yes,Affordable plan with decent claim settlement ratio.
+Star Health and Allied Insurance,Star Basic 1857,Senior,88879,4592.0,2000000,1,94.9,10924,4.0,13215,No,Affordable plan with decent claim settlement ratio.
+ICICI Lombard General Insurance,ICICI Secure 1858,Senior,76874,3049.92,300000,3,84.7,13621,5.0,17453,No,Quick claim approval and responsive customer support.
+HDFC ERGO General Insurance,HDFC Smart 1859,Individual,66975,7037.58,5000000,3,84.2,16020,4.8,14237,No,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,HDFC Basic 1860,Senior,52025,1041.67,300000,2,88.2,15917,3.9,15200,Yes,Great value with lock-the-clock feature.
+Oriental Insurance Company,Oriental Elite 1861,Individual,19809,1866.67,300000,0,97.0,14466,3.7,18400,Yes,Comprehensive plan with safeguard benefits.
+Reliance General Insurance,Reliance Basic 1862,Individual,10893,3208.33,2000000,1,92.8,12953,4.6,12100,Yes,Excellent floater with high sum insured options.
+SBI General Insurance,SBI Basic 1863,Family,43001,4016.67,1500000,2,88.8,4123,4.6,9500,No,Reliable support for senior citizens.
+Tata AIG General Insurance,Tata Basic 1864,Senior,9690,1541.67,2000000,1,90.4,5320,4.3,24500,Yes,Secure benefit doubles cover from day one.
+Aditya Birla Health Insurance,Aditya Secure 1865,Family,53949,2483.33,300000,0,91.6,8105,4.8,21200,No,Classic restoration benefit is very helpful.
+Aditya Birla Health Insurance,Aditya Basic 1866,Senior,19397,1183.33,5000000,2,85.9,15609,4.7,15800,Yes,Balanced features for everyday health.
+SBI General Insurance,SBI Plus 1867,Family,32819,4633.33,5000000,1,91.7,11500,3.6,8900,Yes,Top-tier protection for elderly parents.
+Star Health and Allied Insurance,Star Advantage 1868,Family,64692,983.33,1000000,2,84.4,13671,4.1,14200,Yes,Up to 7x coverage increase is amazing.
+Bajaj Allianz General Insurance,Bajaj Basic 1869,Senior,22832,3500.0,500000,1,96.7,16356,4.0,11000,No,Huge sum insured for full family security.
+Oriental Insurance Company,Oriental Plus 1870,Senior,66907,2708.33,750000,1,85.6,17048,4.0,7400,No,Focused care for senior medical needs.
+Oriental Insurance Company,Oriental Plus 1871,Individual,36464,791.67,1500000,3,82.3,13119,4.4,5600,No,Budget friendly basic health insurance.
+Reliance General Insurance,Reliance Advantage 1872,Senior,85259,1791.67,300000,0,97.8,17485,3.5,22100,Yes,Infinite restoration and high-tech claims.
+Reliance General Insurance,Reliance Advantage 1873,Family,51344,2583.33,1500000,1,96.9,8665,3.6,19500,No,Solid network and fast cashless approval.
+Star Health and Allied Insurance,Star Max 1874,Individual,70961,4916.67,5000000,2,87.2,13076,4.7,10200,Yes,Comprehensive coverage for elderly care.
+ICICI Lombard General Insurance,ICICI Elite 1875,Senior,8607,683.33,5000000,4,94.0,11739,3.8,4800,No,Essential accident and health support.
+ManipalCigna Health Insurance,ManipalCigna Basic 1876,Family,72441,1400.0,2000000,1,85.1,14062,3.8,19800,Yes,Modern features like home care treatment.
+HDFC ERGO General Insurance,HDFC Basic 1877,Senior,71301,1041.67,2000000,0,84.0,6041,4.1,14300,Yes,Best for youth starting early with health.
+Care Health Insurance,Care Elite 1878,Family,58386,2966.67,1000000,2,84.6,14478,4.6,17500,Yes,Includes maternity and OPD benefits.
+Niva Bupa Health Insurance,Niva Advantage 1879,Senior,34941,933.33,750000,3,82.8,6228,4.7,9200,No,Traditional and trusted health plan.
+Aditya Birla Health Insurance,Aditya Plus 1880,Family,86272,1100.0,1500000,1,83.3,9731,4.4,16200,Yes,Earn back premium via health returns.
+Star Health and Allied Insurance,Star Basic 1881,Family,68515,708.33,1000000,2,98.5,6418,4.4,12500,Yes,Tailored for active and fit individuals.
+Bajaj Allianz General Insurance,Bajaj Plus 1882,Individual,88278,3500.0,500000,2,83.1,15336,3.9,8300,Yes,Includes dedicated health coach for seniors.
+Niva Bupa Health Insurance,Niva Advantage 1883,Individual,34172,7916.67,500000,1,90.6,9370,3.9,5400,No,Coverage for international treatments.
+Care Health Insurance,Care Premium 1884,Family,33469,1875.0,2000000,1,85.3,13106,4.6,13800,Yes,World-class features and high restoration.
+Care Health Insurance,Care Advantage 1885,Individual,8733,816.67,500000,2,89.2,6518,4.5,8900,No,Simplified and affordable protection.
+SBI General Insurance,SBI Elite 1886,Individual,71146,4250.0,750000,2,82.1,15459,4.8,6200,Yes,Comprehensive support for elderly needs.
+HDFC ERGO General Insurance,HDFC Advantage 1887,Individual,53709,2375.0,500000,1,83.1,17168,4.8,11200,No,Smooth claim settlement for families.
+National Insurance Company,National Elite 1888,Family,54899,1300.0,500000,2,86.5,4923,4.4,14500,Yes,Covers day care and organ donor expenses.
+HDFC ERGO General Insurance,HDFC Smart 1889,Individual,55284,6250.0,750000,1,95.6,14883,4.0,3100,No,Premium global treatment coverage.
+Care Health Insurance,Care Advantage 1890,Senior,55244,2458.33,1500000,1,90.5,9552,4.4,7800,No,Specific senior plan with low waiting.
+Bajaj Allianz General Insurance,Bajaj Secure 1891,Individual,80680,1516.67,500000,2,96.2,5578,4.1,9200,No,Focus on OPD and tax saving benefits.
+Niva Bupa Health Insurance,Niva Secure 1892,Individual,25935,1150.0,300000,1,94.6,7498,3.9,11200,Yes,Infinite restoration of sum insured.
+Care Health Insurance,Care Smart 1893,Senior,75016,766.67,300000,2,97.2,15830,4.2,8500,No,Basic and easy to understand plan.
+Aditya Birla Health Insurance,Aditya Premium 1894,Senior,70455,3166.67,750000,2,84.6,8049,5.0,5600,No,Affordable senior citizen medical cover.
+Reliance General Insurance,Reliance Advantage 1895,Individual,59444,2116.67,1000000,1,97.9,7975,4.1,7900,No,Flexible family floater for small families.
+Reliance General Insurance,Reliance Secure 1896,Individual,60284,1208.33,5000000,2,92.2,10064,3.7,12400,Yes,Flexible modular health insurance policy.
+ICICI Lombard General Insurance,ICICI Elite 1897,Individual,67581,708.33,2000000,4,93.7,14344,4.9,21000,No,Standard IRDAI mandated health product.
+Reliance General Insurance,Reliance Plus 1898,Individual,33094,1600.0,500000,1,88.3,11975,4.0,9800,Yes,High-end protection for the mass market.
+ManipalCigna Health Insurance,ManipalCigna Elite 1899,Family,79641,3666.67,1000000,1,90.1,17628,3.5,6700,No,Simple coverage with minimal paperwork.
+Bajaj Allianz General Insurance,Bajaj Premium 1900,Family,56177,1632.08,500000,2,90.0,6043,3.7,1952,No,Affordable plan with decent claim settlement ratio.
+SBI General Insurance,SBI Basic 1901,Family,75436,3217.5,500000,0,84.5,15288,4.3,20854,No,Premium slightly higher but offers strong coverage benefits.
+National Insurance Company,National Elite 1902,Senior,56756,2894.5,2000000,3,89.2,9639,4.5,8573,No,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,HDFC Premium 1903,Family,49913,3021.17,750000,1,84.9,6710,4.0,21117,No,Premium slightly higher but offers strong coverage benefits.
+National Insurance Company,National Secure 1904,Senior,26633,4987.17,500000,1,84.5,5489,4.0,11986,Yes,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Oriental Max 1905,Family,31892,1443.67,500000,1,95.0,10550,3.8,2891,Yes,Affordable plan with decent claim settlement ratio.
+HDFC ERGO General Insurance,HDFC Max 1906,Senior,51489,2094.25,500000,1,98.1,16370,3.7,7643,Yes,Premium slightly higher but offers strong coverage benefits.
+Reliance General Insurance,Reliance Max 1907,Family,32090,2290.0,1500000,0,97.5,9682,4.8,24124,Yes,Affordable plan with decent claim settlement ratio.
+Bajaj Allianz General Insurance,Bajaj Max 1908,Family,77508,4638.42,750000,1,92.8,16607,4.0,6371,No,Premium slightly higher but offers strong coverage benefits.
+Tata AIG General Insurance,Tata Premium 1909,Senior,47728,7247.83,2000000,1,95.7,7800,4.7,11899,No,Quick claim approval and responsive customer support.
+Oriental Insurance Company,Oriental Max 1910,Family,20761,1043.92,750000,3,88.3,8688,4.8,7395,No,Premium slightly higher but offers strong coverage benefits.
+Tata AIG General Insurance,Tata Premium 1911,Family,45876,2764.67,1500000,0,88.1,14563,3.8,1056,Yes,Smooth cashless claim process and good hospital network.
+SBI General Insurance,SBI Max 1912,Senior,49129,2174.25,5000000,0,98.7,17125,4.0,15200,Yes,Quick claim approval and responsive customer support.
+Star Health and Allied Insurance,Star Plus 1913,Senior,39859,6445.25,2000000,3,97.5,15323,4.2,23564,Yes,Comprehensive coverage with wellness rewards included.
+Aditya Birla Health Insurance,Aditya Max 1914,Senior,24606,7701.83,300000,2,86.4,8544,4.0,8443,No,Smooth cashless claim process and good hospital network.
+ManipalCigna Health Insurance,ManipalCigna Max 1915,Family,79392,1152.92,500000,2,90.9,7851,4.9,10214,No,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Star Max 1916,Individual,62541,3304.17,5000000,3,90.6,9466,3.6,16893,No,Quick claim approval and responsive customer support.
+Tata AIG General Insurance,Tata Premium 1917,Family,41484,4143.75,300000,0,89.5,11776,3.5,11522,No,Affordable plan with decent claim settlement ratio.
+Aditya Birla Health Insurance,Aditya Elite 1918,Family,13802,5460.25,750000,1,82.3,12087,3.6,19485,No,Quick claim approval and responsive customer support.
+Star Health and Allied Insurance,Star Plus 1919,Senior,19506,5340.0,300000,2,85.8,17002,4.8,15825,Yes,Smooth cashless claim process and good hospital network.
+Oriental Insurance Company,Oriental Basic 1920,Senior,80910,1588.58,500000,0,87.9,13349,4.4,23173,Yes,Smooth cashless claim process and good hospital network.
+Bajaj Allianz General Insurance,Bajaj Basic 1921,Individual,87310,2211.33,300000,0,95.0,7280,3.8,23881,No,Smooth cashless claim process and good hospital network.
+Tata AIG General Insurance,Tata Secure 1922,Senior,15073,4979.58,1000000,1,92.7,4046,4.2,8367,Yes,Quick claim approval and responsive customer support.
+HDFC ERGO General Insurance,HDFC Advantage 1923,Senior,24427,2932.17,1000000,2,89.9,15565,4.2,24701,No,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Star Smart 1924,Family,67978,6222.83,5000000,3,88.8,5556,4.0,23552,No,Affordable plan with decent claim settlement ratio.
+National Insurance Company,National Basic 1925,Individual,81688,1314.17,1000000,2,91.2,13836,4.4,24740,No,Affordable plan with decent claim settlement ratio.
+Tata AIG General Insurance,Tata Elite 1926,Senior,18643,2077.25,5000000,3,98.4,5893,4.6,18553,Yes,Affordable plan with decent claim settlement ratio.
+Care Health Insurance,Care Premium 1927,Family,77255,3184.92,1500000,0,82.4,5521,3.8,3386,Yes,Affordable plan with decent claim settlement ratio.
+Star Health and Allied Insurance,Star Elite 1928,Individual,45042,3525.58,1500000,0,94.5,14917,4.6,4074,Yes,Premium slightly higher but offers strong coverage benefits.
+Star Health and Allied Insurance,Star Plus 1929,Family,85360,6109.17,5000000,3,88.7,5262,4.0,17961,No,Quick claim approval and responsive customer support.
+SBI General Insurance,SBI Secure 1930,Senior,32065,1284.83,1000000,2,91.7,7092,3.5,19282,Yes,Premium slightly higher but offers strong coverage benefits.
+Bajaj Allianz General Insurance,Bajaj Max 1931,Senior,17580,3198.33,5000000,2,95.2,7167,4.9,5842,No,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,HDFC Basic 1932,Family,22429,2431.5,500000,1,88.3,6121,3.9,1736,Yes,Comprehensive coverage with wellness rewards included.
+Care Health Insurance,Care Premium 1933,Individual,29637,5507.5,1500000,0,82.2,12573,4.8,9504,Yes,Quick claim approval and responsive customer support.
+HDFC ERGO General Insurance,HDFC Advantage 1934,Senior,85443,6223.17,1000000,1,85.2,9084,3.6,2303,Yes,Affordable plan with decent claim settlement ratio.
+ManipalCigna Health Insurance,ManipalCigna Plus 1935,Senior,18251,1657.83,1500000,1,95.9,15652,3.7,12378,Yes,Smooth cashless claim process and good hospital network.
+Aditya Birla Health Insurance,Aditya Advantage 1936,Senior,67363,2938.0,300000,1,83.5,12550,4.4,11636,Yes,Comprehensive coverage with wellness rewards included.
+Bajaj Allianz General Insurance,Bajaj Basic 1937,Family,65070,2796.83,750000,3,98.4,15041,4.9,17237,Yes,Comprehensive coverage with wellness rewards included.
+Reliance General Insurance,Reliance Max 1938,Individual,61655,3793.5,1000000,0,88.0,13223,3.7,9371,No,Premium slightly higher but offers strong coverage benefits.
+Niva Bupa Health Insurance,Niva Max 1939,Family,68670,4666.92,500000,3,83.6,16776,4.9,18645,No,Comprehensive coverage with wellness rewards included.
+Tata AIG General Insurance,Tata Max 1940,Senior,30531,1081.08,2000000,3,82.5,11289,4.1,3951,Yes,Smooth cashless claim process and good hospital network.
+Tata AIG General Insurance,Tata Smart 1941,Senior,71889,3105.42,5000000,0,90.2,6192,3.7,23269,Yes,Affordable plan with decent claim settlement ratio.
+ManipalCigna Health Insurance,ManipalCigna Elite 1942,Individual,63450,2433.25,5000000,1,85.5,13053,4.9,3830,No,Comprehensive coverage with wellness rewards included.
+Oriental Insurance Company,Oriental Secure 1943,Senior,17187,4290.83,2000000,0,84.4,10357,4.6,17122,No,Quick claim approval and responsive customer support.
+Care Health Insurance,Care Premium 1944,Senior,60933,7230.67,1000000,2,96.9,6657,4.1,23931,No,Smooth cashless claim process and good hospital network.
+National Insurance Company,National Smart 1945,Family,52860,1105.58,500000,1,88.8,13003,4.8,15039,Yes,Affordable plan with decent claim settlement ratio.
+Star Health and Allied Insurance,Star Secure 1946,Individual,75962,2731.75,750000,1,86.3,10245,3.5,19128,No,Smooth cashless claim process and good hospital network.
+ICICI Lombard General Insurance,ICICI Advantage 1947,Family,78916,4101.92,1000000,2,82.5,15980,3.7,21232,No,Affordable plan with decent claim settlement ratio.
+ICICI Lombard General Insurance,ICICI Elite 1948,Senior,71489,4854.25,300000,0,84.6,12541,4.1,14114,No,Smooth cashless claim process and good hospital network.
+Tata AIG General Insurance,Tata Basic 1949,Individual,66605,3752.08,1500000,0,85.2,9813,3.8,15313,No,Premium slightly higher but offers strong coverage benefits.
+National Insurance Company,National Max 1950,Senior,46653,1122.83,1500000,0,93.2,11805,4.6,12444,Yes,Smooth cashless claim process and good hospital network.
+Care Health Insurance,Care Secure 1951,Family,56577,1750.25,2000000,0,91.2,9722,3.7,24558,No,Premium slightly higher but offers strong coverage benefits.
+ManipalCigna Health Insurance,ManipalCigna Max 1952,Individual,67708,3043.08,1500000,0,83.7,14191,4.7,12267,No,Quick claim approval and responsive customer support.
+SBI General Insurance,SBI Elite 1953,Family,88089,5738.25,750000,2,87.4,6551,3.7,14076,Yes,Premium slightly higher but offers strong coverage benefits.
+HDFC ERGO General Insurance,HDFC Secure 1954,Family,26769,5802.0,1500000,0,91.7,12216,4.3,23398,No,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,HDFC Smart 1955,Individual,42482,1233.42,750000,2,85.0,17448,4.0,1499,No,Affordable plan with decent claim settlement ratio.
+HDFC ERGO General Insurance,HDFC Max 1956,Family,21870,2697.17,1500000,0,93.3,11710,4.5,1546,Yes,Affordable plan with decent claim settlement ratio.
+Reliance General Insurance,Reliance Plus 1957,Senior,30770,4592.0,750000,1,88.8,14694,3.9,13215,No,Affordable plan with decent claim settlement ratio.
+National Insurance Company,National Smart 1958,Individual,19847,3049.92,1000000,3,95.0,17232,4.9,17453,No,Quick claim approval and responsive customer support.
+Bajaj Allianz General Insurance,Bajaj Smart 1959,Family,49673,7037.58,500000,3,86.9,6828,4.9,14237,No,Smooth cashless claim process and good hospital network.
+HDFC ERGO General Insurance,HDFC Elite 1960,Family,77024,1041.67,300000,2,87.6,14083,4.3,15200,Yes,Great value with lock-the-clock feature.
+Star Health and Allied Insurance,Star Advantage 1961,Senior,51374,1866.67,2000000,0,84.0,12689,4.0,18400,Yes,Comprehensive plan with safeguard benefits.
+ICICI Lombard General Insurance,ICICI Secure 1962,Family,47535,3208.33,5000000,1,82.6,16959,3.7,12100,Yes,Excellent floater with high sum insured options.
+National Insurance Company,National Elite 1963,Family,74727,4016.67,300000,2,89.6,13526,4.1,9500,No,Reliable support for senior citizens.
+Tata AIG General Insurance,Tata Max 1964,Family,78154,1541.67,5000000,1,91.6,13167,3.9,24500,Yes,Secure benefit doubles cover from day one.
+Oriental Insurance Company,Oriental Max 1965,Family,72536,2483.33,300000,0,98.2,17073,4.2,21200,No,Classic restoration benefit is very helpful.
+Niva Bupa Health Insurance,Niva Basic 1966,Individual,53390,1183.33,500000,2,90.2,14581,4.4,15800,Yes,Balanced features for everyday health.
+HDFC ERGO General Insurance,HDFC Secure 1967,Senior,88919,4633.33,2000000,1,97.6,6067,4.0,8900,Yes,Top-tier protection for elderly parents.
+HDFC ERGO General Insurance,HDFC Advantage 1968,Senior,38787,983.33,750000,2,93.1,6536,4.7,14200,Yes,Up to 7x coverage increase is amazing.
+Reliance General Insurance,Reliance Premium 1969,Individual,54970,3500.0,500000,1,91.6,17055,4.4,11000,No,Huge sum insured for full family security.
+Oriental Insurance Company,Oriental Elite 1970,Family,68127,2708.33,500000,1,85.9,10763,3.9,7400,No,Focused care for senior medical needs.
+Aditya Birla Health Insurance,Aditya Basic 1971,Senior,79301,791.67,750000,3,92.7,13313,4.1,5600,No,Budget friendly basic health insurance.
+Oriental Insurance Company,Oriental Basic 1972,Family,33691,1791.67,5000000,0,96.3,12741,4.5,22100,Yes,Infinite restoration and high-tech claims.
+SBI General Insurance,SBI Basic 1973,Family,74208,2583.33,1500000,1,93.5,16977,4.1,19500,No,Solid network and fast cashless approval.
+Care Health Insurance,Care Max 1974,Senior,70645,4916.67,300000,2,97.9,14880,3.8,10200,Yes,Comprehensive coverage for elderly care.
+Star Health and Allied Insurance,Star Premium 1975,Individual,13235,683.33,1000000,4,93.7,16350,4.6,4800,No,Essential accident and health support.
+Bajaj Allianz General Insurance,Bajaj Secure 1976,Senior,24513,1400.0,1000000,1,98.7,13452,4.7,19800,Yes,Modern features like home care treatment.
+Aditya Birla Health Insurance,Aditya Advantage 1977,Family,63331,1041.67,1000000,0,95.1,17854,4.6,14300,Yes,Best for youth starting early with health.
+Bajaj Allianz General Insurance,Bajaj Basic 1978,Family,58361,2966.67,1500000,2,97.9,9536,3.9,17500,Yes,Includes maternity and OPD benefits.
+SBI General Insurance,SBI Premium 1979,Senior,88314,933.33,5000000,3,85.4,8547,4.6,9200,No,Traditional and trusted health plan.
+Niva Bupa Health Insurance,Niva Smart 1980,Senior,80280,1100.0,1000000,1,94.7,7220,3.8,16200,Yes,Earn back premium via health returns.
+ManipalCigna Health Insurance,ManipalCigna Max 1981,Family,33840,708.33,1000000,2,96.5,10913,4.6,12500,Yes,Tailored for active and fit individuals.
+Tata AIG General Insurance,Tata Smart 1982,Family,12807,3500.0,2000000,2,85.4,13282,4.7,8300,Yes,Includes dedicated health coach for seniors.
+Star Health and Allied Insurance,Star Plus 1983,Family,50414,7916.67,1000000,1,96.9,9587,4.5,5400,No,Coverage for international treatments.
+Star Health and Allied Insurance,Star Advantage 1984,Senior,32776,1875.0,500000,1,88.1,16034,4.9,13800,Yes,World-class features and high restoration.
+Star Health and Allied Insurance,Star Smart 1985,Family,82125,816.67,1000000,2,98.9,13791,4.5,8900,No,Simplified and affordable protection.
+ManipalCigna Health Insurance,ManipalCigna Plus 1986,Senior,70591,4250.0,500000,2,98.2,17230,4.4,6200,Yes,Comprehensive support for elderly needs.
+ManipalCigna Health Insurance,ManipalCigna Secure 1987,Individual,15819,2375.0,1000000,1,86.6,17261,4.3,11200,No,Smooth claim settlement for families.
+Tata AIG General Insurance,Tata Secure 1988,Individual,56998,1300.0,1500000,2,97.7,11770,4.4,14500,Yes,Covers day care and organ donor expenses.
+ICICI Lombard General Insurance,ICICI Secure 1989,Senior,64631,6250.0,500000,1,92.6,17857,3.6,3100,No,Premium global treatment coverage.
+ManipalCigna Health Insurance,ManipalCigna Secure 1990,Family,85428,2458.33,1000000,1,88.1,6072,4.0,7800,No,Specific senior plan with low waiting.
+ManipalCigna Health Insurance,ManipalCigna Advantage 1991,Senior,70587,1516.67,2000000,2,93.2,9713,3.7,9200,No,Focus on OPD and tax saving benefits.
+Star Health and Allied Insurance,Star Elite 1992,Senior,8695,1150.0,2000000,1,95.4,10739,4.0,11200,Yes,Infinite restoration of sum insured.
+National Insurance Company,National Max 1993,Family,25559,766.67,300000,2,89.9,11041,4.6,8500,No,Basic and easy to understand plan.
+Reliance General Insurance,Reliance Basic 1994,Individual,57141,3166.67,2000000,2,89.4,16558,4.8,5600,No,Affordable senior citizen medical cover.
+Bajaj Allianz General Insurance,Bajaj Max 1995,Senior,54697,2116.67,2000000,1,88.8,10060,4.0,7900,No,Flexible family floater for small families.
+Tata AIG General Insurance,Tata Advantage 1996,Senior,51456,1208.33,500000,2,95.0,11624,4.6,12400,Yes,Flexible modular health insurance policy.
+Reliance General Insurance,Reliance Max 1997,Senior,24980,708.33,5000000,4,90.8,8624,3.7,21000,No,Standard IRDAI mandated health product.
+Star Health and Allied Insurance,Star Advantage 1998,Individual,34455,1600.0,1000000,1,88.8,14971,4.6,9800,Yes,High-end protection for the mass market.
+Oriental Insurance Company,Oriental Elite 1999,Senior,84611,3666.67,2000000,1,94.7,6659,4.9,6700,No,Simple coverage with minimal paperwork.
