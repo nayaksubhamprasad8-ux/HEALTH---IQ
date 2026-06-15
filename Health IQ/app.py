@@ -126,10 +126,15 @@ def load_plans():
 
 
 # =====================================================
-# TEMPORARY DEBUG ROUTE — remove after troubleshooting
+# TEMPORARY DEBUG ROUTE — disabled unless DEBUG_ROUTES=1
+# Set DEBUG_ROUTES=1 locally if you need to troubleshoot CSV loading.
+# Leave unset (default) in production/Render to keep this hidden.
 # =====================================================
 @app.route("/debug/plans")
 def debug_plans():
+    if os.environ.get("DEBUG_ROUTES") != "1":
+        return jsonify({"error": "Not found"}), 404
+
     path = find_plans_csv()
     info = {
         "BASE_DIR": BASE_DIR,
@@ -965,14 +970,17 @@ def server_error(e):
 # =====================================================
 @app.route("/healthz")
 def healthz():
-    return jsonify({
+    info = {
         "status": "ok",
-        "app_file": os.path.abspath(__file__),
-        "base_dir": BASE_DIR,
-        "csv_resolved_path": find_plans_csv(),
         "plans_loaded": len(load_plans()),
-        "users_loaded": len(load_users()),
-    })
+    }
+    # Verbose diagnostics only when explicitly enabled
+    if os.environ.get("DEBUG_ROUTES") == "1":
+        info["app_file"] = os.path.abspath(__file__)
+        info["base_dir"] = BASE_DIR
+        info["csv_resolved_path"] = find_plans_csv()
+        info["users_loaded"] = len(load_users())
+    return jsonify(info)
 
 
 # =====================================================
