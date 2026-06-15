@@ -11,26 +11,22 @@
     {% from 'macros.html' import navbar %}
     <link rel="stylesheet" href="/static/css/main.css" />
     <style>
-      /* ── Hero two-column layout ── */
       .hero-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
         gap: 2rem;
       }
-
       .hero-left {
         flex: 1 1 55%;
         max-width: 600px;
       }
-
       .hero-right {
         flex: 1 1 40%;
         display: flex;
         justify-content: center;
         align-items: center;
       }
-
       .hero-illustration {
         width: 100%;
         max-width: 460px;
@@ -38,17 +34,14 @@
         filter: drop-shadow(0 20px 60px rgba(0, 200, 160, 0.15));
         animation: heroFloat 4s ease-in-out infinite;
       }
-
       @keyframes heroFloat {
         0%, 100% { transform: translateY(0px); }
         50%       { transform: translateY(-14px); }
       }
-
-      /* Hide illustration on small screens */
       @media (max-width: 768px) {
-        .hero-inner      { flex-direction: column; }
-        .hero-left       { max-width: 100%; }
-        .hero-right      { display: none; }
+        .hero-inner  { flex-direction: column; }
+        .hero-left   { max-width: 100%; }
+        .hero-right  { display: none; }
       }
     </style>
   </head>
@@ -59,6 +52,7 @@
       <div class="hero-glow"></div>
       <div class="container">
         <div class="hero-inner">
+
           <!-- LEFT: text content -->
           <div class="hero-left">
             <div class="hero-badge">✦ Trusted by 1,000+ Users across India</div>
@@ -98,14 +92,15 @@
             </div>
           </div>
 
-          <!-- RIGHT: illustration -->
+          <!-- RIGHT: illustration — file lives at static/images/icon.png -->
           <div class="hero-right">
             <img
-              src="{{ url_for('static', filename='HealthIQ/static/images/icon.png') }}"
+              src="{{ url_for('static', filename='images/icon.png') }}"
               alt="Family protected by health insurance"
               class="hero-illustration"
             />
           </div>
+
         </div>
       </div>
     </section>
