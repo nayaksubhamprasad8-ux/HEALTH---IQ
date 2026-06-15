@@ -10,6 +10,47 @@
     />
     {% from 'macros.html' import navbar %}
     <link rel="stylesheet" href="/static/css/main.css" />
+    <style>
+      /* ── Hero two-column layout ── */
+      .hero-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+
+      .hero-left {
+        flex: 1 1 55%;
+        max-width: 600px;
+      }
+
+      .hero-right {
+        flex: 1 1 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .hero-illustration {
+        width: 100%;
+        max-width: 460px;
+        height: auto;
+        filter: drop-shadow(0 20px 60px rgba(0, 200, 160, 0.15));
+        animation: heroFloat 4s ease-in-out infinite;
+      }
+
+      @keyframes heroFloat {
+        0%, 100% { transform: translateY(0px); }
+        50%       { transform: translateY(-14px); }
+      }
+
+      /* Hide illustration on small screens */
+      @media (max-width: 768px) {
+        .hero-inner      { flex-direction: column; }
+        .hero-left       { max-width: 100%; }
+        .hero-right      { display: none; }
+      }
+    </style>
   </head>
   <body class="dark-bg">
     {{ navbar(user, 'home') }}
@@ -17,39 +58,53 @@
     <section class="hero-section">
       <div class="hero-glow"></div>
       <div class="container">
-        <div class="hero-badge">✦ Trusted by 1,000+ Users across India</div>
-        <h1 class="hero-title">
-          Choose the Right<br /><span class="grad-text">Health Insurance</span
-          ><br />with Confidence
-        </h1>
-        <p class="hero-sub">
-          AI-powered comparisons, smart recommendations, and transparent pricing
-          — all in one place.
-        </p>
-        <div class="hero-actions">
-          <a href="/plans" class="btn-primary-lg">Browse Plans</a>
-          <a href="/recommend" class="btn-outline-lg">Get Recommendations</a>
-          <a href="/advisor" class="btn-glow-lg">🤖 Ask AI Advisor</a>
-        </div>
-        <div class="stats-row">
-          <div class="stat-item">
-            <span class="stat-num">{{ total_plans }}+</span>
-            <span class="stat-label">Insurance Plans</span>
+        <div class="hero-inner">
+          <!-- LEFT: text content -->
+          <div class="hero-left">
+            <div class="hero-badge">✦ Trusted by 1,000+ Users across India</div>
+            <h1 class="hero-title">
+              Choose the Right<br /><span class="grad-text">Health Insurance</span
+              ><br />with Confidence
+            </h1>
+            <p class="hero-sub">
+              AI-powered comparisons, smart recommendations, and transparent pricing
+              — all in one place.
+            </p>
+            <div class="hero-actions">
+              <a href="/plans" class="btn-primary-lg">Browse Plans</a>
+              <a href="/recommend" class="btn-outline-lg">Get Recommendations</a>
+              <a href="/advisor" class="btn-glow-lg">🤖 Ask AI Advisor</a>
+            </div>
+            <div class="stats-row">
+              <div class="stat-item">
+                <span class="stat-num">{{ total_plans }}+</span>
+                <span class="stat-label">Insurance Plans</span>
+              </div>
+              <div class="stat-sep"></div>
+              <div class="stat-item">
+                <span class="stat-num">{{ companies }}</span>
+                <span class="stat-label">Top Companies</span>
+              </div>
+              <div class="stat-sep"></div>
+              <div class="stat-item">
+                <span class="stat-num">{{ avg_rating }}★</span>
+                <span class="stat-label">Avg Rating</span>
+              </div>
+              <div class="stat-sep"></div>
+              <div class="stat-item">
+                <span class="stat-num">Free</span>
+                <span class="stat-label">No Hidden Fees</span>
+              </div>
+            </div>
           </div>
-          <div class="stat-sep"></div>
-          <div class="stat-item">
-            <span class="stat-num">{{ companies }}</span>
-            <span class="stat-label">Top Companies</span>
-          </div>
-          <div class="stat-sep"></div>
-          <div class="stat-item">
-            <span class="stat-num">{{ avg_rating }}★</span>
-            <span class="stat-label">Avg Rating</span>
-          </div>
-          <div class="stat-sep"></div>
-          <div class="stat-item">
-            <span class="stat-num">Free</span>
-            <span class="stat-label">No Hidden Fees</span>
+
+          <!-- RIGHT: illustration -->
+          <div class="hero-right">
+            <img
+              src="{{ url_for('static', filename='images/hero-illustration.png') }}"
+              alt="Family protected by health insurance"
+              class="hero-illustration"
+            />
           </div>
         </div>
       </div>
