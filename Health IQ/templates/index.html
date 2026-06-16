@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Health IQ — Home</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    {% from 'macros.html' import navbar %}
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <style>
+      .hero-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+      }
+      .hero-left {
+        flex: 1 1 55%;
+        max-width: 600px;
+      }
+      .hero-right {
+        flex: 1 1 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .hero-illustration {
+        width: 100%;
+        max-width: 520px;
+        height: auto;
+        filter: drop-shadow(0 20px 60px rgba(0, 200, 160, 0.2));
+        animation: heroFloat 4s ease-in-out infinite;
+      }
+      @keyframes heroFloat {
+        0%,
+        100% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-14px);
+        }
+      }
+      @media (max-width: 768px) {
+        .hero-inner {
+          flex-direction: column;
+        }
+        .hero-left {
+          max-width: 100%;
+        }
+        .hero-right {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body class="dark-bg">
+    {{ navbar(user, 'home') }}
+
+    <section class="hero-section">
+      <div class="hero-glow"></div>
+      <div class="container">
+        <div class="hero-inner">
+          <!-- LEFT: text content -->
+          <div class="hero-left">
+            <div class="hero-badge">✦ Trusted by 1,000+ Users across India</div>
+            <h1 class="hero-title">
+              Choose the Right<br /><span class="grad-text"
+                >Health Insurance</span
+              ><br />with Confidence
+            </h1>
+            <p class="hero-sub">
+              AI-powered comparisons, smart recommendations, and transparent
+              pricing — all in one place.
+            </p>
+            <div class="hero-actions">
+              <a href="/plans" class="btn-primary-lg">Browse Plans</a>
+              <a href="/recommend" class="btn-outline-lg"
+                >Get Recommendations</a
+              >
+              <a href="/advisor" class="btn-glow-lg">🤖 Ask AI Advisor</a>
+            </div>
+            <div class="stats-row">
+              <div class="stat-item">
+                <span class="stat-num">{{ total_plans }}+</span>
+                <span class="stat-label">Insurance Plans</span>
+              </div>
+              <div class="stat-sep"></div>
+              <div class="stat-item">
+                <span class="stat-num">{{ companies }}</span>
+                <span class="stat-label">Top Companies</span>
+              </div>
+              <div class="stat-sep"></div>
+              <div class="stat-item">
+                <span class="stat-num">{{ avg_rating }}★</span>
+                <span class="stat-label">Avg Rating</span>
+              </div>
+              <div class="stat-sep"></div>
+              <div class="stat-item">
+                <span class="stat-num">Free</span>
+                <span class="stat-label">No Hidden Fees</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: illustration — file lives at static/images/icon.png -->
+          <div class="hero-right">
+            <img
+              src="{{ url_for('static', filename='images/icon.png') }}"
+              alt="Family protected by health insurance"
+              class="hero-illustration"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="features-section">
+      <div class="container">
+        <div class="section-label">Platform Features</div>
+        <h2 class="section-title">Everything You Need to Decide Smarter</h2>
+        <div class="features-grid">
+          <a href="/recommend" class="feature-card feature-card--teal">
+            <div class="fc-icon">🎯</div>
+            <h3>Smart Recommendations</h3>
+            <p>
+              Get personalized plan suggestions based on your age, budget, and
+              health needs.
+            </p>
+            <span class="fc-link">Try Now →</span>
+          </a>
+          <a href="/advisor" class="feature-card feature-card--purple">
+            <div class="fc-icon">🤖</div>
+            <h3>AI Insurance Advisor</h3>
+            <p>
+              Chat with our Claude-powered AI for expert, personalized insurance
+              guidance.
+            </p>
+            <span class="fc-link">Start Chat →</span>
+          </a>
+          <a href="/calculator" class="feature-card feature-card--green">
+            <div class="fc-icon">🧮</div>
+            <h3>Coverage Calculator</h3>
+            <p>
+              Find out exactly how much coverage you need based on your family
+              and lifestyle.
+            </p>
+            <span class="fc-link">Calculate →</span>
+          </a>
+          <a href="/premium-predict" class="feature-card feature-card--orange">
+            <div class="fc-icon">📈</div>
+            <h3>Premium Predictor</h3>
+            <p>
+              ML-based prediction of your insurance premium before you even
+              apply.
+            </p>
+            <span class="fc-link">Predict →</span>
+          </a>
+          <a href="/claim-predict" class="feature-card feature-card--red">
+            <div class="fc-icon">⚖️</div>
+            <h3>Claim Approval Predictor</h3>
+            <p>
+              Know your claim approval probability before submitting — avoid
+              rejections.
+            </p>
+            <span class="fc-link">Check Now →</span>
+          </a>
+          <a href="/analytics" class="feature-card feature-card--blue">
+            <div class="fc-icon">📊</div>
+            <h3>Analytics Dashboard</h3>
+            <p>
+              Visual insights across all plans — premiums, ratings, CSR, and
+              more.
+            </p>
+            <span class="fc-link">View Dashboard →</span>
+          </a>
+          <a href="/hospitals" class="feature-card feature-card--teal">
+            <div class="fc-icon">🏥</div>
+            <h3>Hospital Finder</h3>
+            <p>
+              Discover network hospitals for any plan sorted by coverage
+              quality.
+            </p>
+            <span class="fc-link">Find Hospitals →</span>
+          </a>
+          <a href="/plans" class="feature-card feature-card--purple">
+            <div class="fc-icon">⚖️</div>
+            <h3>Plan Comparison</h3>
+            <p>
+              Compare up to 3 plans side-by-side with PDF export capability.
+            </p>
+            <span class="fc-link">Compare Plans →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="how-section">
+      <div class="container">
+        <div class="section-label">How It Works</div>
+        <h2 class="section-title">Three Steps to Your Perfect Plan</h2>
+        <div class="steps-row">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <h3>Set Your Preferences</h3>
+            <p>
+              Enter your age, budget, family size, and health priorities to get
+              started.
+            </p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <h3>Compare & Analyze</h3>
+            <p>
+              Our AI engine scores and ranks plans for you. Dive deep with
+              side-by-side comparison.
+            </p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <h3>Choose with Confidence</h3>
+            <p>
+              Export your comparison as PDF, consult the AI advisor, and make
+              your decision.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="main-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <span class="nav-icon">🛡️</span>
+          <span
+            style="
+              color: white;
+              font-family: &quot;Playfair Display&quot;, serif;
+              font-size: 18px;
+            "
+            >Health IQ</span
+          >
+        </div>
+        <p>© 2026 Health IQ — AI-Powered Insurance Comparison</p>
+      </div>
+    </footer>
+  </body>
+</html>

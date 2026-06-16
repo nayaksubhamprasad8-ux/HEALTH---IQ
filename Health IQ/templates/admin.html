@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard — Health IQ</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    {% from 'macros.html' import navbar %}
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <style>
+      .admin-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+        margin-bottom: 32px;
+      }
+      .admin-kpi {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 22px;
+      }
+      .admin-kpi-val {
+        font-family: "Playfair Display", serif;
+        font-size: 36px;
+        font-weight: 700;
+        color: white;
+      }
+      .admin-kpi-label {
+        font-size: 12px;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-top: 4px;
+      }
+      .admin-section {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 28px;
+        margin-bottom: 24px;
+      }
+      .admin-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      .admin-table th {
+        text-align: left;
+        padding: 12px 14px;
+        font-size: 11px;
+        font-weight: 700;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        border-bottom: 1px solid var(--border);
+      }
+      .admin-table td {
+        padding: 14px;
+        font-size: 14px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+        color: var(--text);
+      }
+      .admin-table tr:last-child td {
+        border-bottom: none;
+      }
+      .admin-table tr:hover td {
+        background: rgba(255, 255, 255, 0.02);
+      }
+      .del-btn {
+        padding: 5px 12px;
+        background: rgba(239, 68, 68, 0.1);
+        color: #f87171;
+        border: 1px solid rgba(239, 68, 68, 0.2);
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        font-family: "DM Sans", sans-serif;
+        transition: all 0.2s;
+      }
+      .del-btn:hover {
+        background: rgba(239, 68, 68, 0.2);
+      }
+      .admin-badge {
+        display: inline-block;
+        padding: 3px 10px;
+        border-radius: 100px;
+        font-size: 11px;
+        font-weight: 700;
+      }
+      .admin-badge.admin {
+        background: rgba(139, 92, 246, 0.15);
+        color: #a78bfa;
+      }
+      .admin-badge.user {
+        background: rgba(0, 200, 180, 0.12);
+        color: var(--teal);
+      }
+      .plan-row td:first-child {
+        color: white;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body class="dark-bg">
+    {{ navbar(user, '') }}
+
+    <div class="page-header">
+      <div class="container">
+        <h1>🛠️ Admin Dashboard</h1>
+        <p>Manage users and monitor platform data</p>
+      </div>
+    </div>
+
+    <div class="page-body">
+      <div class="container" style="padding-top: 36px">
+        <div class="admin-grid">
+          <div class="admin-kpi">
+            <div class="admin-kpi-val">{{ total_users }}</div>
+            <div class="admin-kpi-label">Registered Users</div>
+          </div>
+          <div class="admin-kpi">
+            <div class="admin-kpi-val">{{ total_plans }}</div>
+            <div class="admin-kpi-label">Plans in Database</div>
+          </div>
+          <div class="admin-kpi">
+            <div class="admin-kpi-val">13</div>
+            <div class="admin-kpi-label">Insurance Companies</div>
+          </div>
+        </div>
+
+        <!-- Users Table -->
+        <div class="admin-section">
+          <div class="card-title" style="margin-bottom: 20px">
+            👥 Registered Users
+          </div>
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Role</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for u in users %}
+              <tr>
+                <td style="color: var(--text-muted)">{{ loop.index }}</td>
+                <td style="color: white; font-weight: 600">{{ u.name }}</td>
+                <td>{{ u.email }}</td>
+                <td>
+                  <span class="admin-badge {{ u.get('role','user') }}"
+                    >{{ u.get('role','user') }}</span
+                  >
+                </td>
+                <td>
+                  {% if u.email != current_email %}
+                  <form
+                    action="/admin/delete-user/{{ u.email }}"
+                    method="POST"
+                    style="display: inline"
+                    onsubmit="return confirm('Delete user {{ u.name }}?')"
+                  >
+                    <button type="submit" class="del-btn">Delete</button>
+                  </form>
+                  {% else %}
+                  <span style="color: var(--text-muted); font-size: 12px"
+                    >You</span
+                  >
+                  {% endif %}
+                </td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Plans Table -->
+        <div class="admin-section">
+          <div class="card-title" style="margin-bottom: 20px">
+            📋 All Insurance Plans
+          </div>
+          <table class="admin-table">
+            <thead>
+              <tr>
+                <th>Plan Name</th>
+                <th>Company</th>
+                <th>Type</th>
+                <th>Premium/yr</th>
+                <th>Coverage</th>
+                <th>CSR</th>
+                <th>Rating</th>
+              </tr>
+            </thead>
+            <tbody>
+              {% for p in plans %}
+              <tr class="plan-row">
+                <td>{{ p.Plan_Name }}</td>
+                <td style="color: var(--teal)">
+                  {{ p.Company | replace(' Insurance','') | replace('
+                  General','') | replace(' Health','') }}
+                </td>
+                <td>
+                  <span
+                    class="tag {% if p.Plan_Type=='Individual' %}tag-teal{% elif p.Plan_Type=='Family' %}tag-green{% else %}tag-orange{% endif %}"
+                  >
+                    {{ p.Plan_Type }}
+                  </span>
+                </td>
+                <td>₹{{ "{:,.0f}".format(p.Annual_Premium|float) }}</td>
+                <td>₹{{ "{:,.0f}".format(p.Coverage_Limit|float) }}</td>
+                <td>
+                  <span
+                    style="color:{% if p.Claim_Settlement_Ratio_Percent|float >= 96 %}var(--green){% elif p.Claim_Settlement_Ratio_Percent|float >= 92 %}var(--teal){% else %}var(--orange){% endif %}"
+                    >{{ p.Claim_Settlement_Ratio_Percent }}%</span
+                  >
+                </td>
+                <td>⭐ {{ p.Rating }}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

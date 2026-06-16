@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hospital Finder — Health IQ</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    {% from 'macros.html' import navbar %}
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <style>
+      .hospital-layout {
+        display: grid;
+        grid-template-columns: 320px 1fr;
+        gap: 28px;
+        padding: 36px 0;
+      }
+      .hosp-card {
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        padding: 20px;
+        margin-bottom: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        transition: border-color 0.2s;
+      }
+      .hosp-card:hover {
+        border-color: rgba(0, 200, 180, 0.3);
+      }
+      .hosp-name {
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+      .hosp-company {
+        color: var(--teal);
+        font-size: 12px;
+        margin-bottom: 6px;
+      }
+      .hosp-stats {
+        display: flex;
+        gap: 16px;
+      }
+      .hosp-stat {
+        font-size: 12px;
+        color: var(--text-muted);
+      }
+      .hosp-stat strong {
+        color: white;
+      }
+      .hosp-network {
+        text-align: right;
+      }
+      .hosp-count {
+        font-family: "Playfair Display", serif;
+        font-size: 28px;
+        font-weight: 700;
+        color: white;
+      }
+      .hosp-count-label {
+        font-size: 11px;
+        color: var(--text-muted);
+      }
+      .network-bar {
+        background: rgba(255, 255, 255, 0.07);
+        border-radius: 100px;
+        height: 5px;
+        margin-top: 6px;
+      }
+      .network-fill {
+        height: 5px;
+        border-radius: 100px;
+        background: linear-gradient(90deg, var(--teal), var(--green));
+      }
+      .city-search {
+        position: relative;
+        margin-bottom: 20px;
+      }
+      .city-search input {
+        width: 100%;
+        padding: 12px 16px 12px 42px;
+        background: rgba(255, 255, 255, 0.05);
+        border: 1px solid var(--border);
+        border-radius: 10px;
+        color: white;
+        font-size: 14px;
+        font-family: "DM Sans", sans-serif;
+      }
+      .city-search input:focus {
+        outline: none;
+        border-color: var(--teal);
+      }
+      .city-search input::placeholder {
+        color: var(--text-muted);
+      }
+      .city-search::before {
+        content: "🔍";
+        position: absolute;
+        left: 14px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 14px;
+      }
+      .sort-row {
+        display: flex;
+        gap: 8px;
+        margin-bottom: 20px;
+        flex-wrap: wrap;
+      }
+      .sort-pill {
+        padding: 6px 14px;
+        border-radius: 100px;
+        border: 1px solid var(--border);
+        background: var(--bg);
+        color: var(--text-muted);
+        font-size: 12px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s;
+      }
+      .sort-pill.active {
+        background: rgba(0, 200, 180, 0.15);
+        border-color: var(--teal);
+        color: var(--teal);
+      }
+      .results-count {
+        color: var(--text-muted);
+        font-size: 13px;
+        margin-bottom: 16px;
+      }
+      @media (max-width: 900px) {
+        .hospital-layout {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body class="dark-bg">
+    {{ navbar(user, 'hospitals') }}
+
+    <div class="page-header">
+      <div class="container">
+        <h1>🏥 Hospital Network Finder</h1>
+        <p>Explore cashless hospital networks across all insurance plans</p>
+      </div>
+    </div>
+
+    <div class="page-body">
+      <div class="container">
+        <div class="hospital-layout">
+          <!-- Sidebar filters -->
+          <div>
+            <div class="card">
+              <div class="card-title">Filter by Company</div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 8px;
+                  margin-top: 4px;
+                "
+              >
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    color: var(--text);
+                  "
+                >
+                  <input
+                    type="radio"
+                    name="company"
+                    value=""
+                    onchange="filterHospitals()"
+                    checked
+                    style="accent-color: var(--teal)"
+                  />
+                  All Companies
+                </label>
+                {% for c in companies %}
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    cursor: pointer;
+                    font-size: 13px;
+                    color: var(--text-muted);
+                  "
+                >
+                  <input
+                    type="radio"
+                    name="company"
+                    value="{{ c }}"
+                    onchange="filterHospitals()"
+                    style="accent-color: var(--teal)"
+                  />
+                  {{ c|replace(' Insurance','') | replace(' General','') |
+                  truncate(30) }}
+                </label>
+                {% endfor %}
+              </div>
+            </div>
+            <div class="card" style="margin-top: 16px">
+              <div class="card-title">Plan Type</div>
+              <div
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 8px;
+                  margin-top: 4px;
+                "
+              >
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    cursor: pointer;
+                    font-size: 14px;
+                    color: var(--text);
+                  "
+                >
+                  <input
+                    type="radio"
+                    name="ptype"
+                    value=""
+                    onchange="filterHospitals()"
+                    checked
+                    style="accent-color: var(--teal)"
+                  />
+                  All Types
+                </label>
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    cursor: pointer;
+                    font-size: 13px;
+                    color: var(--text-muted);
+                  "
+                >
+                  <input
+                    type="radio"
+                    name="ptype"
+                    value="Individual"
+                    onchange="filterHospitals()"
+                    style="accent-color: var(--teal)"
+                  />
+                  Individual
+                </label>
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    cursor: pointer;
+                    font-size: 13px;
+                    color: var(--text-muted);
+                  "
+                >
+                  <input
+                    type="radio"
+                    name="ptype"
+                    value="Family"
+                    onchange="filterHospitals()"
+                    style="accent-color: var(--teal)"
+                  />
+                  Family
+                </label>
+                <label
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    cursor: pointer;
+                    font-size: 13px;
+                    color: var(--text-muted);
+                  "
+                >
+                  <input
+                    type="radio"
+                    name="ptype"
+                    value="Senior"
+                    onchange="filterHospitals()"
+                    style="accent-color: var(--teal)"
+                  />
+                  Senior
+                </label>
+              </div>
+            </div>
+            <div class="card" style="margin-top: 16px">
+              <div class="card-title">Min. Network Size</div>
+              <input
+                type="range"
+                id="minHosp"
+                min="0"
+                max="15000"
+                value="0"
+                step="1000"
+                oninput="
+                  document.getElementById('minHospVal').textContent =
+                    this.value.toLocaleString('en-IN');
+                  filterHospitals();
+                "
+                style="
+                  width: 100%;
+                  accent-color: var(--teal);
+                  margin-bottom: 8px;
+                "
+              />
+              <div style="font-size: 13px; color: var(--text-muted)">
+                Min:
+                <strong id="minHospVal" style="color: white">0</strong>
+                hospitals
+              </div>
+            </div>
+          </div>
+
+          <!-- Main list -->
+          <div>
+            <div class="city-search">
+              <input
+                type="text"
+                id="searchInput"
+                placeholder="Search plan name or company..."
+                oninput="filterHospitals()"
+              />
+            </div>
+            <div class="sort-row">
+              <button
+                class="sort-pill active"
+                onclick="setSort('hospitals', this)"
+              >
+                Most Hospitals
+              </button>
+              <button class="sort-pill" onclick="setSort('rating', this)">
+                Highest Rating
+              </button>
+              <button class="sort-pill" onclick="setSort('csr', this)">
+                Best CSR
+              </button>
+              <button class="sort-pill" onclick="setSort('premium', this)">
+                Lowest Premium
+              </button>
+            </div>
+            <div class="results-count" id="resultsCount"></div>
+            <div id="hospitalList">
+              {% for plan in plans %}
+              <div
+                class="hosp-card"
+                data-company="{{ plan.Company }}"
+                data-type="{{ plan.Plan_Type }}"
+                data-hospitals="{{ plan.Network_Hospitals }}"
+                data-rating="{{ plan.Rating }}"
+                data-csr="{{ plan.Claim_Settlement_Ratio_Percent }}"
+                data-premium="{{ plan.Annual_Premium }}"
+                data-name="{{ plan.Plan_Name }}"
+              >
+                <div>
+                  <div class="hosp-name">{{ plan.Plan_Name }}</div>
+                  <div class="hosp-company">{{ plan.Company }}</div>
+                  <div class="hosp-stats">
+                    <div class="hosp-stat">
+                      <strong>{{ plan.Plan_Type }}</strong>
+                    </div>
+                    <div class="hosp-stat">
+                      ⭐ <strong>{{ plan.Rating }}</strong>
+                    </div>
+                    <div class="hosp-stat">
+                      CSR:
+                      <strong
+                        >{{ plan.Claim_Settlement_Ratio_Percent }}%</strong
+                      >
+                    </div>
+                    <div class="hosp-stat">
+                      ₹{{ "{:,.0f}".format(plan.Annual_Premium|float) }}/yr
+                    </div>
+                  </div>
+                </div>
+                <div class="hosp-network">
+                  <div class="hosp-count">
+                    {{ "{:,}".format(plan.Network_Hospitals|int) }}
+                  </div>
+                  <div class="hosp-count-label">Network Hospitals</div>
+                  <div class="network-bar">
+                    <div
+                      class="network-fill"
+                      style="width:{{ [(plan.Network_Hospitals|int / 150), 100]|min }}%"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+              {% endfor %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let sortField = "hospitals";
+
+      function setSort(field, btn) {
+        sortField = field;
+        document
+          .querySelectorAll(".sort-pill")
+          .forEach((b) => b.classList.remove("active"));
+        btn.classList.add("active");
+        filterHospitals();
+      }
+
+      function filterHospitals() {
+        const search = document
+          .getElementById("searchInput")
+          .value.toLowerCase();
+        const company =
+          document.querySelector('input[name="company"]:checked')?.value || "";
+        const ptype =
+          document.querySelector('input[name="ptype"]:checked')?.value || "";
+        const minH = parseInt(document.getElementById("minHosp").value) || 0;
+
+        let cards = Array.from(document.querySelectorAll(".hosp-card"));
+        let visible = cards.filter((c) => {
+          const name = (c.dataset.name + " " + c.dataset.company).toLowerCase();
+          return (
+            (!search || name.includes(search)) &&
+            (!company || c.dataset.company === company) &&
+            (!ptype || c.dataset.type === ptype) &&
+            parseInt(c.dataset.hospitals) >= minH
+          );
+        });
+
+        visible.sort((a, b) => {
+          if (sortField === "hospitals")
+            return (
+              parseInt(b.dataset.hospitals) - parseInt(a.dataset.hospitals)
+            );
+          if (sortField === "rating")
+            return parseFloat(b.dataset.rating) - parseFloat(a.dataset.rating);
+          if (sortField === "csr")
+            return parseFloat(b.dataset.csr) - parseFloat(a.dataset.csr);
+          if (sortField === "premium")
+            return (
+              parseFloat(a.dataset.premium) - parseFloat(b.dataset.premium)
+            );
+          return 0;
+        });
+
+        const list = document.getElementById("hospitalList");
+        cards.forEach((c) => (c.style.display = "none"));
+        visible.forEach((c) => {
+          c.style.display = "";
+          list.appendChild(c);
+        });
+        document.getElementById("resultsCount").textContent =
+          `Showing ${visible.length} plans`;
+      }
+
+      filterHospitals();
+    </script>
+  </body>
+</html>
