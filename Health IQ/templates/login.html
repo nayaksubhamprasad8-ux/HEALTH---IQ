@@ -54,7 +54,7 @@
       .left-panel p { color: rgba(255,255,255,0.65); font-size: 16px; line-height: 1.7; max-width: 400px; margin-bottom: 40px; }
       .feature-list { list-style: none; }
       .feature-list li { color: rgba(255,255,255,0.8); padding: 10px 0; display: flex; align-items: center; gap: 12px; font-size: 14px; }
-      .feature-list li::before { content: "✦"; color: #2ecc71; font-size: 10px; }
+      .feature-list li::before { content: "\2756"; color: #2ecc71; font-size: 10px; }
 
       .right-panel {
         width: 480px;
@@ -87,6 +87,21 @@
         font-family: "DM Sans", sans-serif;
       }
       .tab-row button.active { background: #00c8b4; color: white; }
+
+      .back-link {
+        display: none;
+        margin-bottom: 36px;
+      }
+      .back-link a {
+        color: #00c8b4;
+        font-size: 13px;
+        cursor: pointer;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+      }
+      .back-link a:hover { opacity: 0.8; }
 
       .auth-box { display: none; }
       .auth-box.visible { display: block; }
@@ -138,6 +153,20 @@
       .btn-submit:hover { opacity: 0.9; transform: translateY(-1px); }
       .btn-submit:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
 
+      .forgot-link {
+        text-align: right;
+        margin-top: 10px;
+        margin-bottom: 4px;
+      }
+      .forgot-link a {
+        color: #00c8b4;
+        font-size: 13px;
+        cursor: pointer;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      .forgot-link a:hover { opacity: 0.8; }
+
       .divider {
         display: flex;
         align-items: center;
@@ -188,6 +217,17 @@
         font-size: 12px;
       }
 
+      /* Forgot password success illustration */
+      .email-sent-icon {
+        width: 72px; height: 72px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, rgba(0,200,180,0.15), rgba(46,204,113,0.15));
+        border: 2px solid rgba(0,200,180,0.3);
+        display: flex; align-items: center; justify-content: center;
+        font-size: 32px;
+        margin: 0 auto 20px;
+      }
+
       @media (max-width: 900px) {
         .left-panel { display: none; }
         .right-panel { width: 100%; padding: 40px 24px; }
@@ -195,9 +235,10 @@
     </style>
   </head>
   <body>
+    <!-- LEFT PANEL -->
     <div class="left-panel">
       <div class="brand-mark">
-        <div class="brand-icon">🛡️</div>
+        <div class="brand-icon">&#x1F6E1;</div>
         <span class="brand-text">Health IQ</span>
       </div>
       <h1>India's Smartest<br /><span>Insurance</span><br />Platform</h1>
@@ -211,28 +252,39 @@
       </ul>
     </div>
 
+    <!-- RIGHT PANEL -->
     <div class="right-panel">
-      <!-- TAB ROW -->
+
+      <!-- TAB ROW (hidden on forgot password view) -->
       <div class="tab-row" id="tab-row">
         <button class="active" id="tab-signin" onclick="switchTab('signin')">Sign In</button>
         <button id="tab-signup" onclick="switchTab('signup')">Sign Up</button>
       </div>
 
-      <!-- SIGN IN BOX -->
+      <!-- BACK LINK (shown only on forgot password view) -->
+      <div class="back-link" id="back-link">
+        <a onclick="switchTab('signin')">&#8592; Back to Sign In</a>
+      </div>
+
+      <!-- ───────────── SIGN IN BOX ───────────── -->
       <div id="signin-box" class="auth-box visible">
         <h2>Welcome back</h2>
         <p class="sub">Sign in to your Health IQ account</p>
         <div class="alert" id="signin-alert"></div>
 
         <div class="input-group">
-          <span class="icon">✉</span>
+          <span class="icon">&#x2709;</span>
           <input type="email" id="signin-email" placeholder="Email address" />
         </div>
         <div class="input-group">
-          <span class="icon">🔒</span>
+          <span class="icon">&#x1F512;</span>
           <input type="password" id="signin-password" placeholder="Password" />
         </div>
-        <button class="btn-submit" id="signin-btn" onclick="handleSignIn()">Sign In →</button>
+        <button class="btn-submit" id="signin-btn" onclick="handleSignIn()">Sign In &#8594;</button>
+
+        <div class="forgot-link">
+          <a onclick="switchTab('forgot')">Forgot password?</a>
+        </div>
 
         <div class="divider">or</div>
         <button class="btn-google" id="signin-google-btn" onclick="handleGoogleSignIn('signin-alert')">
@@ -246,28 +298,28 @@
         </button>
 
         <p class="footer-text">Don't have an account? <a onclick="switchTab('signup')">Create one free</a></p>
-        <div class="security-note">🔐 Your data is encrypted and never shared with third parties.</div>
+        <div class="security-note">&#x1F510; Your data is encrypted and never shared with third parties.</div>
       </div>
 
-      <!-- SIGN UP BOX -->
+      <!-- ───────────── SIGN UP BOX ───────────── -->
       <div id="signup-box" class="auth-box">
         <h2>Create account</h2>
         <p class="sub">Join 1,000+ users on Health IQ</p>
         <div class="alert" id="signup-alert"></div>
 
         <div class="input-group">
-          <span class="icon">👤</span>
+          <span class="icon">&#x1F464;</span>
           <input type="text" id="signup-name" placeholder="Full name" />
         </div>
         <div class="input-group">
-          <span class="icon">✉</span>
+          <span class="icon">&#x2709;</span>
           <input type="email" id="signup-email" placeholder="Email address" />
         </div>
         <div class="input-group">
-          <span class="icon">🔒</span>
+          <span class="icon">&#x1F512;</span>
           <input type="password" id="signup-password" placeholder="Password (min 8 chars)" />
         </div>
-        <button class="btn-submit" id="signup-btn" onclick="handleSignUp()">Create Account →</button>
+        <button class="btn-submit" id="signup-btn" onclick="handleSignUp()">Create Account &#8594;</button>
 
         <div class="divider">or</div>
         <button class="btn-google" id="signup-google-btn" onclick="handleGoogleSignIn('signup-alert')">
@@ -281,9 +333,46 @@
         </button>
 
         <p class="footer-text">Already have an account? <a onclick="switchTab('signin')">Sign in</a></p>
-        <div class="security-note">🔐 Your data is encrypted and never shared with third parties.</div>
+        <div class="security-note">&#x1F510; Your data is encrypted and never shared with third parties.</div>
       </div>
-    </div>
+
+      <!-- ───────────── FORGOT PASSWORD BOX ───────────── -->
+      <div id="forgot-box" class="auth-box">
+        <h2>Reset Password</h2>
+        <p class="sub">Enter your email and we'll send you a reset link</p>
+        <div class="alert" id="forgot-alert"></div>
+
+        <!-- Step 1: email input -->
+        <div id="forgot-form">
+          <div class="input-group">
+            <span class="icon">&#x2709;</span>
+            <input type="email" id="forgot-email" placeholder="Email address" />
+          </div>
+          <button class="btn-submit" id="forgot-btn" onclick="handleForgotPassword()">Send Reset Email &#8594;</button>
+          <p class="footer-text" style="margin-top:16px;">
+            Remember your password? <a onclick="switchTab('signin')">Sign in</a>
+          </p>
+        </div>
+
+        <!-- Step 2: success state (shown after email sent) -->
+        <div id="forgot-success" style="display:none; text-align:center;">
+          <div class="email-sent-icon">&#x2709;</div>
+          <h2 style="margin-bottom:10px;">Check your email</h2>
+          <p class="sub" style="margin-bottom:24px;">
+            We sent a password reset link to<br />
+            <strong id="forgot-sent-to" style="color:white;"></strong>
+          </p>
+          <p style="color:rgba(255,255,255,0.4); font-size:13px; line-height:1.6;">
+            Didn't receive it? Check your spam folder or
+            <a onclick="resetForgotForm()" style="color:#00c8b4; cursor:pointer;">try again</a>.
+          </p>
+          <button class="btn-submit" style="margin-top:24px;" onclick="switchTab('signin')">
+            Back to Sign In
+          </button>
+        </div>
+      </div>
+
+    </div><!-- end .right-panel -->
 
     <!-- ============================================================
          Firebase SDK  (client-side auth only)
@@ -300,6 +389,7 @@
         signInWithPopup,
         GoogleAuthProvider,
         updateProfile,
+        sendPasswordResetEmail,
       } from "https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js";
 
       // ── Firebase project config ──────────────────────────────────
@@ -312,7 +402,6 @@
         appId:             "1:363160192138:web:cabb02445480ef885e1973",
         measurementId:     "G-MDW2GJKJGK",
       };
-      // ────────────────────────────────────────────────────────────
 
       const firebaseApp    = initializeApp(firebaseConfig);
       const auth           = getAuth(firebaseApp);
@@ -320,141 +409,193 @@
 
       // ── Helpers ─────────────────────────────────────────────────
       function setLoading(btnId, loading, defaultLabel) {
-        const btn   = document.getElementById(btnId);
-        btn.disabled = loading;
-        btn.textContent = loading ? "Please wait…" : defaultLabel;
+        const btn = document.getElementById(btnId);
+        btn.disabled    = loading;
+        btn.textContent = loading ? "Please wait..." : defaultLabel;
       }
 
       function showAlert(id, message, type) {
-        const el    = document.getElementById(id);
+        const el = document.getElementById(id);
         el.textContent = message;
-        el.className   = `alert ${type}`;
+        el.className   = "alert " + type;
       }
 
       function clearAlert(id) {
-        const el  = document.getElementById(id);
+        const el = document.getElementById(id);
         el.className   = "alert";
         el.textContent = "";
       }
 
-      /**
-       * sendTokenToFlask
-       * ─────────────────
-       * Gets a fresh Firebase ID token for the signed-in user, POSTs it
-       * to /api/firebase-login, and follows the redirect Flask returns.
-       * On error it calls showAlert(alertId, ...) so the user sees feedback.
-       */
+      // ── Send ID token to Flask after successful Firebase auth ────
       async function sendTokenToFlask(user, alertId) {
         let idToken;
         try {
-          // forceRefresh=false is fine; the token is brand-new after sign-in
           idToken = await user.getIdToken(false);
         } catch (e) {
-          showAlert(alertId, "⚠ Could not get session token. Please try again.", "error");
+          showAlert(alertId, "Could not get session token. Please try again.", "error");
           return;
         }
-
         try {
-          const res = await fetch("/api/firebase-login", {
+          const res  = await fetch("/api/firebase-login", {
             method:  "POST",
             headers: { "Content-Type": "application/json" },
             body:    JSON.stringify({ idToken }),
           });
-
           const json = await res.json();
-
           if (!res.ok) {
-            showAlert(alertId, `⚠ ${json.error || "Server error. Please try again."}`, "error");
+            showAlert(alertId, json.error || "Server error. Please try again.", "error");
             return;
           }
-
-          // Flask returns { "redirect": "/home" }
           window.location.href = json.redirect || "/home";
         } catch (networkErr) {
-          showAlert(alertId, "⚠ Network error. Please check your connection.", "error");
+          showAlert(alertId, "Network error. Please check your connection.", "error");
         }
       }
 
-      // ── Sign Up (email / password) ───────────────────────────────
+      // ── Sign Up ──────────────────────────────────────────────────
       window.handleSignUp = async function () {
         const name     = document.getElementById("signup-name").value.trim();
         const email    = document.getElementById("signup-email").value.trim();
         const password = document.getElementById("signup-password").value;
 
         if (!name || !email || !password)
-          return showAlert("signup-alert", "⚠ Please fill in all fields.", "error");
+          return showAlert("signup-alert", "Please fill in all fields.", "error");
         if (password.length < 8)
-          return showAlert("signup-alert", "⚠ Password must be at least 8 characters.", "error");
+          return showAlert("signup-alert", "Password must be at least 8 characters.", "error");
 
         clearAlert("signup-alert");
-        setLoading("signup-btn", true, "Create Account →");
+        setLoading("signup-btn", true, "Create Account");
 
         try {
           const cred = await createUserWithEmailAndPassword(auth, email, password);
           await updateProfile(cred.user, { displayName: name });
-          // Hand off to Flask
           await sendTokenToFlask(cred.user, "signup-alert");
         } catch (err) {
-          setLoading("signup-btn", false, "Create Account →");
+          setLoading("signup-btn", false, "Create Account");
           const msg = {
-            "auth/email-already-in-use": "⚠ This email is already registered. Please sign in.",
-            "auth/invalid-email":        "⚠ Invalid email address.",
-            "auth/weak-password":        "⚠ Password is too weak.",
-          }[err.code] || "⚠ Something went wrong. Please try again.";
+            "auth/email-already-in-use": "This email is already registered. Please sign in.",
+            "auth/invalid-email":        "Invalid email address.",
+            "auth/weak-password":        "Password is too weak.",
+          }[err.code] || "Something went wrong. Please try again.";
           showAlert("signup-alert", msg, "error");
         }
       };
 
-      // ── Sign In (email / password) ───────────────────────────────
+      // ── Sign In ──────────────────────────────────────────────────
       window.handleSignIn = async function () {
         const email    = document.getElementById("signin-email").value.trim();
         const password = document.getElementById("signin-password").value;
 
         if (!email || !password)
-          return showAlert("signin-alert", "⚠ Please enter your email and password.", "error");
+          return showAlert("signin-alert", "Please enter your email and password.", "error");
 
         clearAlert("signin-alert");
-        setLoading("signin-btn", true, "Sign In →");
+        setLoading("signin-btn", true, "Sign In");
 
         try {
           const cred = await signInWithEmailAndPassword(auth, email, password);
-          // Hand off to Flask
           await sendTokenToFlask(cred.user, "signin-alert");
         } catch (err) {
-          setLoading("signin-btn", false, "Sign In →");
+          setLoading("signin-btn", false, "Sign In");
           const msg = {
-            "auth/user-not-found":    "⚠ No account found with this email.",
-            "auth/wrong-password":    "⚠ Incorrect password.",
-            "auth/invalid-email":     "⚠ Invalid email address.",
-            "auth/too-many-requests": "⚠ Too many attempts. Try again later.",
-            "auth/invalid-credential":"⚠ Incorrect email or password.",
-          }[err.code] || "⚠ Sign in failed. Please try again.";
+            "auth/user-not-found":     "No account found with this email.",
+            "auth/wrong-password":     "Incorrect password.",
+            "auth/invalid-email":      "Invalid email address.",
+            "auth/too-many-requests":  "Too many attempts. Try again later.",
+            "auth/invalid-credential": "Incorrect email or password.",
+          }[err.code] || "Sign in failed. Please try again.";
           showAlert("signin-alert", msg, "error");
         }
       };
 
-      // ── Google Sign-In / Sign-Up ─────────────────────────────────
-      window.handleGoogleSignIn = async function (alertId = "signin-alert") {
+      // ── Google Sign-In ───────────────────────────────────────────
+      window.handleGoogleSignIn = async function (alertId) {
+        alertId = alertId || "signin-alert";
         try {
           const cred = await signInWithPopup(auth, googleProvider);
-          // Hand off to Flask
           await sendTokenToFlask(cred.user, alertId);
         } catch (err) {
           if (err.code !== "auth/popup-closed-by-user") {
-            showAlert(alertId, "⚠ Google sign in failed. Please try again.", "error");
+            showAlert(alertId, "Google sign in failed. Please try again.", "error");
           }
         }
       };
+
+      // ── Forgot Password ──────────────────────────────────────────
+      window.handleForgotPassword = async function () {
+        const email = document.getElementById("forgot-email").value.trim();
+
+        if (!email)
+          return showAlert("forgot-alert", "Please enter your email address.", "error");
+
+        clearAlert("forgot-alert");
+        setLoading("forgot-btn", true, "Send Reset Email");
+
+        try {
+          await sendPasswordResetEmail(auth, email);
+
+          // Show success state
+          document.getElementById("forgot-form").style.display    = "none";
+          document.getElementById("forgot-success").style.display = "block";
+          document.getElementById("forgot-sent-to").textContent   = email;
+
+        } catch (err) {
+          setLoading("forgot-btn", false, "Send Reset Email");
+          const msg = {
+            "auth/user-not-found":  "No account found with this email address.",
+            "auth/invalid-email":   "Please enter a valid email address.",
+            "auth/too-many-requests": "Too many requests. Please try again later.",
+          }[err.code] || "Something went wrong. Please try again.";
+          showAlert("forgot-alert", msg, "error");
+        }
+      };
+
+      // Reset the forgot password form back to initial state
+      window.resetForgotForm = function () {
+        document.getElementById("forgot-form").style.display    = "block";
+        document.getElementById("forgot-success").style.display = "none";
+        document.getElementById("forgot-email").value           = "";
+        clearAlert("forgot-alert");
+        const btn = document.getElementById("forgot-btn");
+        btn.disabled    = false;
+        btn.textContent = "Send Reset Email";
+      };
+
     </script>
 
     <script>
       function switchTab(tab) {
-        document.getElementById("signin-box").classList.remove("visible");
-        document.getElementById("signup-box").classList.remove("visible");
-        document.getElementById("tab-signin").classList.remove("active");
-        document.getElementById("tab-signup").classList.remove("active");
-        document.getElementById(tab + "-box").classList.add("visible");
-        document.getElementById("tab-" + tab).classList.add("active");
+        // Hide all boxes
+        ["signin", "signup", "forgot"].forEach(function(t) {
+          var box = document.getElementById(t + "-box");
+          if (box) box.classList.remove("visible");
+        });
+
+        // Show the selected box
+        var target = document.getElementById(tab + "-box");
+        if (target) target.classList.add("visible");
+
+        // Toggle tab row vs back link
+        var tabRow  = document.getElementById("tab-row");
+        var backLink = document.getElementById("back-link");
+
+        if (tab === "forgot") {
+          tabRow.style.display   = "none";
+          backLink.style.display = "block";
+          // Reset forgot form to clean state when opening
+          window.resetForgotForm();
+        } else {
+          tabRow.style.display   = "flex";
+          backLink.style.display = "none";
+
+          // Update active tab button
+          ["signin", "signup"].forEach(function(t) {
+            var btn = document.getElementById("tab-" + t);
+            if (btn) btn.classList.remove("active");
+          });
+          var activeBtn = document.getElementById("tab-" + tab);
+          if (activeBtn) activeBtn.classList.add("active");
+        }
       }
     </script>
   </body>
