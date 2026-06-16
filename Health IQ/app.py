@@ -20,25 +20,43 @@ from firebase_admin import credentials, auth as firebase_auth
 
 def _init_firebase():
     """
-    Initialize firebase-admin once.
-    Looks for credentials in order:
-      1. GOOGLE_APPLICATION_CREDENTIALS env var (standard GCP / Cloud Run)
-      2. firebase-service-account.json in BASE_DIR (local dev)
+    Initialize firebase-admin once. Credential resolution order:
+      1. FIREBASE_SERVICE_ACCOUNT_JSON env var — JSON string (Render / any PaaS)
+      2. GOOGLE_APPLICATION_CREDENTIALS env var — path to JSON file (GCP / Cloud Run)
+      3. firebase-service-account.json in BASE_DIR — local development fallback
     """
-    if firebase_admin._apps:          # already initialised
+    if firebase_admin._apps:
         return
-    sa_path = os.environ.get(
-        "GOOGLE_APPLICATION_CREDENTIALS",
-        os.path.join(BASE_DIR, "firebase-service-account.json"),
-    )
-    if os.path.exists(sa_path):
+
+    # ── 1. JSON string in environment variable (Render) ──────────────
+    sa_json_str = os.environ.get("FIREBASE_SERVICE_ACCOUNT_JSON")
+    if sa_json_str:
+        try:
+            sa_dict = json.loads(sa_json_str)
+            cred = credentials.Certificate(sa_dict)
+            firebase_admin.initialize_app(cred)
+            print("[firebase-admin] Initialised from FIREBASE_SERVICE_ACCOUNT_JSON env var")
+            return
+        except Exception as e:
+            print(f"[firebase-admin] ERROR parsing FIREBASE_SERVICE_ACCOUNT_JSON: {e}")
+
+    # ── 2. Path to JSON file in environment variable (GCP / Cloud Run) ─
+    sa_path = os.environ.get("GOOGLE_APPLICATION_CREDENTIALS")
+    if sa_path and os.path.exists(sa_path):
         cred = credentials.Certificate(sa_path)
         firebase_admin.initialize_app(cred)
-        print(f"[firebase-admin] Initialised with service account: {sa_path}")
-    else:
-        # Fallback: Application Default Credentials (works on GCP without a file)
-        firebase_admin.initialize_app()
-        print("[firebase-admin] Initialised with Application Default Credentials")
+        print(f"[firebase-admin] Initialised from GOOGLE_APPLICATION_CREDENTIALS: {sa_path}")
+        return
+
+    # ── 3. Local file fallback (development) ─────────────────────────
+    local_path = os.path.join(BASE_DIR, "firebase-service-account.json")
+    if os.path.exists(local_path):
+        cred = credentials.Certificate(local_path)
+        firebase_admin.initialize_app(cred)
+        print(f"[firebase-admin] Initialised from local file: {local_path}")
+        return
+
+    print("[firebase-admin] WARNING: No credentials found! Token verification will fail.")
 
 _init_firebase()
 
