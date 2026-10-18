@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compare Plans — Health IQ</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    {% from 'macros.html' import navbar %}
+    <link rel="stylesheet" href="/static/css/main.css" />
+    <style>
+      .compare-table {
+        width: 100%;
+        border-collapse: separate;
+        border-spacing: 0;
+        background: var(--bg2);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        overflow: hidden;
+        margin: 32px 0;
+      }
+      .compare-table thead {
+        background: linear-gradient(135deg, #0a2540, #0d3352);
+      }
+      .compare-table th {
+        color: white;
+        padding: 22px 20px;
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .compare-table th:last-child {
+        border-right: none;
+      }
+      .compare-table th:first-child {
+        text-align: left;
+        min-width: 200px;
+        background: rgba(0, 0, 0, 0.2);
+      }
+      .compare-table td {
+        padding: 16px 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        border-right: 1px solid rgba(255, 255, 255, 0.05);
+        font-size: 14px;
+        text-align: center;
+        color: var(--text);
+      }
+      .compare-table td:last-child {
+        border-right: none;
+      }
+      .compare-table tbody tr:last-child td {
+        border-bottom: none;
+      }
+      .compare-table tbody tr:hover td {
+        background: rgba(255, 255, 255, 0.02);
+      }
+      .attr-name {
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.7);
+        text-align: left !important;
+        background: rgba(0, 0, 0, 0.15);
+        font-size: 13px;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+      }
+      .plan-column {
+        word-break: break-word;
+      }
+      .highlight {
+        color: var(--green);
+        font-weight: 700;
+      }
+      .btn-row {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 40px;
+      }
+      .empty-compare {
+        text-align: center;
+        padding: 80px 20px;
+        color: var(--text-muted);
+      }
+    </style>
+  </head>
+  <body class="dark-bg">
+    {{ navbar(user, 'plans') }}
+
+    <div class="page-header">
+      <div class="container">
+        <h1>⚖️ Compare Plans</h1>
+        <p>Side-by-side comparison of your selected plans</p>
+      </div>
+    </div>
+
+    <div class="page-body">
+      <div class="container">
+        {% if error %}
+        <div class="error-box">{{ error }}</div>
+        {% endif %} {% if selected %}
+        <div class="btn-row">
+          <a href="/plans" class="btn-secondary">← Back to Plans</a>
+          {% set names = selected | map(attribute='Plan_Name') | list %}
+          <a
+            href="/export-pdf?{% for n in names %}plans={{ n | urlencode }}&{% endfor %}"
+            target="_blank"
+            class="btn-primary"
+            >📄 Export as PDF</a
+          >
+        </div>
+
+        <!-- Summary cards on top -->
+        <div
+          style="display:grid;grid-template-columns:repeat({{ selected|length }},1fr);gap:16px;margin-bottom:24px;margin-left:200px;"
+        >
+          {% for plan in selected %}
+          <div
+            style="
+              background: var(--bg2);
+              border: 1px solid var(--border);
+              border-radius: 12px;
+              padding: 20px;
+              text-align: center;
+            "
+          >
+            <div
+              style="
+                font-size: 11px;
+                color: var(--teal);
+                text-transform: uppercase;
+                font-weight: 700;
+                margin-bottom: 4px;
+              "
+            >
+              {{ plan.Company }}
+            </div>
+            <div
+              style="
+                font-size: 15px;
+                font-weight: 800;
+                color: white;
+                margin-bottom: 8px;
+              "
+            >
+              {{ plan.Plan_Name }}
+            </div>
+            <div
+              style="
+                font-size: 26px;
+                font-weight: 900;
+                color: white;
+                font-family: &quot;Playfair Display&quot;, serif;
+              "
+            >
+              ₹{{ "{:,.0f}".format(plan.Annual_Premium|float) }}
+            </div>
+            <div style="font-size: 12px; color: var(--text-muted)">/year</div>
+          </div>
+          {% endfor %}
+        </div>
+
+        <table class="compare-table">
+          <thead>
+            <tr>
+              <th>Attribute</th>
+              {% for plan in selected %}
+              <th>{{ plan['Plan_Name'] }}</th>
+              {% endfor %}
+            </tr>
+          </thead>
+          <tbody>
+            {% set display_keys = [ ('Company', 'Company'), ('Plan_Type', 'Plan
+            Type'), ('Annual_Premium', 'Annual Premium (₹)'),
+            ('Monthly_Premium', 'Monthly Premium (₹)'), ('Coverage_Limit',
+            'Coverage Limit (₹)'), ('Waiting_Period_Years', 'Waiting Period'),
+            ('Claim_Settlement_Ratio_Percent', 'Claim Settlement Ratio'),
+            ('Network_Hospitals', 'Network Hospitals'), ('Rating', 'Customer
+            Rating'), ('Reviews_Count', 'Reviews Count'), ('Wellness_Benefit',
+            'Wellness Benefit'), ] %} {% for key, label in display_keys %}
+            <tr>
+              <td class="attr-name">{{ label }}</td>
+              {% for plan in selected %}
+              <td class="plan-column">
+                {% if key == 'Annual_Premium' or key == 'Monthly_Premium' or key
+                == 'Coverage_Limit' %} ₹{{ "{:,.0f}".format(plan[key]|float) }}
+                {% elif key == 'Claim_Settlement_Ratio_Percent' %}
+                <span
+                  style="color:{% if plan[key]|float >= 96 %}var(--green){% elif plan[key]|float >= 92 %}var(--teal){% else %}var(--orange){% endif %};"
+                  >{{ plan[key] }}%</span
+                >
+                {% elif key == 'Rating' %} ⭐ {{ plan[key] }} {% elif key ==
+                'Network_Hospitals' %} {{ "{:,}".format(plan[key]|int) }} {%
+                elif key == 'Waiting_Period_Years' %} {{ plan[key] }} year{% if
+                plan[key]|int != 1 %}s{% endif %} {% elif key ==
+                'Wellness_Benefit' %} {% if plan[key] == 'Yes' %}<span
+                  class="tag tag-green"
+                  >✓ Yes</span
+                >{% else %}<span class="tag tag-red">✗ No</span>{% endif %} {%
+                elif key == 'Reviews_Count' %} {{ "{:,}".format(plan[key]|int)
+                }} {% else %} {{ plan[key] }} {% endif %}
+              </td>
+              {% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+
+        <div class="btn-row">
+          <a href="/plans" class="btn-secondary">← Back to Plans</a>
+          <a href="/home" class="btn-primary">Home</a>
+        </div>
+        {% else %}
+        <div class="empty-compare">
+          <div style="font-size: 48px; margin-bottom: 16px">⚖️</div>
+          <h3 style="color: white; margin-bottom: 8px">No plans selected</h3>
+          <p style="margin-bottom: 20px">
+            Go back to Plans and select 2–3 plans to compare
+          </p>
+          <a href="/plans" class="btn-primary">← Browse Plans</a>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </body>
+</html>

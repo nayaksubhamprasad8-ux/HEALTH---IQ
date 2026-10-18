@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Export Comparison — Health IQ</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@600;700&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "DM Sans", sans-serif;
+        background: #fff;
+        color: #1a2a3a;
+      }
+      .toolbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        background: #0a2540;
+        padding: 14px 32px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 100;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+      }
+      .toolbar .brand {
+        color: white;
+        font-family: "Playfair Display", serif;
+        font-size: 18px;
+        font-weight: 700;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .toolbar-actions {
+        display: flex;
+        gap: 10px;
+      }
+      .btn-print {
+        padding: 9px 22px;
+        background: #2ecc71;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        font-family: "DM Sans", sans-serif;
+      }
+      .btn-back {
+        padding: 9px 22px;
+        background: transparent;
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 8px;
+        font-size: 14px;
+        font-weight: 600;
+        cursor: pointer;
+        text-decoration: none;
+        display: inline-block;
+        font-family: "DM Sans", sans-serif;
+      }
+      .page {
+        max-width: 960px;
+        margin: 80px auto 40px;
+        padding: 0 24px;
+      }
+      .report-header {
+        text-align: center;
+        padding: 40px 0 28px;
+        border-bottom: 2px solid #e8edf2;
+        margin-bottom: 32px;
+      }
+      .report-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        margin-bottom: 14px;
+      }
+      .report-logo-icon {
+        width: 40px;
+        height: 40px;
+        background: linear-gradient(135deg, #00c8b4, #2ecc71);
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 18px;
+      }
+      .report-logo-text {
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+        font-weight: 700;
+        color: #0a2540;
+      }
+      .report-header h1 {
+        font-family: "Playfair Display", serif;
+        font-size: 28px;
+        color: #0a2540;
+        margin-bottom: 6px;
+      }
+      .report-header p {
+        color: #6b7f93;
+        font-size: 14px;
+      }
+      .report-date {
+        display: inline-block;
+        margin-top: 10px;
+        background: #f0f4f8;
+        padding: 4px 14px;
+        border-radius: 100px;
+        font-size: 12px;
+        color: #6b7f93;
+      }
+      /* Summary cards */
+      .summary-row {
+        display: grid;
+        gap: 16px;
+        margin-bottom: 32px;
+      }
+      .summary-card {
+        background: #f8fafc;
+        border: 1px solid #e2e8f0;
+        border-radius: 12px;
+        padding: 20px;
+        text-align: center;
+        border-top: 4px solid #00c8b4;
+      }
+      .summary-card h3 {
+        font-size: 13px;
+        color: #6b7f93;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: 6px;
+      }
+      .summary-card .big {
+        font-family: "Playfair Display", serif;
+        font-size: 26px;
+        font-weight: 700;
+        color: #0a2540;
+      }
+      .summary-card .sub {
+        font-size: 12px;
+        color: #6b7f93;
+        margin-top: 2px;
+      }
+      /* Table */
+      .compare-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-bottom: 32px;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+      }
+      .compare-table thead tr {
+        background: linear-gradient(135deg, #0a2540, #1a4d6d);
+      }
+      .compare-table th {
+        color: white;
+        padding: 16px 18px;
+        font-size: 13px;
+        font-weight: 700;
+        text-align: center;
+        border-right: 1px solid rgba(255, 255, 255, 0.1);
+      }
+      .compare-table th:first-child {
+        text-align: left;
+        width: 180px;
+      }
+      .compare-table th:last-child {
+        border-right: none;
+      }
+      .compare-table td {
+        padding: 14px 18px;
+        border-bottom: 1px solid #e8edf2;
+        border-right: 1px solid #e8edf2;
+        font-size: 13px;
+        text-align: center;
+        color: #2d3748;
+      }
+      .compare-table td:first-child {
+        text-align: left;
+        background: #f8fafc;
+        font-weight: 700;
+        color: #0a2540;
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+      }
+      .compare-table td:last-child {
+        border-right: none;
+      }
+      .compare-table tr:last-child td {
+        border-bottom: none;
+      }
+      .compare-table tbody tr:nth-child(even) td:not(:first-child) {
+        background: #fafbfc;
+      }
+      .tag-good {
+        color: #059669;
+        font-weight: 700;
+      }
+      .tag-warn {
+        color: #d97706;
+        font-weight: 700;
+      }
+      .footer-note {
+        text-align: center;
+        color: #9ca3af;
+        font-size: 12px;
+        padding: 24px 0;
+        border-top: 1px solid #e8edf2;
+      }
+      @media print {
+        .toolbar {
+          display: none;
+        }
+        .page {
+          margin-top: 20px;
+        }
+        body {
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="toolbar">
+      <div class="brand">🛡️ Health IQ</div>
+      <div class="toolbar-actions">
+        <a href="/plans" class="btn-back">← Back to Plans</a>
+        <button class="btn-print" onclick="window.print()">
+          🖨️ Print / Save PDF
+        </button>
+      </div>
+    </div>
+
+    <div class="page">
+      <div class="report-header">
+        <div class="report-logo">
+          <div class="report-logo-icon">🛡️</div>
+          <div class="report-logo-text">Health IQ</div>
+        </div>
+        <h1>Insurance Plan Comparison Report</h1>
+        <p>Prepared for: <strong>{{ user }}</strong></p>
+        <span class="report-date" id="reportDate"></span>
+      </div>
+
+      {% if selected %}
+      <!-- Summary cards -->
+      <div
+        class="summary-row"
+        style="grid-template-columns: repeat({{ selected|length }}, 1fr);"
+      >
+        {% for plan in selected %}
+        <div class="summary-card">
+          <h3>{{ plan.Company }}</h3>
+          <div class="big">
+            ₹{{ "{:,.0f}".format(plan.Annual_Premium|float) }}
+          </div>
+          <div class="sub">{{ plan.Plan_Name }}</div>
+          <div class="sub">
+            Coverage: ₹{{ "{:,.0f}".format(plan.Coverage_Limit|float) }}
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+
+      <!-- Comparison table -->
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th>Attribute</th>
+            {% for plan in selected %}
+            <th>{{ plan.Plan_Name }}</th>
+            {% endfor %}
+          </tr>
+        </thead>
+        <tbody>
+          {% set rows = [ ('Company', 'Insurer'), ('Plan_Type', 'Plan Type'),
+          ('Annual_Premium', 'Annual Premium'), ('Monthly_Premium', 'Monthly
+          Premium'), ('Coverage_Limit', 'Sum Insured'), ('Waiting_Period_Years',
+          'Waiting Period'), ('Claim_Settlement_Ratio_Percent', 'Claim
+          Settlement Ratio'), ('Network_Hospitals', 'Network Hospitals'),
+          ('Rating', 'Customer Rating'), ('Reviews_Count', 'Reviews'),
+          ('Wellness_Benefit', 'Wellness Benefits'), ] %} {% for key, label in
+          rows %}
+          <tr>
+            <td>{{ label }}</td>
+            {% for plan in selected %}
+            <td>
+              {% if key in ['Annual_Premium','Monthly_Premium','Coverage_Limit']
+              %} ₹{{ "{:,.0f}".format(plan[key]|float) }} {% elif key ==
+              'Claim_Settlement_Ratio_Percent' %}
+              <span
+                class="{% if plan[key]|float >= 95 %}tag-good{% elif plan[key]|float >= 90 %}{% else %}tag-warn{% endif %}"
+                >{{ plan[key] }}%</span
+              >
+              {% elif key == 'Rating' %} ⭐ {{ plan[key] }} {% elif key ==
+              'Network_Hospitals' or key == 'Reviews_Count' %} {{
+              "{:,}".format(plan[key]|int) }} {% elif key ==
+              'Waiting_Period_Years' %} {{ plan[key] }} year{% if plan[key]|int
+              != 1 %}s{% endif %} {% elif key == 'Wellness_Benefit' %} {% if
+              plan[key] == 'Yes' %}✅ Yes{% else %}❌ No{% endif %} {% else %}
+              {{ plan[key] }} {% endif %}
+            </td>
+            {% endfor %}
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+
+      <div class="footer-note">
+        This report is generated by Health IQ for informational purposes only.
+        Actual premiums and terms may vary. Please verify with the insurer
+        before purchasing.<br />
+        © 2026 Health IQ — AI-Powered Insurance Comparison Platform
+      </div>
+      {% else %}
+      <p style="text-align: center; color: #6b7f93; padding: 60px">
+        No plans selected for export.
+      </p>
+      {% endif %}
+    </div>
+
+    <script>
+      document.getElementById("reportDate").textContent =
+        "Generated: " +
+        new Date().toLocaleDateString("en-IN", {
+          day: "numeric",
+          month: "long",
+          year: "numeric",
+        });
+    </script>
+  </body>
+</html>
